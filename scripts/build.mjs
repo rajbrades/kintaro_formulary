@@ -182,11 +182,11 @@ function writeHtml(rows, blends) {
   <div class="empty" id="blend-empty" hidden>No matching blends.</div>
 </div>
 <script>
-const ROWS = \${data};
-const CATS = \${cats};
-const PHARMS = \${pharms};
-const BLENDS = \${blendsData};
-const BLEND_CATS = \${blendCats};
+const ROWS = ${data};
+const CATS = ${cats};
+const PHARMS = ${pharms};
+const BLENDS = ${blendsData};
+const BLEND_CATS = ${blendCats};
 const COLS = [
   ["product_name","Product"],["strength","Strength"],["form","Form"],["package","Package"],
   ["pharmacy","Pharmacy"],["sku","SKU"],["wholesale_cost","Wholesale $"],["tags","Tags"],["notes","Notes"]

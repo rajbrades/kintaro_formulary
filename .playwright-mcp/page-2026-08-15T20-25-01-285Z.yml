@@ -1,0 +1,22 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: KINTARO x FORMULARY
+      - generic [ref=e5]: Compounded Rx Catalog
+    - generic [ref=e6]:
+      - heading [level=1] [ref=e7]:
+        - text: The
+        - emphasis [ref=e8]: formulary.
+      - generic [ref=e10]:
+        - button "Formulary" [ref=e11] [cursor=pointer]
+        - button "Potential Blends" [ref=e12] [cursor=pointer]
+  - generic [ref=e13]:
+    - generic [ref=e16]:
+      - searchbox "Search product, ingredient, SKU, strength..." [ref=e17]
+      - combobox [ref=e18]
+      - generic [ref=e19]:
+        - checkbox "Rx only" [ref=e20]
+        - text: Rx only
+    - table [ref=e23]:
+      - rowgroup
+      - rowgroup
