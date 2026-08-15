@@ -35,212 +35,212 @@ Rows whose primary category or classification a human should confirm.
 
 | Product | Strength | Form | Package | Pharmacy | SKU | Wholesale | Tags | Notes |
 |---|---|---|---|---|---|---:|---|---|
+| Ergoloid Pentoxifylline Arginine Cream | Ergoloid 0.05% – Pentoxifylline 5% - Arginine 6% | cream | 8GRAMS | V Pharm | ERG-PEN-ARG-CRM-VS | $31.25 |  |  |
+| OXYTOCIN | 1 TROCHE/RDT | troche |  | V Pharm |  | $1.25 | peptide | SKU available upon request |
+| Oxytocin | 10mg | injectable | vial | Peptides Supplier |  | $35 | peptide |  |
 | Oxytocin | 50IU | troche |  | V Pharm | OXY-50-RDT-VS | $0.75 | peptide |  |
 | Oxytocin | 250IU | troche |  | V Pharm | OXY-250-RDT-VS | $1.25 | peptide |  |
-| Sildenafil | 55mg | capsule |  | V Pharm | SIL-55-CAP-VS | $1.25 |  |  |
-| Sildenafil | 110mg | capsule |  | V Pharm | SIL-110-CAP-VS | $1.25 |  |  |
-| SildenafilCitrate | 125mg | troche |  | V Pharm | SIL-CIT-125-TRO-VS | $1.38 |  |  |
-| Sildenafil/TadalafilSL | 120mg/22mg | troche |  | V Pharm | SIL-TAD-120-22-TRO-VS | $1.88 |  |  |
-| Tadalafil | 5.5mg | capsule |  | V Pharm | TAD5.5-CAP-VS | $0.5 |  |  |
-| Tadalafil | 25mg | capsule |  | V Pharm | TAD25-CAP-VS | $1 |  |  |
-| Vardenafil | 20mg | capsule |  | V Pharm | VAR-20-CAP-VS | $1 |  |  |
-| Ergoloid Pentoxifylline Arginine Cream | Ergoloid 0.05% – Pentoxifylline 5% - Arginine 6% | cream | 8GRAMS | V Pharm | ERG-PEN-ARG-CRM-VS | $31.25 |  |  |
+| Oxytocin HRT Rapid Dissolve Tablet | 50IU | troche | 50IU | V Pharm | OXY-RDT-50-WS | $2.5 | peptide |  |
+| Oxytocin HRT Rapid Dissolve Tablet | 250IU | troche | 250IU | V Pharm | OXY-RDT-250-WS | $2.81 | peptide |  |
 | Oxytocin Nasal Spray | 20 units/0.1ml | nasal-spray | 12mL | V Pharm | OXYT50 | $50 | peptide |  |
 | Oxytocin Nasal Spray | 20 units/0.1ml | nasal-spray | 24mL | V Pharm | OXYT20 | $75 | peptide |  |
+| PT-141 | 10mg | injectable | vial | Peptides Supplier |  | $47 | peptide |  |
+| PT-141 Peptides Injectable | 2mg/mL | injectable | 5mL | V Pharm | PT141-WS | $100 | peptide |  |
 | Scream Cream | CMPD Sildenafil 1% - Ergoloid 0.05% – Pentoxifylline 5% – Arginine 6% | cream | 8 GRAMS | V Pharm | SCREAMCR-VS | $31.25 |  |  |
 | Sildenafil | 20mg | troche |  | V Pharm | SIL20 | $0.5 |  | form inferred |
+| Sildenafil | 55mg | capsule |  | V Pharm | SIL-55-CAP-VS | $1.25 |  |  |
 | Sildenafil | 100mg | troche |  | V Pharm | SIL100 | $1 |  | form inferred |
+| Sildenafil | 110mg | capsule |  | V Pharm | SIL-110-CAP-VS | $1.25 |  |  |
+| Sildenafil/TadalafilSL | 120mg/22mg | troche |  | V Pharm | SIL-TAD-120-22-TRO-VS | $1.88 |  |  |
+| SildenafilCitrate | 125mg | troche |  | V Pharm | SIL-CIT-125-TRO-VS | $1.38 |  |  |
 | Tadalafil | 5mg | troche |  | V Pharm | TADA5MG | $0.5 |  | form inferred |
-| Tadalafil Sildenafil troche | 5mg/25mg | troche |  | V Pharm | TADA5SIL25 | $1.5 |  |  |
-| Tadalafil Oxytocin troche | 5mg/100IU | troche |  | V Pharm | TADA5OX100 | $1.5 | peptide |  |
+| Tadalafil | 5.5mg | capsule |  | V Pharm | TAD5.5-CAP-VS | $0.5 |  |  |
 | Tadalafil | 10mg | troche |  | V Pharm | TADA10MG | $0.5 |  | form inferred |
-| Tadalafil Oxytocin troche | 10mg/100IU | troche |  | V Pharm | TADA10OX100 | $1 | peptide |  |
-| Tadalafil Oxytocin PT 141 troche | 10mg/100IU/1000mcg | troche |  | V Pharm | TAD-OXY-PT141-TRO-VS | $2.19 | peptide |  |
-| Tadalafil - Sildenafil (Berry) Rapid Dissolve Tablet | 12mg/55mg | troche |  | V Pharm | TADA12SIL55B | $1.5 |  |  |
 | Tadalafil | 20mg | troche |  | V Pharm | TADA20MG | $0.75 |  | form inferred |
+| Tadalafil | 25mg | capsule |  | V Pharm | TAD25-CAP-VS | $1 |  |  |
+| Tadalafil - Sildenafil (Berry) Rapid Dissolve Tablet | 12mg/55mg | troche |  | V Pharm | TADA12SIL55B | $1.5 |  |  |
 | Tadalafil /Oxytocin troche | 20mg/100IU | troche |  | V Pharm | TADA20OX100 | $1 | peptide |  |
-| Tadalafil Oxytocin PT 141 troche | 20mg/100IU/1000mcg | troche |  | V Pharm | TAD-20-OXY-PT141-TRO-VS | $2.19 | peptide |  |
 | Tadalafil /Oxytocin troche | 40mg/125IU | troche |  | V Pharm | TADA40OX125 | $1 | peptide |  |
+| Tadalafil Oxytocin PT 141 troche | 10mg/100IU/1000mcg | troche |  | V Pharm | TAD-OXY-PT141-TRO-VS | $2.19 | peptide |  |
+| Tadalafil Oxytocin PT 141 troche | 20mg/100IU/1000mcg | troche |  | V Pharm | TAD-20-OXY-PT141-TRO-VS | $2.19 | peptide |  |
+| Tadalafil Oxytocin troche | 5mg/100IU | troche |  | V Pharm | TADA5OX100 | $1.5 | peptide |  |
+| Tadalafil Oxytocin troche | 10mg/100IU | troche |  | V Pharm | TADA10OX100 | $1 | peptide |  |
+| Tadalafil Sildenafil troche | 5mg/25mg | troche |  | V Pharm | TADA5SIL25 | $1.5 |  |  |
 | Tri-Mix | 30mg/1mg/10mcg/ml | injectable | 5ml vial | V Pharm | TRMX1P | $50 |  |  |
-| OXYTOCIN | 1 TROCHE/RDT | troche |  | V Pharm |  | $1.25 | peptide | SKU available upon request |
-| Oxytocin HRT Rapid Dissolve Tablet | 250IU | troche | 250IU | V Pharm | OXY-RDT-250-WS | $2.81 | peptide |  |
-| Oxytocin HRT Rapid Dissolve Tablet | 50IU | troche | 50IU | V Pharm | OXY-RDT-50-WS | $2.5 | peptide |  |
-| PT-141 Peptides Injectable | 2mg/mL | injectable | 5mL | V Pharm | PT141-WS | $100 | peptide |  |
-| Oxytocin | 10mg | injectable | vial | Peptides Supplier |  | $35 | peptide |  |
-| PT-141 | 10mg | injectable | vial | Peptides Supplier |  | $47 | peptide |  |
+| Vardenafil | 20mg | capsule |  | V Pharm | VAR-20-CAP-VS | $1 |  |  |
 
 ## Hair Restoration (17)
 
 | Product | Strength | Form | Package | Pharmacy | SKU | Wholesale | Tags | Notes |
 |---|---|---|---|---|---|---:|---|---|
+| Biotin / Minoxidil / Spironolactone Capsule | 5/1.25/25 mg | capsule |  | V Pharm | BMS525 | $0.75 |  |  |
+| Biotin / Minoxidil Capsule | 5/1.25mg | capsule |  | V Pharm | BIOMIN | $0.63 |  |  |
 | Finasteride | .50mg | capsule |  | V Pharm | FINA.50MG | $0.5 |  | form inferred |
+| Finasteride | 5mg | capsule |  | V Pharm | FINA5 | $0.5 |  | form inferred |
+| Finasteride Tretinoin in Minoxidil Scalp Solution | Finasteride 0.25% - Tretinoin 0.01% in Minoxidil 5% | solution | 30ML | V Pharm | FINTM | $40 |  |  |
 | Finasteride-commercial | 1.0mg | capsule |  | V Pharm | FINACOM1 | $0.5 |  | form inferred |
 | Finasteride/Minoxidil | 0.25%/5% | capsule |  | V Pharm | FINAMINFO255 | $40 |  | form inferred |
 | Finasteride/Minoxidil | 0.25/12% | capsule |  | V Pharm | FINAMINFO2512 | $40 |  | form inferred |
-| Finasteride/Minoxidil | 1mg/2.5mg | capsule |  | V Pharm | FINAMINCAP125 | $0.94 |  |  |
 | Finasteride/Minoxidil | 0.25/12%; | capsule | 30mL | V Pharm | FINMINSOL25 | $40 |  | form inferred |
+| Finasteride/Minoxidil | 1mg/2.5mg | capsule |  | V Pharm | FINAMINCAP125 | $0.94 |  |  |
 | Finasteride/Minoxidil/Tretinoin | 0.25mg/5.0mg/0.03% 30ml | capsule |  | V Pharm | FINMINTRETF | $40 |  | form inferred |
 | Minoxidil | 2.5mg | capsule |  | V Pharm | MINOXIDIL25 | $0.5 |  | form inferred |
+| Minoxidil Azelaic acid Finasteride Niacinamide Scalp Suspension | Minoxidil 7% - Azelaic acid 5% – Finasteride 0.1% - Niacinamide 5% | solution | 30ML | V Pharm | MAFNSS | $40 |  |  |
 | Spironolactone | 10mg | capsule |  | V Pharm | SPIROL-10-VS | $0.75 | review | androgenetic alopecia use; also prescribed for acne; form inferred |
 | Spironolactone | 55mg | capsule |  | V Pharm | SPIROL-55-VS | $0.75 | review | androgenetic alopecia use; also prescribed for acne; form inferred |
 | Spironolactone | 75mg | capsule |  | V Pharm | SPIROL-75-VS | $0.75 | review | androgenetic alopecia use; also prescribed for acne; form inferred |
 | Spironolactone | 115mg | capsule |  | V Pharm | SPIROL-115-VS | $1 | review | androgenetic alopecia use; also prescribed for acne; form inferred |
-| Biotin / Minoxidil / Spironolactone Capsule | 5/1.25/25 mg | capsule |  | V Pharm | BMS525 | $0.75 |  |  |
-| Biotin / Minoxidil Capsule | 5/1.25mg | capsule |  | V Pharm | BIOMIN | $0.63 |  |  |
-| Finasteride | 5mg | capsule |  | V Pharm | FINA5 | $0.5 |  | form inferred |
-| Finasteride Tretinoin in Minoxidil Scalp Solution | Finasteride 0.25% - Tretinoin 0.01% in Minoxidil 5% | solution | 30ML | V Pharm | FINTM | $40 |  |  |
-| Minoxidil Azelaic acid Finasteride Niacinamide Scalp Suspension | Minoxidil 7% - Azelaic acid 5% – Finasteride 0.1% - Niacinamide 5% | solution | 30ML | V Pharm | MAFNSS | $40 |  |  |
 
 ## Peptide Therapy (65)
 
 | Product | Strength | Form | Package | Pharmacy | SKU | Wholesale | Tags | Notes |
 |---|---|---|---|---|---|---:|---|---|
-| Sermorelin | 3MG/ML | injectable | 5 ML VIAL | V Pharm | SER3MG | $56.25 |  |  |
-| Sermorelin Sublingual Suspension in SubMagna™ SL HMW | 2mg/1ml | troche | 15mL | V Pharm | SERMSUBSL | $50 |  |  |
-| Sermorelin troche | 500mcg | troche |  | V Pharm | SERM-TRO-500-VS | $1.56 |  |  |
-| Sermorelin | 15mg | injectable |  | V Pharm | SRM15P | $110 |  | name inferred from SKU SRM15P; form inferred |
 | AOD - 9604 Peptides Injectable | 1.2mg/ml | injectable | 5mL | V Pharm | AOD9604-WS | $100 | weight |  |
 | AOD - 9604/MOTs-C Peptides Injectable | 1.2mg/2mg/mL | injectable | 5mL | V Pharm | AOD9604-MOT-WS | $118.75 | weight |  |
 | AOD - 9604/MOTs-C/Tesamorelin Peptides Injectable | 1.2mg/2mg/3mg/mL | injectable | 5mL | V Pharm | AOD9604-MOT-T-WS | $118.75 | weight |  |
-| BPC-157 ACETATE Peptide Capsule | 500mcg | capsule | 1 EA | V Pharm | BPC157-AC-WS | $2.5 |  |  |
-| BPC-157 Peptides Injectable | 3mg/mL | injectable | 5mL | V Pharm | BPC157-WS | $100 |  |  |
-| BPC-157/GHK-CU/KPV/TB500 Peptide Injectable | 3mg/10mg/3mg/3mg/mL | injectable | 5mL | V Pharm | BPC157-GHK-KPV-TB-WS | $118.75 |  |  |
-| BPC-157/KPV/TB500 Peptides Injectable | 3mg/3mg/3mg/mL | injectable | 5mL | V Pharm | BPC157-KPV-TB-WS | $118.75 |  |  |
-| BPC-157/TB-500/GHK-Cu | 3/3/10mg/mL | injectable | 5mL | V Pharm | BPC-TB-GHK-WS | $118.75 |  |  |
-| BPC-157/TB500 Peptides Injectable | 3mg/3mg/mL | injectable | 5mL | V Pharm | BPC157-TB-WS | $118.75 |  |  |
-| CJC/Ipamorelin Peptides Injectable | 1.2mg/2mg | injectable | 5mL | V Pharm | CJC-IPA-WS | $118.75 |  |  |
-| Dihexa/Tesofensine | 5mg/500mcg | injectable | 1 EA | V Pharm | DIH-TES-CAP-WS | $3.6 | review | cognitive/weight combo — confirm category |
-| DSIP Peptides Injectable | 1mg/mL | injectable | 5mL | V Pharm | DSIP-WS | $100 |  |  |
-| DSIP/BPC/CJC Peptides Injectable | 1mg/2mg/2mg/mL | injectable | 5mL | V Pharm | DSIP-BPC-CJC-WS | $118.75 |  |  |
-| Epithalon Peptides Injectable | 2mg/mL | injectable | 5mL | V Pharm | EPITHALON-WS | $100 |  |  |
-| GHK-Cu Peptides Injectable | 10mg/mL | injectable | 5mL | V Pharm | GHK-CU-WS | $100 |  |  |
-| GHK-Cu/Epithalon Peptides Injectable | 10mg/2mg/mL | injectable | 5mL | V Pharm | GHK-CU-EPI-WS | $118.75 |  |  |
-| IGF-LR3 Peptides Injectable | 200mcg/mL | injectable | 5mL | V Pharm | IGF-LR3-WS | $100 |  |  |
-| LL-37 Peptides Injectable | 2mg/mL | injectable | 5mL | V Pharm | LL-37-WS | $100 |  |  |
-| MK 677 (Ibutamoren) Capsules | 25mg | capsule |  | V Pharm | MK677-WS | $5 |  | non-peptide oral GH secretagogue |
-| MOTS-C Peptides Injectable | 2mg/ml | injectable | 5mL | V Pharm | MOTS-C-WS | $100 |  |  |
-| Pinealon/PE22-28/Selank Peptides Injectable | 2mg/2mg/2mg/mL | injectable | 5mL | V Pharm | PIN-PE22-SEL-WS | $118.75 |  |  |
-| Semax/Selank Peptides Injectable | 1mg/1mg/mL | injectable | 5mL | V Pharm | SEM-SEL-WS | $118.75 |  |  |
-| Sermorelin | 3mg/mL | injectable | 5mL | V Pharm | SEM-SEL-WS | $125 |  |  |
-| Tesamorelin / Ipamorelin Peptides Injectable | 2mg/2mg/mL/5mL | injectable | 5mL | V Pharm | TES-IPA-WS | $118.75 |  |  |
-| Tesamorelin Peptides Injectable | 3mg/mL/5mL | injectable | 5mL | V Pharm | TES-WS | $100 |  |  |
-| Thymosin A-1 Peptides Injectable | 5mg/mL | injectable | 5mL | V Pharm | THYMOSIN-WS | $100 |  |  |
-| Ara-290 | 10mg | injectable | vial | Peptides Supplier |  | $48 |  |  |
 | AOD-9604 | 5mg | injectable | vial | Peptides Supplier |  | $53 | weight |  |
+| Ara-290 | 10mg | injectable | vial | Peptides Supplier |  | $48 |  |  |
 | BPC-157 | 5mg | injectable | vial | Peptides Supplier |  | $27 |  |  |
 | BPC-157 | 10mg | injectable | vial | Peptides Supplier |  | $44 |  |  |
 | BPC-157 / GHK-Cu / KPV / TB-500 | 10mg / 50mg / 10mg / 10mg | injectable | vial | Peptides Supplier |  | $68 |  |  |
 | BPC-157 / GHK-Cu / TB-500 | 10mg / 50mg / 10mg | injectable | vial | Peptides Supplier |  | $59 |  |  |
 | BPC-157 / TB-500 | 5mg / 5mg | injectable | vial | Peptides Supplier |  | $44 |  |  |
 | BPC-157 / TB-500 | 10mg / 10mg | injectable | vial | Peptides Supplier |  | $51 |  |  |
+| BPC-157 ACETATE Peptide Capsule | 500mcg | capsule | 1 EA | V Pharm | BPC157-AC-WS | $2.5 |  |  |
+| BPC-157 Peptides Injectable | 3mg/mL | injectable | 5mL | V Pharm | BPC157-WS | $100 |  |  |
+| BPC-157/GHK-CU/KPV/TB500 Peptide Injectable | 3mg/10mg/3mg/3mg/mL | injectable | 5mL | V Pharm | BPC157-GHK-KPV-TB-WS | $118.75 |  |  |
+| BPC-157/KPV/TB500 Peptides Injectable | 3mg/3mg/3mg/mL | injectable | 5mL | V Pharm | BPC157-KPV-TB-WS | $118.75 |  |  |
+| BPC-157/TB-500/GHK-Cu | 3/3/10mg/mL | injectable | 5mL | V Pharm | BPC-TB-GHK-WS | $118.75 |  |  |
+| BPC-157/TB500 Peptides Injectable | 3mg/3mg/mL | injectable | 5mL | V Pharm | BPC157-TB-WS | $118.75 |  |  |
 | CJC-1295 | 10mg | injectable | vial | Peptides Supplier |  | $56 |  |  |
-| CJC-1295 with DAC | 5mg | injectable | vial | Peptides Supplier |  | $46 |  |  |
 | CJC-1295 / Ipamorelin | 5mg / 5mg | injectable | vial | Peptides Supplier |  | $53 |  |  |
+| CJC-1295 with DAC | 5mg | injectable | vial | Peptides Supplier |  | $46 |  |  |
+| CJC/Ipamorelin Peptides Injectable | 1.2mg/2mg | injectable | 5mL | V Pharm | CJC-IPA-WS | $118.75 |  |  |
+| Dihexa/Tesofensine | 5mg/500mcg | injectable | 1 EA | V Pharm | DIH-TES-CAP-WS | $3.6 | review | cognitive/weight combo — confirm category |
 | DSIP | 10mg | injectable | vial | Peptides Supplier |  | $48 |  |  |
+| DSIP Peptides Injectable | 1mg/mL | injectable | 5mL | V Pharm | DSIP-WS | $100 |  |  |
+| DSIP/BPC/CJC Peptides Injectable | 1mg/2mg/2mg/mL | injectable | 5mL | V Pharm | DSIP-BPC-CJC-WS | $118.75 |  |  |
 | Epithalon | 10mg | injectable | vial | Peptides Supplier |  | $35 |  |  |
+| Epithalon Peptides Injectable | 2mg/mL | injectable | 5mL | V Pharm | EPITHALON-WS | $100 |  |  |
 | GHK-Cu | 50mg | injectable | vial | Peptides Supplier |  | $40 |  |  |
 | GHK-Cu | 100mg | injectable | vial | Peptides Supplier |  | $50 |  |  |
+| GHK-Cu Peptides Injectable | 10mg/mL | injectable | 5mL | V Pharm | GHK-CU-WS | $100 |  |  |
+| GHK-Cu/Epithalon Peptides Injectable | 10mg/2mg/mL | injectable | 5mL | V Pharm | GHK-CU-EPI-WS | $118.75 |  |  |
 | GHRP-2 | 10mg | injectable | vial | Peptides Supplier |  | $46 |  |  |
 | GHRP-6 | 10mg | injectable | vial | Peptides Supplier |  | $46 |  |  |
 | IGF-1 LR3 | 1mg | injectable | vial | Peptides Supplier |  | $84 |  |  |
+| IGF-LR3 Peptides Injectable | 200mcg/mL | injectable | 5mL | V Pharm | IGF-LR3-WS | $100 |  |  |
 | Ipamorelin | 10mg | injectable | vial | Peptides Supplier |  | $47 |  |  |
 | KPV | 10mg | injectable | vial | Peptides Supplier |  | $40 |  |  |
 | LL-37 | 5mg | injectable | vial | Peptides Supplier |  | $53 |  |  |
+| LL-37 Peptides Injectable | 2mg/mL | injectable | 5mL | V Pharm | LL-37-WS | $100 |  |  |
+| MK 677 (Ibutamoren) Capsules | 25mg | capsule |  | V Pharm | MK677-WS | $5 |  | non-peptide oral GH secretagogue |
 | MOTS-C | 10mg | injectable | vial | Peptides Supplier |  | $46 |  |  |
+| MOTS-C Peptides Injectable | 2mg/ml | injectable | 5mL | V Pharm | MOTS-C-WS | $100 |  |  |
 | MT-II (Melanotan II) | 10mg | injectable | vial | Peptides Supplier |  | $46 |  |  |
 | Pinealon | 20mg | injectable | vial | Peptides Supplier |  | $52 |  |  |
+| Pinealon/PE22-28/Selank Peptides Injectable | 2mg/2mg/2mg/mL | injectable | 5mL | V Pharm | PIN-PE22-SEL-WS | $118.75 |  |  |
 | Selank | 11mg | injectable | vial | Peptides Supplier |  | $47 |  |  |
 | Selank / Semax (Nasal) | 10mg / 10mg | nasal-spray | vial | Peptides Supplier |  | $55 |  |  |
 | Semax | 11mg | injectable | vial | Peptides Supplier |  | $47 |  |  |
+| Semax/Selank Peptides Injectable | 1mg/1mg/mL | injectable | 5mL | V Pharm | SEM-SEL-WS | $118.75 |  |  |
+| Sermorelin | 3MG/ML | injectable | 5 ML VIAL | V Pharm | SER3MG | $56.25 |  |  |
+| Sermorelin | 3mg/mL | injectable | 5mL | V Pharm | SEM-SEL-WS | $125 |  |  |
 | Sermorelin | 10mg | injectable | vial | Peptides Supplier |  | $57 |  |  |
+| Sermorelin | 15mg | injectable |  | V Pharm | SRM15P | $110 |  | name inferred from SKU SRM15P; form inferred |
+| Sermorelin Sublingual Suspension in SubMagna™ SL HMW | 2mg/1ml | troche | 15mL | V Pharm | SERMSUBSL | $50 |  |  |
+| Sermorelin troche | 500mcg | troche |  | V Pharm | SERM-TRO-500-VS | $1.56 |  |  |
 | SS-31 | 50mg | injectable | vial | Peptides Supplier |  | $93 |  |  |
 | TB-500 | 10mg | injectable | vial | Peptides Supplier |  | $44 |  |  |
 | Tesamorelin | 10mg | injectable | vial | Peptides Supplier |  | $63 |  |  |
 | Tesamorelin / Ipamorelin | 5mg / 5mg | injectable | vial | Peptides Supplier |  | $54 |  |  |
-| Thymalin | 10mg | injectable | vial | Peptides Supplier |  | $47 |  |  |
-| Thymosin Alpha-1 | 10mg | injectable | vial | Peptides Supplier |  | $65 |  |  |
 | Tesamorelin / Ipamorelin Blend | 12mg / 6mg | injectable | vial | Peptides Supplier |  | $65 |  |  |
+| Tesamorelin / Ipamorelin Peptides Injectable | 2mg/2mg/mL/5mL | injectable | 5mL | V Pharm | TES-IPA-WS | $118.75 |  |  |
+| Tesamorelin Peptides Injectable | 3mg/mL/5mL | injectable | 5mL | V Pharm | TES-WS | $100 |  |  |
+| Thymalin | 10mg | injectable | vial | Peptides Supplier |  | $47 |  |  |
+| Thymosin A-1 Peptides Injectable | 5mg/mL | injectable | 5mL | V Pharm | THYMOSIN-WS | $100 |  |  |
+| Thymosin Alpha-1 | 10mg | injectable | vial | Peptides Supplier |  | $65 |  |  |
 
 ## Weight Management (76)
 
 | Product | Strength | Form | Package | Pharmacy | SKU | Wholesale | Tags | Notes |
 |---|---|---|---|---|---|---:|---|---|
-| Metformin | 500mg | tablet |  | V Pharm | MET500 | $0.5 |  |  |
-| Metformin | 1000mg | tablet |  | V Pharm | MET1000 | $0.5 |  |  |
+| Cagrilintide | 5mg | injectable | vial | Peptides Supplier |  | $61 | amylin | amylin analog, not a GLP-1 |
+| L-Carnitine Injectable | 500 mg/ml -30ml | injectable | 30mL | V Pharm |  | $62.5 | lipotropic\|injectable | SKU available upon request |
+| Liraglutide 503B Weight Loss Injectable | 6mg/mL | injectable | (42mg/7mL Vial) | V Pharm | LIRAGLUTIDE-WS | $73.75 | glp-1 |  |
+| Liraglutide 503B Weight Loss Injectable | 6mg/mL | injectable | (90mg/15mL Vial) | V Pharm | LIRAGLUTIDE15-WS | $123.75 | glp-1 |  |
 | Low Dose Naltrexone | 1.5mg | injectable |  | V Pharm | LDNAL1.5 | $1.25 | metabolic | LDN — also used for autoimmune/inflammation; form inferred |
 | Low Dose Naltrexone | 3mg | injectable |  | V Pharm | LDNAL3 | $1.25 | metabolic | LDN — also used for autoimmune/inflammation; form inferred |
 | Low Dose Naltrexone | 4.5mg | injectable |  | V Pharm | LDNAL4.5 | $1.25 | metabolic | LDN — also used for autoimmune/inflammation; form inferred |
 | Low Dose Naltrexone | 6mg | injectable |  | V Pharm | LDNAL6 | $1.25 | metabolic | LDN — also used for autoimmune/inflammation; form inferred |
+| Metformin | 500mg | tablet |  | V Pharm | MET500 | $0.5 |  |  |
+| Metformin | 1000mg | tablet |  | V Pharm | MET1000 | $0.5 |  |  |
+| Methionine/Inositol B12 (Cyanocobalamin) | 25/50/50/1MG/ML | injectable | 10ML | V Pharm | MEINB12CY | $37.5 | lipotropic\|injectable |  |
+| MIC/B6/B12 | 25/50/50/10/1mg/mL - 10mL Vial | injectable | 10mL | V Pharm | MICB6B12P | $50 | lipotropic\|injectable |  |
 | Phentermine | 37.5mg | tablet |  | V Pharm | PHENTAB375 | $0.63 |  |  |
+| Phentermine | 37.5mg | tablet |  | V Pharm | PHENTAB375 | $18.75 |  |  |
 | Phentermine/Topiramate | 15mg/12.5mg | injectable |  | V Pharm | PHEN-TOP-15-VS | $1.25 |  | form inferred |
 | Phentermine/Topiramate | 30mg/12.5mg | injectable |  | V Pharm | PHEN-TOP-30-VS | $1.25 |  | form inferred |
-| Methionine/Inositol B12 (Cyanocobalamin) | 25/50/50/1MG/ML | injectable | 10ML | V Pharm | MEINB12CY | $37.5 | lipotropic\|injectable |  |
-| Semaglutide Oral Dissolving Tablets | 250mcg | troche |  | V Pharm | SG-ODT-250-VS | $87.5 | glp-1 |  |
-| Semaglutide Oral Dissolving Tablets | 500mcg | troche |  | V Pharm | SG-ODT-500-VS | $87.5 | glp-1 |  |
-| Semaglutide Oral Dissolving Tablets | 1000mcg | troche |  | V Pharm | SG-ODT-1000-VS | $106.25 | glp-1 |  |
-| Semaglutide Oral Dissolving Tablets | 1.5mg | troche |  | V Pharm | SG-ODT-1.5-VS | $112.5 | glp-1 |  |
-| Semaglutide Oral Dissolving Tablets | 2mg | troche |  | V Pharm | SG-ODT-2-VS | $125 | glp-1 |  |
-| Semaglutide Oral Dissolving Tablets | 2.5mg | troche |  | V Pharm | SG-ODT-2.5-VS | $131.25 | glp-1 |  |
-| Tirzepatide Oral Dissolving Tablets | 3MG | troche |  | V Pharm | TZT-ODT-3-VS | $112.5 | glp-1 |  |
-| Tirzepatide Oral Dissolving Tablets | 4MG | troche |  | V Pharm | TZT-ODT-4-VS | $118.75 | glp-1 |  |
-| Tirzepatide Oral Dissolving Tablets | 5MG | troche |  | V Pharm | TZT-ODT-5-VS | $131.25 | glp-1 |  |
-| Tirzepatide Oral Dissolving Tablets | 6MG | troche |  | V Pharm | TZT-ODT-6-VS | $137.5 | glp-1 |  |
-| Tirzepatide Oral Dissolving Tablets | 7MG | troche |  | V Pharm | TZT-ODT-7-VS | $150 | glp-1 |  |
-| Tirzepatide Oral Dissolving Tablets | 8MG | troche |  | V Pharm | TZT-ODT-8-VS | $156.25 | glp-1 |  |
-| Phentermine | 37.5mg | tablet |  | V Pharm | PHENTAB375 | $18.75 |  |  |
-| MIC/B6/B12 | 25/50/50/10/1mg/mL - 10mL Vial | injectable | 10mL | V Pharm | MICB6B12P | $50 | lipotropic\|injectable |  |
-| Semaglutide Sublingual | 15mL - 2mg/mL | troche |  | V Pharm |  | $94 | glp-1 | SKU available upon request |
-| Semaglutide Sublingual | 15mL - 3mg/mL | troche |  | V Pharm |  | $100 | glp-1 | name inferred from context; SKU available upon request |
-| Semaglutide Sublingual | 15mL - 4mg/mL | troche |  | V Pharm |  | $107 | glp-1 | name inferred from context; SKU available upon request |
-| Semaglutide Sublingual | 15mL - 6mg/mL | troche |  | V Pharm |  | $113 | glp-1 | name inferred from context; SKU available upon request |
-| L-Carnitine Injectable | 500 mg/ml -30ml | injectable | 30mL | V Pharm |  | $62.5 | lipotropic\|injectable | SKU available upon request |
-| Liraglutide 503B Weight Loss Injectable | 6mg/mL | injectable | (42mg/7mL Vial) | V Pharm | LIRAGLUTIDE-WS | $73.75 | glp-1 |  |
-| Liraglutide 503B Weight Loss Injectable | 6mg/mL | injectable | (90mg/15mL Vial) | V Pharm | LIRAGLUTIDE15-WS | $123.75 | glp-1 |  |
-| Semaglutide + Glycine 1.25mg/5mg per ml (1ml vial) | 1.25mg/5mg per ml (1ml vial) | injectable | 1ml | V Pharm | SGGLY-1.25-5-1-DX | $45 | glp-1 |  |
-| Semaglutide + Glycine 1.25mg/5mg per ml (2ml vial) | 1.25mg/5mg per ml (2ml vial) | injectable | 2ml | V Pharm | SGGLY-1.25-5-2-DX | $55 | glp-1 |  |
-| Semaglutide + Glycine 2.5 mg/5mg per ml (2 ml vial) | 2.5 mg/5mg per ml (2 ml vial) | injectable | 2ml | V Pharm | SGGLY-2.5-5-2-DX | $58 | glp-1 |  |
-| Semaglutide + Glycine 3.125mg/5mg per ml (4ml vial) | 3.125mg/5mg per ml (4ml vial) | injectable | 4ml | V Pharm | SGGLY-3.125-5-4-DX | $70 | glp-1 |  |
-| Semaglutide + B12 1.25mg/0.5mg per ml (2ml vial) | 1.25mg/0.5mg per ml (2ml vial) | injectable | 2ml | V Pharm | SGB12-1.25-0.5-2-DX | $55 | glp-1 |  |
-| Semaglutide + B12 2.5 mg/0.5mg per ml (2 ml vial) | 2.5mg/0.5mg per ml (2ml vial) | injectable | 2ml | V Pharm | SGB12-2.5-0.5-2-DX | $58 | glp-1 |  |
-| Semaglutide + B12 3.125mg/0.5mg per ml (4ml vial) | 3.125mg/0.5mg per ml (2ml vial) | injectable | 4ml | V Pharm | SGB12-3.125-0.5-4-DX | $70 | glp-1 |  |
-| Semaglutide/Methylcobalamin/Glycine | 1mg/1mg/10mg/ml | injectable | 1mL | V Pharm | SGMG1-VS | $78 | glp-1 |  |
-| Semaglutide/Methylcobalamin/Glycine | 1mg/1mg/10mg/ml | injectable | 2.5mL | V Pharm | SGMG2.5-VS | $96 | glp-1 |  |
-| Semaglutide/Methylcobalamin/Glycine | 5mg/1mg/10mg/ml | injectable | 1mL | V Pharm | SGMG5-VS | $120 | glp-1 |  |
-| Semaglutide/Methylcobalamin/Glycine | 5mg/1mg/10mg/ml | injectable | 2.5mL | V Pharm | SGMG12.5-VS | $138 | glp-1 |  |
-| Tirzepatide + Glycine 8.5 mg/5mg per ml (1ml vial) | 8.5 mg/5mg per ml (1ml vial) | injectable | 1ml | V Pharm | TZTGLY-8.5-5-1-DX | $60 | glp-1 |  |
-| Tirzepatide + Glycine 8.5 mg/5mg per ml (2ml vial) | 8.5 mg/5mg per ml (2ml vial) | injectable | 2ml | V Pharm | TZTGLY-8.5-5-2-DX | $78 | glp-1 |  |
-| Tirzepatide + Glycine 17 mg/5mg per ml (2ml vial) | 17 mg/5mg per ml (2ml vial) | injectable | 2ml | V Pharm | TZTGLY-17-5-2-DX | $93 | glp-1 |  |
-| Tirzepatide + Glycine 17mg/5mg per ml (4ml vial) | 17mg/5mg per ml (4ml vial) | injectable | 4ml | V Pharm | TZTGLY-17-5-2-DX | $114 | glp-1 |  |
-| Tirzepatide + B12 8.5 mg/0.5mg per ml (2ml vial) | 8.5 mg/0.5mg per ml (2ml vial) | injectable | 2ml | V Pharm | TZTB12-8.5-0.5-2-DX | $78 | glp-1 |  |
-| Tirzepatide + B12 17 mg/0.5mg per ml (2ml vial) | 17 mg/0.5mg per ml (2ml vial) | injectable | 2ml | V Pharm | TZTB12-17-0.5-2-DX | $93 | glp-1 |  |
-| Tirzepatide + B12 17mg/0.5mg per ml (4ml vial) | 17mg/0.5mg per ml (4ml vial) | injectable | 4ml | V Pharm | TZTB12-17-0.5-4-DX | $114 | glp-1 |  |
-| Tirzepatide/Glycine/Methylcobalamin | 8.5mg/10mg/1mg/ml | injectable | 2mL | V Pharm | TZTGM172-VS | $78 | glp-1 |  |
-| Tirzepatide/Glycine/Methylcobalamin | 17mg/10mg/1mg/ml | injectable | 2mL | V Pharm | TZTGM342-VS | $168 | glp-1 |  |
-| Tirzepatide/Glycine/Methylcobalamin | 17mg/10mg/1mg/ml | injectable | 4mL | V Pharm | TZTGM344-VS | $198 | glp-1 |  |
-| Tirzepatide/L-Carnitine | 10mg/100mg/ml | injectable | 1mL | V Pharm | TZTC101-VS | $126 | glp-1 |  |
-| Tirzepatide/L-Carnitine | 10mg/100mg/ml | injectable | 3mL | V Pharm | TZTC103-VS | $156 | glp-1 |  |
-| Tirzepatide/L-Carnitine | 20mg/100mg/ml | injectable | 3mL | V Pharm | TZTC203-VS | $186 | glp-1 |  |
-| Cagrilintide | 5mg | injectable | vial | Peptides Supplier |  | $61 | amylin | amylin analog, not a GLP-1 |
 | Retatrutide | 10mg | injectable | vial | Peptides Supplier |  | $60 | glp-1 |  |
 | Retatrutide | 20mg | injectable | vial | Peptides Supplier |  | $80 | glp-1 |  |
 | Retatrutide | 30mg | injectable | vial | Peptides Supplier |  | $100 | glp-1 |  |
 | Retatrutide | 60mg | injectable | vial | Peptides Supplier |  | $150 | glp-1 |  |
 | Semaglutide | 5mg | injectable | vial | Peptides Supplier |  | $40 | glp-1 |  |
 | Semaglutide | 10mg | injectable | vial | Peptides Supplier |  | $43 | glp-1 |  |
-| Tirzepatide | 10mg | injectable | vial | Peptides Supplier |  | $60 | glp-1 |  |
-| Tirzepatide | 30mg | injectable | vial | Peptides Supplier |  | $80 | glp-1 |  |
-| Tirzepatide | 60mg | injectable | vial | Peptides Supplier |  | $120 | glp-1 |  |
-| Tirzepatide + Glycine | 10mg + Glycine 5mg 1mL | injectable | 1mL | S Pharm |  | $35 | glp-1 |  |
-| Tirzepatide + Glycine | 20mg + Glycine 10mg 2mL | injectable | 2mL | S Pharm |  | $45 | glp-1 |  |
-| Tirzepatide + Glycine | 30mg + Glycine 15mg 3mL | injectable | 3mL | S Pharm |  | $55 | glp-1 |  |
-| Tirzepatide + Glycine | 40mg + Glycine 10mg 2mL | injectable | 2mL | S Pharm |  | $65 | glp-1 |  |
-| Tirzepatide + Glycine | 60mg + Glycine 15mg 3mL | injectable | 3mL | S Pharm |  | $75 | glp-1 |  |
+| Semaglutide + B12 1.25mg/0.5mg per ml (2ml vial) | 1.25mg/0.5mg per ml (2ml vial) | injectable | 2ml | V Pharm | SGB12-1.25-0.5-2-DX | $55 | glp-1 |  |
+| Semaglutide + B12 2.5 mg/0.5mg per ml (2 ml vial) | 2.5mg/0.5mg per ml (2ml vial) | injectable | 2ml | V Pharm | SGB12-2.5-0.5-2-DX | $58 | glp-1 |  |
+| Semaglutide + B12 3.125mg/0.5mg per ml (4ml vial) | 3.125mg/0.5mg per ml (2ml vial) | injectable | 4ml | V Pharm | SGB12-3.125-0.5-4-DX | $70 | glp-1 |  |
 | Semaglutide + Glycine | 1.5mg + Glycine 5mg 1mL | injectable | 1mL | S Pharm |  | $15 | glp-1 |  |
 | Semaglutide + Glycine | 2.5mg + Glycine 5mg 1mL | injectable | 1mL | S Pharm |  | $15 | glp-1 |  |
 | Semaglutide + Glycine | 3.75mg + Glycine 12.5mg 2.5mL | injectable | 2.5mL | S Pharm |  | $20 | glp-1 |  |
 | Semaglutide + Glycine | 6.25mg + Glycine 12.5mg 2.5mL | injectable | 2.5mL | S Pharm |  | $25 | glp-1 |  |
 | Semaglutide + Glycine | 8.75mg + Glycine 17.5mg 3.5mL | injectable | 3.5mL | S Pharm |  | $35 | glp-1 |  |
 | Semaglutide + Glycine | 10mg + Glycine 10mg 2mL | injectable | 2mL | S Pharm |  | $40 | glp-1 |  |
+| Semaglutide + Glycine 1.25mg/5mg per ml (1ml vial) | 1.25mg/5mg per ml (1ml vial) | injectable | 1ml | V Pharm | SGGLY-1.25-5-1-DX | $45 | glp-1 |  |
+| Semaglutide + Glycine 1.25mg/5mg per ml (2ml vial) | 1.25mg/5mg per ml (2ml vial) | injectable | 2ml | V Pharm | SGGLY-1.25-5-2-DX | $55 | glp-1 |  |
+| Semaglutide + Glycine 2.5 mg/5mg per ml (2 ml vial) | 2.5 mg/5mg per ml (2 ml vial) | injectable | 2ml | V Pharm | SGGLY-2.5-5-2-DX | $58 | glp-1 |  |
+| Semaglutide + Glycine 3.125mg/5mg per ml (4ml vial) | 3.125mg/5mg per ml (4ml vial) | injectable | 4ml | V Pharm | SGGLY-3.125-5-4-DX | $70 | glp-1 |  |
+| Semaglutide Oral Dissolving Tablets | 1.5mg | troche |  | V Pharm | SG-ODT-1.5-VS | $112.5 | glp-1 |  |
+| Semaglutide Oral Dissolving Tablets | 2mg | troche |  | V Pharm | SG-ODT-2-VS | $125 | glp-1 |  |
+| Semaglutide Oral Dissolving Tablets | 2.5mg | troche |  | V Pharm | SG-ODT-2.5-VS | $131.25 | glp-1 |  |
+| Semaglutide Oral Dissolving Tablets | 250mcg | troche |  | V Pharm | SG-ODT-250-VS | $87.5 | glp-1 |  |
+| Semaglutide Oral Dissolving Tablets | 500mcg | troche |  | V Pharm | SG-ODT-500-VS | $87.5 | glp-1 |  |
+| Semaglutide Oral Dissolving Tablets | 1000mcg | troche |  | V Pharm | SG-ODT-1000-VS | $106.25 | glp-1 |  |
+| Semaglutide Sublingual | 15mL - 2mg/mL | troche |  | V Pharm |  | $94 | glp-1 | SKU available upon request |
+| Semaglutide Sublingual | 15mL - 3mg/mL | troche |  | V Pharm |  | $100 | glp-1 | name inferred from context; SKU available upon request |
+| Semaglutide Sublingual | 15mL - 4mg/mL | troche |  | V Pharm |  | $107 | glp-1 | name inferred from context; SKU available upon request |
+| Semaglutide Sublingual | 15mL - 6mg/mL | troche |  | V Pharm |  | $113 | glp-1 | name inferred from context; SKU available upon request |
+| Semaglutide/Methylcobalamin/Glycine | 1mg/1mg/10mg/ml | injectable | 1mL | V Pharm | SGMG1-VS | $78 | glp-1 |  |
+| Semaglutide/Methylcobalamin/Glycine | 1mg/1mg/10mg/ml | injectable | 2.5mL | V Pharm | SGMG2.5-VS | $96 | glp-1 |  |
+| Semaglutide/Methylcobalamin/Glycine | 5mg/1mg/10mg/ml | injectable | 1mL | V Pharm | SGMG5-VS | $120 | glp-1 |  |
+| Semaglutide/Methylcobalamin/Glycine | 5mg/1mg/10mg/ml | injectable | 2.5mL | V Pharm | SGMG12.5-VS | $138 | glp-1 |  |
+| Tirzepatide | 10mg | injectable | vial | Peptides Supplier |  | $60 | glp-1 |  |
+| Tirzepatide | 30mg | injectable | vial | Peptides Supplier |  | $80 | glp-1 |  |
+| Tirzepatide | 60mg | injectable | vial | Peptides Supplier |  | $120 | glp-1 |  |
+| Tirzepatide + B12 17 mg/0.5mg per ml (2ml vial) | 17 mg/0.5mg per ml (2ml vial) | injectable | 2ml | V Pharm | TZTB12-17-0.5-2-DX | $93 | glp-1 |  |
+| Tirzepatide + B12 17mg/0.5mg per ml (4ml vial) | 17mg/0.5mg per ml (4ml vial) | injectable | 4ml | V Pharm | TZTB12-17-0.5-4-DX | $114 | glp-1 |  |
+| Tirzepatide + B12 8.5 mg/0.5mg per ml (2ml vial) | 8.5 mg/0.5mg per ml (2ml vial) | injectable | 2ml | V Pharm | TZTB12-8.5-0.5-2-DX | $78 | glp-1 |  |
+| Tirzepatide + Glycine | 10mg + Glycine 5mg 1mL | injectable | 1mL | S Pharm |  | $35 | glp-1 |  |
+| Tirzepatide + Glycine | 20mg + Glycine 10mg 2mL | injectable | 2mL | S Pharm |  | $45 | glp-1 |  |
+| Tirzepatide + Glycine | 30mg + Glycine 15mg 3mL | injectable | 3mL | S Pharm |  | $55 | glp-1 |  |
+| Tirzepatide + Glycine | 40mg + Glycine 10mg 2mL | injectable | 2mL | S Pharm |  | $65 | glp-1 |  |
+| Tirzepatide + Glycine | 60mg + Glycine 15mg 3mL | injectable | 3mL | S Pharm |  | $75 | glp-1 |  |
+| Tirzepatide + Glycine 17 mg/5mg per ml (2ml vial) | 17 mg/5mg per ml (2ml vial) | injectable | 2ml | V Pharm | TZTGLY-17-5-2-DX | $93 | glp-1 |  |
+| Tirzepatide + Glycine 17mg/5mg per ml (4ml vial) | 17mg/5mg per ml (4ml vial) | injectable | 4ml | V Pharm | TZTGLY-17-5-2-DX | $114 | glp-1 |  |
+| Tirzepatide + Glycine 8.5 mg/5mg per ml (1ml vial) | 8.5 mg/5mg per ml (1ml vial) | injectable | 1ml | V Pharm | TZTGLY-8.5-5-1-DX | $60 | glp-1 |  |
+| Tirzepatide + Glycine 8.5 mg/5mg per ml (2ml vial) | 8.5 mg/5mg per ml (2ml vial) | injectable | 2ml | V Pharm | TZTGLY-8.5-5-2-DX | $78 | glp-1 |  |
+| Tirzepatide Oral Dissolving Tablets | 3MG | troche |  | V Pharm | TZT-ODT-3-VS | $112.5 | glp-1 |  |
+| Tirzepatide Oral Dissolving Tablets | 4MG | troche |  | V Pharm | TZT-ODT-4-VS | $118.75 | glp-1 |  |
+| Tirzepatide Oral Dissolving Tablets | 5MG | troche |  | V Pharm | TZT-ODT-5-VS | $131.25 | glp-1 |  |
+| Tirzepatide Oral Dissolving Tablets | 6MG | troche |  | V Pharm | TZT-ODT-6-VS | $137.5 | glp-1 |  |
+| Tirzepatide Oral Dissolving Tablets | 7MG | troche |  | V Pharm | TZT-ODT-7-VS | $150 | glp-1 |  |
+| Tirzepatide Oral Dissolving Tablets | 8MG | troche |  | V Pharm | TZT-ODT-8-VS | $156.25 | glp-1 |  |
+| Tirzepatide/Glycine/Methylcobalamin | 8.5mg/10mg/1mg/ml | injectable | 2mL | V Pharm | TZTGM172-VS | $78 | glp-1 |  |
+| Tirzepatide/Glycine/Methylcobalamin | 17mg/10mg/1mg/ml | injectable | 2mL | V Pharm | TZTGM342-VS | $168 | glp-1 |  |
+| Tirzepatide/Glycine/Methylcobalamin | 17mg/10mg/1mg/ml | injectable | 4mL | V Pharm | TZTGM344-VS | $198 | glp-1 |  |
+| Tirzepatide/L-Carnitine | 10mg/100mg/ml | injectable | 1mL | V Pharm | TZTC101-VS | $126 | glp-1 |  |
+| Tirzepatide/L-Carnitine | 10mg/100mg/ml | injectable | 3mL | V Pharm | TZTC103-VS | $156 | glp-1 |  |
+| Tirzepatide/L-Carnitine | 20mg/100mg/ml | injectable | 3mL | V Pharm | TZTC203-VS | $186 | glp-1 |  |
 
 ## Hormone Therapy (183)
 
@@ -250,233 +250,233 @@ Rows whose primary category or classification a human should confirm.
 | Anastrozole | 0.25mg | capsule |  | V Pharm | ANA25 | $0.5 | aromatase-inhibitor | form inferred |
 | Anastrozole | 0.5mg | capsule |  | V Pharm | ANA50 | $0.5 | aromatase-inhibitor | form inferred |
 | Anastrozole | 1mg | capsule |  | V Pharm | ANA100 | $0.5 | aromatase-inhibitor | form inferred |
-| BIEST(80 E3: 20 E2) | 0.5MG/ML | cream | 30mLTube | V Pharm | BIEST802005 | $27.5 |  |  |
-| BIEST(80 E3: 20 E2) | 1MG/ML | cream | 30mLTube | V Pharm | BIEST80201 | $27.5 |  |  |
-| BIEST(80 E3: 20 E2) | 1.5MG/ML | cream | 30mLTube | V Pharm | BIEST802015 | $27.5 |  |  |
-| BIEST(80 E3: 20 E2) | 2MG/ML | cream | 30mLTube | V Pharm | BIEST80202 | $27.5 |  |  |
-| BIEST(80 E3: 20 E2) | 2.5MG/ML | cream | 30mLTube | V Pharm | BIEST80202.5 | $27.5 |  |  |
-| BIEST(80 E3: 20 E2) | 3MG/ML | cream | 30mLTube | V Pharm | BIEST802023 | $27.5 |  |  |
-| BIEST(80 E3: 20 E2) | 3.5MG/ML | cream | 30mLTube | V Pharm | BIEST802023.5 | $27.5 |  |  |
-| BIEST(80 E3: 20 E2) | 4MG/ML | cream | 30mLTube | V Pharm | BIEST802024 | $27.5 |  |  |
-| BIEST(80 E3: 20 E2) | 4.5MG/ML | cream | 30mLTube | V Pharm | BIEST802024.5 | $27.5 |  |  |
-| BIEST(80 E3: 20 E2) | 5MG/ML | cream | 30mLTube | V Pharm | BIEST802025 | $27.5 |  |  |
-| BIEST(80 E3: 20 E2) | 5.5MG/ML | cream | 30mLTube | V Pharm | BIEST802025.5 | $27.5 |  |  |
-| BIEST(80 E3: 20 E2) | 6MG/ML | cream | 30mLTube | V Pharm | BIEST802026 | $27.5 |  |  |
-| BIEST(80 E3: 20 E2) | 6.5MG/ML | cream | 30mLTube | V Pharm | BIEST802026.5 | $27.5 |  |  |
-| BIEST(80 E3: 20 E2) | 7MG/ML | cream | 30mLTube | V Pharm | BIEST802027 | $27.5 |  |  |
-| BIEST(80 E3: 20 E2) | 7.5MG/ML | cream | 30mLTube | V Pharm | BIEST802027.5 | $27.5 |  |  |
-| BIEST(80 E3: 20 E2) | 8MG/ML | cream | 30mLTube | V Pharm | BIEST802028 | $27.5 |  |  |
-| BIEST(80 E3: 20 E2) | 1MG | capsule |  | V Pharm | BIEST802021CAP | $0.75 |  |  |
-| BIEST(80 E3: 20 E2) | 1.5MG | capsule |  | V Pharm | BIEST802021.5CAP | $0.75 |  |  |
-| BIEST(80 E3: 20 E2) | 2MG | capsule |  | V Pharm | BIEST802022CAP | $0.75 |  |  |
-| BIEST(80 E3: 20 E2) | 2.5MG | capsule |  | V Pharm | BIEST8020212.5CAP | $0.75 |  |  |
-| BIEST(80 E3: 20 E2) | 3MG | capsule |  | V Pharm | BIEST802023CAP | $0.75 |  |  |
-| BIEST(80 E3: 20 E2) | 3.5MG | capsule |  | V Pharm | BIEST802023.5CAP | $0.75 |  |  |
-| BIEST(80 E3: 20 E2) | 4MG | capsule |  | V Pharm | BIEST802024CAP | $0.75 |  |  |
-| BIEST(80 E3: 20 E2) | 4.5MG | capsule |  | V Pharm | BIEST802024.5CAP | $0.75 |  |  |
-| BIEST(80 E3: 20 E2) | 5MG | capsule |  | V Pharm | BIEST802025CAP | $0.75 |  |  |
-| BIEST(80 E3: 20 E2) | 5.5MG | capsule |  | V Pharm | BIEST802025.5CAP | $0.75 |  |  |
-| BIEST(80 E3: 20 E2) | 6MG | capsule |  | V Pharm | BIEST802026CAP | $0.75 |  |  |
 | BIEST(50 E3: 50 E2) | 0.5MG/ML | cream | 30mLTube | V Pharm | BIEST505005 | $27.5 |  |  |
 | BIEST(50 E3: 50 E2) | 1MG/ML | cream | 30mLTube | V Pharm | BIEST50501 | $27.5 |  |  |
+| BIEST(50 E3: 50 E2) | 1MG | capsule |  | V Pharm | BIEST505021CAP | $0.75 |  |  |
 | BIEST(50 E3: 50 E2) | 1.5MG/ML | cream | 30mLTube | V Pharm | BIEST505015 | $27.5 |  |  |
+| BIEST(50 E3: 50 E2) | 1.5MG | capsule |  | V Pharm | BIEST505021.5CAP | $0.75 |  |  |
 | BIEST(50 E3: 50 E2) | 2MG/ML | cream | 30mLTube | V Pharm | BIEST50502 | $27.5 |  |  |
+| BIEST(50 E3: 50 E2) | 2MG/M | capsule |  | V Pharm | BIEST505022CAP | $0.75 |  |  |
 | BIEST(50 E3: 50 E2) | 2.5MG/ML | cream | 30mLTube | V Pharm | BIEST50502.5 | $27.5 |  |  |
+| BIEST(50 E3: 50 E2) | 2.5MG | capsule |  | V Pharm | BIEST5050212.5CAP | $0.75 |  |  |
 | BIEST(50 E3: 50 E2) | 3MG/ML | cream | 30mLTube | V Pharm | BIEST505023 | $27.5 |  |  |
+| BIEST(50 E3: 50 E2) | 3MG | capsule |  | V Pharm | BIEST505023CAP | $0.75 |  |  |
 | BIEST(50 E3: 50 E2) | 3.5MG/ML | cream | 30mLTube | V Pharm | BIEST505023.5 | $27.5 |  |  |
+| BIEST(50 E3: 50 E2) | 3.5MG | capsule |  | V Pharm | BIEST505023.5CAP | $0.75 |  |  |
 | BIEST(50 E3: 50 E2) | 4MG/ML | cream | 30mLTube | V Pharm | BIEST505024 | $27.5 |  |  |
+| BIEST(50 E3: 50 E2) | 4MG | capsule |  | V Pharm | BIEST505024CAP | $0.75 |  |  |
 | BIEST(50 E3: 50 E2) | 4.5MG/ML | cream | 30mLTube | V Pharm | BIEST505024.5 | $27.5 |  |  |
+| BIEST(50 E3: 50 E2) | 4.5MG | capsule |  | V Pharm | BIEST505024.5CAP | $0.75 |  |  |
 | BIEST(50 E3: 50 E2) | 5MG/ML | cream | 30mLTube | V Pharm | BIEST505025 | $27.5 |  |  |
+| BIEST(50 E3: 50 E2) | 5MG | capsule |  | V Pharm | BIEST505025CAP | $0.75 |  |  |
 | BIEST(50 E3: 50 E2) | 5.5MG/ML | cream | 30mLTube | V Pharm | BIEST505025.5 | $27.5 |  |  |
+| BIEST(50 E3: 50 E2) | 5.5MG | capsule |  | V Pharm | BIEST505025.5CAP | $0.75 |  |  |
 | BIEST(50 E3: 50 E2) | 6MG/ML | cream | 30mLTube | V Pharm | BIEST505026 | $27.5 |  |  |
+| BIEST(50 E3: 50 E2) | 6MG | capsule |  | V Pharm | BIEST505026CAP | $0.75 |  |  |
 | BIEST(50 E3: 50 E2) | 6.5MG/ML | cream | 30mLTube | V Pharm | BIEST505026.5 | $27.5 |  |  |
 | BIEST(50 E3: 50 E2) | 7MG/ML | cream | 30mLTube | V Pharm | BIEST505027 | $27.5 |  |  |
 | BIEST(50 E3: 50 E2) | 7.5MG/ML | cream | 30mLTube | V Pharm | BIEST505027.5 | $27.5 |  |  |
 | BIEST(50 E3: 50 E2) | 8MG/ML | cream | 30mLTube | V Pharm | BIEST505028 | $27.5 |  |  |
-| BIEST(50 E3: 50 E2) | 1MG | capsule |  | V Pharm | BIEST505021CAP | $0.75 |  |  |
-| BIEST(50 E3: 50 E2) | 1.5MG | capsule |  | V Pharm | BIEST505021.5CAP | $0.75 |  |  |
-| BIEST(50 E3: 50 E2) | 2MG/M | capsule |  | V Pharm | BIEST505022CAP | $0.75 |  |  |
-| BIEST(50 E3: 50 E2) | 2.5MG | capsule |  | V Pharm | BIEST5050212.5CAP | $0.75 |  |  |
-| BIEST(50 E3: 50 E2) | 3MG | capsule |  | V Pharm | BIEST505023CAP | $0.75 |  |  |
-| BIEST(50 E3: 50 E2) | 3.5MG | capsule |  | V Pharm | BIEST505023.5CAP | $0.75 |  |  |
-| BIEST(50 E3: 50 E2) | 4MG | capsule |  | V Pharm | BIEST505024CAP | $0.75 |  |  |
-| BIEST(50 E3: 50 E2) | 4.5MG | capsule |  | V Pharm | BIEST505024.5CAP | $0.75 |  |  |
-| BIEST(50 E3: 50 E2) | 5MG | capsule |  | V Pharm | BIEST505025CAP | $0.75 |  |  |
-| BIEST(50 E3: 50 E2) | 5.5MG | capsule |  | V Pharm | BIEST505025.5CAP | $0.75 |  |  |
-| BIEST(50 E3: 50 E2) | 6MG | capsule |  | V Pharm | BIEST505026CAP | $0.75 |  |  |
+| BIEST(80 E3: 20 E2) | 0.5MG/ML | cream | 30mLTube | V Pharm | BIEST802005 | $27.5 |  |  |
+| BIEST(80 E3: 20 E2) | 1MG/ML | cream | 30mLTube | V Pharm | BIEST80201 | $27.5 |  |  |
+| BIEST(80 E3: 20 E2) | 1MG | capsule |  | V Pharm | BIEST802021CAP | $0.75 |  |  |
+| BIEST(80 E3: 20 E2) | 1.5MG/ML | cream | 30mLTube | V Pharm | BIEST802015 | $27.5 |  |  |
+| BIEST(80 E3: 20 E2) | 1.5MG | capsule |  | V Pharm | BIEST802021.5CAP | $0.75 |  |  |
+| BIEST(80 E3: 20 E2) | 2MG/ML | cream | 30mLTube | V Pharm | BIEST80202 | $27.5 |  |  |
+| BIEST(80 E3: 20 E2) | 2MG | capsule |  | V Pharm | BIEST802022CAP | $0.75 |  |  |
+| BIEST(80 E3: 20 E2) | 2.5MG/ML | cream | 30mLTube | V Pharm | BIEST80202.5 | $27.5 |  |  |
+| BIEST(80 E3: 20 E2) | 2.5MG | capsule |  | V Pharm | BIEST8020212.5CAP | $0.75 |  |  |
+| BIEST(80 E3: 20 E2) | 3MG/ML | cream | 30mLTube | V Pharm | BIEST802023 | $27.5 |  |  |
+| BIEST(80 E3: 20 E2) | 3MG | capsule |  | V Pharm | BIEST802023CAP | $0.75 |  |  |
+| BIEST(80 E3: 20 E2) | 3.5MG/ML | cream | 30mLTube | V Pharm | BIEST802023.5 | $27.5 |  |  |
+| BIEST(80 E3: 20 E2) | 3.5MG | capsule |  | V Pharm | BIEST802023.5CAP | $0.75 |  |  |
+| BIEST(80 E3: 20 E2) | 4MG/ML | cream | 30mLTube | V Pharm | BIEST802024 | $27.5 |  |  |
+| BIEST(80 E3: 20 E2) | 4MG | capsule |  | V Pharm | BIEST802024CAP | $0.75 |  |  |
+| BIEST(80 E3: 20 E2) | 4.5MG/ML | cream | 30mLTube | V Pharm | BIEST802024.5 | $27.5 |  |  |
+| BIEST(80 E3: 20 E2) | 4.5MG | capsule |  | V Pharm | BIEST802024.5CAP | $0.75 |  |  |
+| BIEST(80 E3: 20 E2) | 5MG/ML | cream | 30mLTube | V Pharm | BIEST802025 | $27.5 |  |  |
+| BIEST(80 E3: 20 E2) | 5MG | capsule |  | V Pharm | BIEST802025CAP | $0.75 |  |  |
+| BIEST(80 E3: 20 E2) | 5.5MG/ML | cream | 30mLTube | V Pharm | BIEST802025.5 | $27.5 |  |  |
+| BIEST(80 E3: 20 E2) | 5.5MG | capsule |  | V Pharm | BIEST802025.5CAP | $0.75 |  |  |
+| BIEST(80 E3: 20 E2) | 6MG/ML | cream | 30mLTube | V Pharm | BIEST802026 | $27.5 |  |  |
+| BIEST(80 E3: 20 E2) | 6MG | capsule |  | V Pharm | BIEST802026CAP | $0.75 |  |  |
+| BIEST(80 E3: 20 E2) | 6.5MG/ML | cream | 30mLTube | V Pharm | BIEST802026.5 | $27.5 |  |  |
+| BIEST(80 E3: 20 E2) | 7MG/ML | cream | 30mLTube | V Pharm | BIEST802027 | $27.5 |  |  |
+| BIEST(80 E3: 20 E2) | 7.5MG/ML | cream | 30mLTube | V Pharm | BIEST802027.5 | $27.5 |  |  |
+| BIEST(80 E3: 20 E2) | 8MG/ML | cream | 30mLTube | V Pharm | BIEST802028 | $27.5 |  |  |
 | Clomiphene Capsule | 12.5mg | capsule |  | V Pharm | CLOMCAP12.5 | $0.63 | fertility |  |
 | Clomiphene Capsule | 25mg | capsule |  | V Pharm | CLOMCAP25 | $0.75 | fertility |  |
 | Clomiphene Capsule | 51mg | capsule |  | V Pharm | CLOMCAP51 | $0.88 | fertility |  |
-| DHEASR | 5mg | capsule |  | V Pharm | DHEASR5 | $0.5 |  | form inferred |
-| DHEASR | 10mg | capsule |  | V Pharm | DHEASR10 | $0.5 |  | form inferred |
-| DHEASR | 25mg | capsule |  | V Pharm | DHEASR25 | $0.5 |  | form inferred |
-| DHEASR | 50mg | capsule |  | V Pharm | DHEASR50 | $0.5 |  | form inferred |
-| DHEASR | 100mg | capsule |  | V Pharm | DHEASR100 | $0.5 |  | form inferred |
 | DHEA | 5mg/ml | cream |  | V Pharm | DHEA5CR | $0.63 |  |  |
 | DHEA | 10mg/ml | cream |  | V Pharm | DHEA10CR | $0.63 |  |  |
 | DHEA | 25mg/ml | cream |  | V Pharm | DHEA25CR | $0.63 |  |  |
 | DHEA | 50mg/ml | cream |  | V Pharm | DHEA50CR | $0.75 |  |  |
 | DHEA | 100mg/ml | cream |  | V Pharm | DHEA100CR | $0.75 |  |  |
+| DHEASR | 5mg | capsule |  | V Pharm | DHEASR5 | $0.5 |  | form inferred |
+| DHEASR | 10mg | capsule |  | V Pharm | DHEASR10 | $0.5 |  | form inferred |
+| DHEASR | 25mg | capsule |  | V Pharm | DHEASR25 | $0.5 |  | form inferred |
+| DHEASR | 50mg | capsule |  | V Pharm | DHEASR50 | $0.5 |  | form inferred |
+| DHEASR | 100mg | capsule |  | V Pharm | DHEASR100 | $0.5 |  | form inferred |
+| Dotti Estradiol patch | 0.025mg/24hr Patch | patch | 4 Patches | V Pharm | DOT-EST-0.025-PATCH-VS | $59.38 |  |  |
+| Dotti Estradiol patch | 0.025mg/24hr Patch | patch | 8 Patches | V Pharm | DOT-EST-0.025-PATCH-VS | $118.75 |  |  |
+| Dotti Estradiol patch | 0.025mg/24hr Patch | patch | 12 Patches | V Pharm | DOT-EST-0.025-PATCH-VS | $168.75 |  |  |
+| Dotti Estradiol patch | 0.05mg/24hr | patch | 4 Patches | V Pharm | DOT-EST-0.05-PATCH-VS | $59.38 |  |  |
+| Dotti Estradiol patch | 0.05mg/24hr | patch | 8 Patches | V Pharm | DOT-EST-0.05-PATCH-VS | $118.75 |  |  |
+| Dotti Estradiol patch | 0.05mg/24hr | patch | 12 Patches | V Pharm | DOT-EST-0.05-PATCH-VS | $168.75 |  |  |
+| Dotti Estradiol patch | 0.1mg/24hr | patch | 4 Patches | V Pharm | DOT-EST-0.1-PATCH-VS | $59.38 |  |  |
+| Dotti Estradiol patch | 0.1mg/24hr | patch | 8 Patches | V Pharm | DOT-EST-0.1-PATCH-VS | $118.75 |  |  |
+| Dotti Estradiol patch | 0.1mg/24hr | patch | 12 Patches | V Pharm | DOT-EST-0.1-PATCH-VS | $168.75 |  |  |
+| Enclomiphene | 12.5mg | capsule |  | V Pharm | ENC12.5 | $1.25 | fertility | form inferred |
 | Enclomiphene Capsule | 25mg | capsule |  | V Pharm | ENC25 | $1.25 | fertility |  |
 | Enclomiphene Capsule | 51mg | capsule |  | V Pharm | ENC50 | $2.19 | fertility |  |
+| ESTRADIOL | 0.01% | cream | 30mLTube | V Pharm | ESTRVAGCRM0.01 | $27.5 |  |  |
+| ESTRADIOL | 0.1MG/ML | cream | 30mLTube | V Pharm | ESTRVAGCRM0.1 | $27.5 |  |  |
 | Estradiol | 0.25mg | capsule |  | V Pharm | ESTR0.25CAP | $0.63 |  |  |
-| Estradiol | 0.5mg | capsule |  | V Pharm | ESTR0.5CAP | $0.63 |  |  |
-| Estradiol | 1mg | capsule |  | V Pharm | ESTR1CAP | $0.63 |  |  |
-| Estradiol | 1.5mg | capsule |  | V Pharm | ESTR1.5CAP | $0.63 |  |  |
-| Estradiol | 2mg | capsule |  | V Pharm | ESTR2CAP | $0.63 |  |  |
-| Estradiol | 2.5mg | capsule |  | V Pharm | ESTR2.5CAP | $0.63 |  |  |
 | Estradiol | 0.25MG/ML | cream | 30mLTube | V Pharm | ESTRCR0.25 | $27.5 |  |  |
+| Estradiol | 0.5mg | capsule |  | V Pharm | ESTR0.5CAP | $0.63 |  |  |
 | Estradiol | 0.5MG/ML | cream | 30mLTube | V Pharm | ESTRCR0.5 | $27.5 |  |  |
+| ESTRADIOL | 0.5MG/ML | cream | 30mLTube | V Pharm | ESTRVAGCRM0.5 | $27.5 |  |  |
+| Estradiol | 1mg | capsule |  | V Pharm | ESTR1CAP | $0.63 |  |  |
 | Estradiol | 1MG/ML | cream | 30mLTube | V Pharm | ESTRCR1 | $27.5 |  |  |
+| Estradiol | 1.5mg | capsule |  | V Pharm | ESTR1.5CAP | $0.63 |  |  |
 | Estradiol | 1.5MG/ML | cream | 30mLTube | V Pharm | ESTRCR1.5 | $27.5 |  |  |
+| Estradiol | 2mg | capsule |  | V Pharm | ESTR2CAP | $0.63 |  |  |
 | Estradiol | 2MG/ML | cream | 30mLTube | V Pharm | ESTRCR2 | $27.5 |  |  |
+| Estradiol | 2.5mg | capsule |  | V Pharm | ESTR2.5CAP | $0.63 |  |  |
 | Estradiol | 2.5MG/ML | cream | 30mLTube | V Pharm | ESTRCR2.5 | $27.5 |  |  |
 | Estradiol | 3MG/ML | cream | 30mLTube | V Pharm | ESTRCR3 | $27.5 |  |  |
-| ESTRADIOL | 0.1MG/ML | cream | 30mLTube | V Pharm | ESTRVAGCRM0.1 | $27.5 |  |  |
-| ESTRADIOL | 0.5MG/ML | cream | 30mLTube | V Pharm | ESTRVAGCRM0.5 | $27.5 |  |  |
-| ESTRADIOL | 0.01% | cream | 30mLTube | V Pharm | ESTRVAGCRM0.01 | $27.5 |  |  |
 | ESTRADIOL | 10MG/ML | cream | 30mLTube | V Pharm | ESTRVAGCRM10 | $27.5 |  |  |
 | Estradiol 0.5mg Tablet | 0.5mg | tablet |  | V Pharm | ESTR0.5TAB | $0.94 |  |  |
 | Estradiol 10mcg Vaginal Insert | 10mcg | tablet |  | V Pharm | ESTR0.5TAB | $93.75 |  |  |
 | Estradiol 1mg Tablet | 1mg | tablet |  | V Pharm | ESTR1 | $0.94 |  |  |
 | Estradiol 2mg Tablet | 2mg | tablet |  | V Pharm | ESTR2-VS | $0.94 |  |  |
-| Pregnenolone | 25mg | capsule |  | V Pharm | PREG-CAPS-25MG-VIOS | $0.75 |  |  |
-| Pregnenolone | 50mg | capsule |  | V Pharm | PREG-CAPS-50MG-VIOS | $0.75 |  |  |
-| Pregnenolone | 100mg | capsule |  | V Pharm | PREG-CAPS-100MG-VIOS | $0.94 |  |  |
-| Progesterone | 25mg | capsule |  | V Pharm | PRGT25CAP | $0.75 |  |  |
-| Progesterone | 50mg | capsule |  | V Pharm | PRGT50CAP | $0.75 |  |  |
-| Progesterone | 100mg | capsule |  | V Pharm | PRGT50CAP | $0.75 |  |  |
-| Progesterone | 200mg | capsule |  | V Pharm | PRGT200CAP | $0.94 |  |  |
-| Progesterone | 50mg/mL | cream | 30mLTube | V Pharm | PROG-CREAM-50/30-VIOS | $27.5 |  |  |
-| Progesterone | 100mg/mL | cream | 30mLTube | V Pharm | PROG-CREAM-100/30-VS | $27.5 |  |  |
-| Progesterone | 200mg/mL | cream | 30mLTube | V Pharm | PROG-CREAM-200/30-VS | $27.5 |  |  |
-| Testosterone | 0.5mg | troche |  | V Pharm | TEST-0.5-TRO-VS | $0.88 | men's-sexual-health |  |
-| Testosterone | 1mg | troche |  | V Pharm | TEST-1-TRO-VS | $0.88 | men's-sexual-health |  |
-| Testosterone | 1.5mg | troche |  | V Pharm | TEST-1.5-TRO-VS | $0.88 | men's-sexual-health |  |
-| Testosterone | 2mg | troche |  | V Pharm | TEST-2-TRO-VS | $0.88 | men's-sexual-health |  |
-| Testosterone | 2.5mg | troche |  | V Pharm | TEST-2.5-TRO-VS | $0.88 | men's-sexual-health |  |
-| Testosterone | 3mg | troche |  | V Pharm | TEST-3-TRO-VS | $0.88 | men's-sexual-health |  |
-| Testosterone | 3.5mg | troche |  | V Pharm | TEST-3.5-TRO-VS | $0.88 | men's-sexual-health |  |
-| Testosterone | 4mg | troche |  | V Pharm | TEST-4-TRO-VS | $0.88 | men's-sexual-health |  |
-| Testosterone | 4.5mg | troche |  | V Pharm | TEST-4.5-TRO-VS | $0.88 | men's-sexual-health |  |
-| Testosterone | 5mg | troche |  | V Pharm | TEST-5-TRO-VS | $0.88 | men's-sexual-health |  |
-| Testosterone | 5.5mg | troche |  | V Pharm | TEST-5.5-TRO-VS | $0.88 | men's-sexual-health |  |
-| Testosterone | 6mg | troche |  | V Pharm | TEST-6-TRO-VS | $0.88 | men's-sexual-health |  |
-| Testosterone | 6.5mg | troche |  | V Pharm | TEST-6.5-TRO-VS | $0.88 | men's-sexual-health |  |
-| Testosterone | 7mg | troche |  | V Pharm | TEST-7-TRO-VS | $0.88 | men's-sexual-health |  |
-| Testosterone | 7.5mg | troche |  | V Pharm | TEST-7.5-TRO-VS | $0.88 | men's-sexual-health |  |
-| Testosterone | 8mg | troche |  | V Pharm | TEST-8-TRO-VS | $0.88 | men's-sexual-health |  |
-| Testosterone | 8.5mg | troche |  | V Pharm | TEST-8.5-TRO-VS | $0.88 | men's-sexual-health |  |
-| Testosterone | 9mg | troche |  | V Pharm | TEST-9-TRO-VS | $0.88 | men's-sexual-health |  |
-| Testosterone | 9.5mg | troche |  | V Pharm | TEST-9.5-TRO-VS | $0.88 | men's-sexual-health |  |
-| Testosterone | 10mg | troche |  | V Pharm | TESTTROCHE10BE | $0.88 | men's-sexual-health |  |
-| Testosterone | 25mg | troche |  | V Pharm | TESTTROCHE25BE | $0.88 | men's-sexual-health |  |
-| Testosterone | 50mg | troche |  | V Pharm | TESTTROCHE50BE | $0.88 | men's-sexual-health |  |
-| Testosterone | 75mg | troche |  | V Pharm | TESTTROCHE75BE | $0.94 | men's-sexual-health |  |
-| Testosterone | 100mg | troche |  | V Pharm | TESTTROCHE100BE | $0.94 | men's-sexual-health |  |
-| Testosterone | 200mg | troche |  | V Pharm | TESTTROCHE200BE | $1.25 | men's-sexual-health |  |
-| Testosterone | 0.5MG/ML | cream | 30mLTube | V Pharm | TESTOS0.5MGMLCREA | $27.5 | men's-sexual-health |  |
-| Testosterone | 1MG/ML | cream | 30mLTube | V Pharm | TESTOS1MGMLCREA | $27.5 | men's-sexual-health |  |
-| Testosterone | 2MG/ML | cream | 30mLTube | V Pharm | TESTOS2MGMLCREA | $27.5 | men's-sexual-health |  |
-| Testosterone | 3MG/ML | cream | 30mLTube | V Pharm | TESTOS3MGMLCREA | $27.5 | men's-sexual-health |  |
-| Testosterone | 4MG/ML | cream | 30mLTube | V Pharm | TESTOS4MGMLCREA | $27.5 | men's-sexual-health |  |
-| Testosterone | 5MG/ML | cream | 30mLTube | V Pharm | TESTOS5MGMLCREA | $27.5 | men's-sexual-health |  |
-| Testosterone | 6MG/ML | cream | 30mLTube | V Pharm | TESTOS6MGMLCREA | $27.5 | men's-sexual-health |  |
-| Testosterone | 7MG/ML | cream | 30mLTube | V Pharm | TESTOS7MGMLCREA | $27.5 | men's-sexual-health |  |
-| Testosterone | 8MG/ML | cream | 30mLTube | V Pharm | TESTOS8MGMLCREA | $27.5 | men's-sexual-health |  |
-| Testosterone | 9mg/ml | cream | 30mLTube | V Pharm | TESTOS9MGMLCREA | $27.5 | men's-sexual-health |  |
-| Testosterone | 10mg/ml | cream | 30mLTube | V Pharm | TESTOS10MGMLCREA | $27.5 | men's-sexual-health |  |
-| Testosterone | 20mg/ml | cream | 30mLTube | V Pharm | TESTOS20MGMLCREA | $27.5 | men's-sexual-health |  |
-| Testosterone | 50mg/ml | cream | 30mLTube | V Pharm | TESTOS50MGMCREA | $27.5 | men's-sexual-health |  |
-| Testosterone | 120mg/ml | cream | 30mLTube | V Pharm | TESTOS120MGMCREA | $27.5 | men's-sexual-health |  |
-| Testosterone | 200mg/ml | cream | 30mLTube | V Pharm | TESTOS200MGMCREA | $27.5 | men's-sexual-health |  |
-| Testosterone Cypionate | 25mg/mlGSO;5mLVial | injectable | 5ml | V Pharm | TRTGSO255 | $20 | men's-sexual-health |  |
-| TestosteroneCypionate | 25mg/mlMCT;5mLVial | injectable | 5ml | V Pharm | TRTMCT255 | $20 | men's-sexual-health |  |
-| TestosteroneCypionate | 200mg/mlGSO;5mLVial | injectable | 5ml | V Pharm | TRTGSO5 | $20 | men's-sexual-health |  |
-| TestosteroneCypionate | 200mg/mlMCT;5mLVial | injectable | 5ml | V Pharm | TRTMCO5 | $20 | men's-sexual-health |  |
-| TestosteroneCypionate-Commercial | 200mg/ml;10mLVial | injectable | 10ml | V Pharm | TESTOS200MGCOM | $31.25 | men's-sexual-health |  |
-| TestosteroneEnanthate | 200mg/mlGSO;5mLVial | injectable | 5ml | V Pharm | TESTOS200MGMOILI | $20 | men's-sexual-health |  |
-| Gonadorelin | 1mg/ml | injectable | 5ML | V Pharm | GN1 | $50 | peptide\|fertility |  |
-| Testosterone Cypionate -MCT oil (does not ship to Alabama or Cali) | 200mg/ml | injectable | 5mL | V Pharm | TRTMCO5 | $20 | men's-sexual-health |  |
-| Testosterone Cypionate -Grapeseed oil (does not ship to Alabama or Cali) | 200mg/ml | injectable | 5mL | V Pharm | TRTGSO5 | $20 | men's-sexual-health |  |
-| TRT Injectable commercial - Ships to all 50 states. |  | injectable | 10mL | V Pharm | TESTOS200MGCOM | $60 | men's-sexual-health |  |
-| Estradiol Vaginal Topical Cream | 2.5mg/ml | cream | 15ml | V Pharm | ESTR2.5 | $31 |  |  |
-| Progesterone capsules - per pill price | 100mg | capsule |  | V Pharm | PRGT100CAP | $0.75 |  |  |
-| Progesterone capsules - per pill price | 150mg | capsule |  | V Pharm | PRGT150CAP | $0.88 |  |  |
-| Progesterone capsules - per pill price immediate release or sustained released - immediate | 200mg | capsule |  | V Pharm | PRGT200CAP | $0.94 |  |  |
-| Testosterone lotion | 5% | lotion | 60mg | V Pharm | TEST-LOTION-5-VS | $56.25 | men's-sexual-health |  |
-| Testosterone lotion | 10% | lotion | 60mg | V Pharm | TEST-LOTION-10-VS | $62.5 | men's-sexual-health |  |
-| Enclomiphene | 12.5mg | capsule |  | V Pharm | ENC12.5 | $1.25 | fertility | form inferred |
+| Estradiol tablets commercial | 0.5mg | tablet |  | V Pharm | ESTR0.5TAB | $0.94 |  |  |
 | Estradiol tablets commercial | 1mg | tablet |  | V Pharm | ESTR1 | $0.94 |  |  |
 | Estradiol tablets commercial | 2mg | tablet |  | V Pharm | ESTR2-VS | $0.94 |  |  |
-| Estradiol tablets commercial | 0.5mg | tablet |  | V Pharm | ESTR0.5TAB | $0.94 |  |  |
+| Estradiol Vaginal Topical Cream | 2.5mg/ml | cream | 15ml | V Pharm | ESTR2.5 | $31 |  |  |
 | Estriol with tretinoin cream |  | cream | 30 grams | V Pharm | EST-TRET-CREAM-VS | $43.75 | review | estriol+tretinoin — also dermatology |
-| Dotti Estradiol patch | 0.1mg/24hr | patch | 4 Patches | V Pharm | DOT-EST-0.1-PATCH-VS | $59.38 |  |  |
-| Dotti Estradiol patch | 0.1mg/24hr | patch | 8 Patches | V Pharm | DOT-EST-0.1-PATCH-VS | $118.75 |  |  |
-| Dotti Estradiol patch | 0.1mg/24hr | patch | 12 Patches | V Pharm | DOT-EST-0.1-PATCH-VS | $168.75 |  |  |
-| Dotti Estradiol patch | 0.05mg/24hr | patch | 4 Patches | V Pharm | DOT-EST-0.05-PATCH-VS | $59.38 |  |  |
-| Dotti Estradiol patch | 0.05mg/24hr | patch | 8 Patches | V Pharm | DOT-EST-0.05-PATCH-VS | $118.75 |  |  |
-| Dotti Estradiol patch | 0.05mg/24hr | patch | 12 Patches | V Pharm | DOT-EST-0.05-PATCH-VS | $168.75 |  |  |
-| Dotti Estradiol patch | 0.025mg/24hr Patch | patch | 4 Patches | V Pharm | DOT-EST-0.025-PATCH-VS | $59.38 |  |  |
-| Dotti Estradiol patch | 0.025mg/24hr Patch | patch | 8 Patches | V Pharm | DOT-EST-0.025-PATCH-VS | $118.75 |  |  |
-| Dotti Estradiol patch | 0.025mg/24hr Patch | patch | 12 Patches | V Pharm | DOT-EST-0.025-PATCH-VS | $168.75 |  |  |
+| Gonadorelin | 1mg/ml | injectable | 5ML | V Pharm | GN1 | $50 | peptide\|fertility |  |
 | Gonadorelin 503B HRT Injectable | 1mg/mL | injectable | 5mL | V Pharm | GONAD-HRT-WS | $75 | peptide\|fertility |  |
 | Gonadorelin 503B HRT Injectable | 2mg/mL | injectable | 10mg/5mL vial | V Pharm | GONAD-HRT-WS | $100 | peptide\|fertility |  |
 | HCG (Chorionic) - Commercial HRT Injectable | 10,000iu | injectable |  | V Pharm | HCG-CH-WS | $262.5 | fertility |  |
 | Kisspeptin Peptides Injectable | 1mg/mL | injectable | 5mL | V Pharm | KISSPEPTIN-WS | $100 | peptide\|fertility |  |
 | Nandrolone DECANOATE HRT Injectable | 200mg/mL | injectable | 5mL | V Pharm | NAND-DEC-WS | $93.75 | anabolic |  |
+| Oxandrolone HRT Capsule | 5mg | capsule | 5mg | V Pharm | OXANDROLONE5-WS | $3.75 | anabolic |  |
 | Oxandrolone HRT Capsule | 10mg | capsule | 10mg | V Pharm | OXANDROLONE10-WS | $5 | anabolic |  |
 | Oxandrolone HRT Capsule | 25mg | capsule | 25mg | V Pharm | OXANDROLONE25-WS | $5.63 | anabolic |  |
 | Oxandrolone HRT Capsule | 50mg | capsule | 50mg | V Pharm | OXANDROLONE50-WS | $7.75 | anabolic |  |
-| Oxandrolone HRT Capsule | 5mg | capsule | 5mg | V Pharm | OXANDROLONE5-WS | $3.75 | anabolic |  |
+| Pregnenolone | 25mg | capsule |  | V Pharm | PREG-CAPS-25MG-VIOS | $0.75 |  |  |
+| Pregnenolone | 50mg | capsule |  | V Pharm | PREG-CAPS-50MG-VIOS | $0.75 |  |  |
+| Pregnenolone | 100mg | capsule |  | V Pharm | PREG-CAPS-100MG-VIOS | $0.94 |  |  |
+| Progesterone | 25mg | capsule |  | V Pharm | PRGT25CAP | $0.75 |  |  |
+| Progesterone | 50mg | capsule |  | V Pharm | PRGT50CAP | $0.75 |  |  |
+| Progesterone | 50mg/mL | cream | 30mLTube | V Pharm | PROG-CREAM-50/30-VIOS | $27.5 |  |  |
+| Progesterone | 100mg | capsule |  | V Pharm | PRGT50CAP | $0.75 |  |  |
+| Progesterone | 100mg/mL | cream | 30mLTube | V Pharm | PROG-CREAM-100/30-VS | $27.5 |  |  |
+| Progesterone | 200mg | capsule |  | V Pharm | PRGT200CAP | $0.94 |  |  |
+| Progesterone | 200mg/mL | cream | 30mLTube | V Pharm | PROG-CREAM-200/30-VS | $27.5 |  |  |
+| Progesterone capsules - per pill price | 100mg | capsule |  | V Pharm | PRGT100CAP | $0.75 |  |  |
+| Progesterone capsules - per pill price | 150mg | capsule |  | V Pharm | PRGT150CAP | $0.88 |  |  |
+| Progesterone capsules - per pill price immediate release or sustained released - immediate | 200mg | capsule |  | V Pharm | PRGT200CAP | $0.94 |  |  |
+| Testosterone | 0.5mg | troche |  | V Pharm | TEST-0.5-TRO-VS | $0.88 | men's-sexual-health |  |
+| Testosterone | 0.5MG/ML | cream | 30mLTube | V Pharm | TESTOS0.5MGMLCREA | $27.5 | men's-sexual-health |  |
+| Testosterone | 1mg | troche |  | V Pharm | TEST-1-TRO-VS | $0.88 | men's-sexual-health |  |
+| Testosterone | 1MG/ML | cream | 30mLTube | V Pharm | TESTOS1MGMLCREA | $27.5 | men's-sexual-health |  |
+| Testosterone | 1.5mg | troche |  | V Pharm | TEST-1.5-TRO-VS | $0.88 | men's-sexual-health |  |
+| Testosterone | 2mg | troche |  | V Pharm | TEST-2-TRO-VS | $0.88 | men's-sexual-health |  |
+| Testosterone | 2MG/ML | cream | 30mLTube | V Pharm | TESTOS2MGMLCREA | $27.5 | men's-sexual-health |  |
+| Testosterone | 2.5mg | troche |  | V Pharm | TEST-2.5-TRO-VS | $0.88 | men's-sexual-health |  |
+| Testosterone | 3mg | troche |  | V Pharm | TEST-3-TRO-VS | $0.88 | men's-sexual-health |  |
+| Testosterone | 3MG/ML | cream | 30mLTube | V Pharm | TESTOS3MGMLCREA | $27.5 | men's-sexual-health |  |
+| Testosterone | 3.5mg | troche |  | V Pharm | TEST-3.5-TRO-VS | $0.88 | men's-sexual-health |  |
+| Testosterone | 4mg | troche |  | V Pharm | TEST-4-TRO-VS | $0.88 | men's-sexual-health |  |
+| Testosterone | 4MG/ML | cream | 30mLTube | V Pharm | TESTOS4MGMLCREA | $27.5 | men's-sexual-health |  |
+| Testosterone | 4.5mg | troche |  | V Pharm | TEST-4.5-TRO-VS | $0.88 | men's-sexual-health |  |
+| Testosterone | 5mg | troche |  | V Pharm | TEST-5-TRO-VS | $0.88 | men's-sexual-health |  |
+| Testosterone | 5MG/ML | cream | 30mLTube | V Pharm | TESTOS5MGMLCREA | $27.5 | men's-sexual-health |  |
+| Testosterone | 5.5mg | troche |  | V Pharm | TEST-5.5-TRO-VS | $0.88 | men's-sexual-health |  |
+| Testosterone | 6mg | troche |  | V Pharm | TEST-6-TRO-VS | $0.88 | men's-sexual-health |  |
+| Testosterone | 6MG/ML | cream | 30mLTube | V Pharm | TESTOS6MGMLCREA | $27.5 | men's-sexual-health |  |
+| Testosterone | 6.5mg | troche |  | V Pharm | TEST-6.5-TRO-VS | $0.88 | men's-sexual-health |  |
+| Testosterone | 7mg | troche |  | V Pharm | TEST-7-TRO-VS | $0.88 | men's-sexual-health |  |
+| Testosterone | 7MG/ML | cream | 30mLTube | V Pharm | TESTOS7MGMLCREA | $27.5 | men's-sexual-health |  |
+| Testosterone | 7.5mg | troche |  | V Pharm | TEST-7.5-TRO-VS | $0.88 | men's-sexual-health |  |
+| Testosterone | 8mg | troche |  | V Pharm | TEST-8-TRO-VS | $0.88 | men's-sexual-health |  |
+| Testosterone | 8MG/ML | cream | 30mLTube | V Pharm | TESTOS8MGMLCREA | $27.5 | men's-sexual-health |  |
+| Testosterone | 8.5mg | troche |  | V Pharm | TEST-8.5-TRO-VS | $0.88 | men's-sexual-health |  |
+| Testosterone | 9mg | troche |  | V Pharm | TEST-9-TRO-VS | $0.88 | men's-sexual-health |  |
+| Testosterone | 9mg/ml | cream | 30mLTube | V Pharm | TESTOS9MGMLCREA | $27.5 | men's-sexual-health |  |
+| Testosterone | 9.5mg | troche |  | V Pharm | TEST-9.5-TRO-VS | $0.88 | men's-sexual-health |  |
+| Testosterone | 10mg | troche |  | V Pharm | TESTTROCHE10BE | $0.88 | men's-sexual-health |  |
+| Testosterone | 10mg/ml | cream | 30mLTube | V Pharm | TESTOS10MGMLCREA | $27.5 | men's-sexual-health |  |
+| Testosterone | 20mg/ml | cream | 30mLTube | V Pharm | TESTOS20MGMLCREA | $27.5 | men's-sexual-health |  |
+| Testosterone | 25mg | troche |  | V Pharm | TESTTROCHE25BE | $0.88 | men's-sexual-health |  |
+| Testosterone | 50mg | troche |  | V Pharm | TESTTROCHE50BE | $0.88 | men's-sexual-health |  |
+| Testosterone | 50mg/ml | cream | 30mLTube | V Pharm | TESTOS50MGMCREA | $27.5 | men's-sexual-health |  |
+| Testosterone | 75mg | troche |  | V Pharm | TESTTROCHE75BE | $0.94 | men's-sexual-health |  |
+| Testosterone | 100mg | troche |  | V Pharm | TESTTROCHE100BE | $0.94 | men's-sexual-health |  |
+| Testosterone | 120mg/ml | cream | 30mLTube | V Pharm | TESTOS120MGMCREA | $27.5 | men's-sexual-health |  |
+| Testosterone | 200mg | troche |  | V Pharm | TESTTROCHE200BE | $1.25 | men's-sexual-health |  |
+| Testosterone | 200mg/ml | cream | 30mLTube | V Pharm | TESTOS200MGMCREA | $27.5 | men's-sexual-health |  |
+| Testosterone Cypionate | 25mg/mlGSO;5mLVial | injectable | 5ml | V Pharm | TRTGSO255 | $20 | men's-sexual-health |  |
+| Testosterone Cypionate -Grapeseed oil (does not ship to Alabama or Cali) | 200mg/ml | injectable | 5mL | V Pharm | TRTGSO5 | $20 | men's-sexual-health |  |
+| Testosterone Cypionate -MCT oil (does not ship to Alabama or Cali) | 200mg/ml | injectable | 5mL | V Pharm | TRTMCO5 | $20 | men's-sexual-health |  |
+| Testosterone lotion | 5% | lotion | 60mg | V Pharm | TEST-LOTION-5-VS | $56.25 | men's-sexual-health |  |
+| Testosterone lotion | 10% | lotion | 60mg | V Pharm | TEST-LOTION-10-VS | $62.5 | men's-sexual-health |  |
+| TestosteroneCypionate | 25mg/mlMCT;5mLVial | injectable | 5ml | V Pharm | TRTMCT255 | $20 | men's-sexual-health |  |
+| TestosteroneCypionate | 200mg/mlGSO;5mLVial | injectable | 5ml | V Pharm | TRTGSO5 | $20 | men's-sexual-health |  |
+| TestosteroneCypionate | 200mg/mlMCT;5mLVial | injectable | 5ml | V Pharm | TRTMCO5 | $20 | men's-sexual-health |  |
+| TestosteroneCypionate-Commercial | 200mg/ml;10mLVial | injectable | 10ml | V Pharm | TESTOS200MGCOM | $31.25 | men's-sexual-health |  |
+| TestosteroneEnanthate | 200mg/mlGSO;5mLVial | injectable | 5ml | V Pharm | TESTOS200MGMOILI | $20 | men's-sexual-health |  |
+| TRT Injectable commercial - Ships to all 50 states. |  | injectable | 10mL | V Pharm | TESTOS200MGCOM | $60 | men's-sexual-health |  |
 
 ## Dermatology (13)
 
 | Product | Strength | Form | Package | Pharmacy | SKU | Wholesale | Tags | Notes |
 |---|---|---|---|---|---|---:|---|---|
-| Tretinoin | 0.024% | cream | 30mLTube | V Pharm | TRETCR0.024 | $31.25 |  |  |
-| Tretinoin | 0.1% | cream | 30mLTube | V Pharm | TRETCR01 | $37.5 |  |  |
-| Tretinoin | 0.024% | cream | Cream | V Pharm | TRETCR0.024 | $0.94 |  |  |
-| Tretinoin | 0.015% | cream | Cream | V Pharm | TRETCR015 | $0.94 |  |  |
-| Tretinoin | 0.1% | gel | Gel | V Pharm | TRETCR0100 | $1.25 |  |  |
-| Epiduo gel generic |  | gel | 45g | V Pharm | EPIDUO | $37.5 |  |  |
-| Sulfacetamide lotion | 4oz | lotion |  | V Pharm | SULFAC10 | $125 |  |  |
-| HYDROQUINONE/TRETINOIN/HYDROCORTISONE | 6/0.025/1% | cream |  | V Pharm | HYDQ-TRET-HYDC-VS | $1.56 |  | form inferred |
-| Doxycycline Hyclate 100mg Tablets | 100mg | tablet | 90 units | V Pharm | DOXY-HYC-100-VS | $51 |  |  |
-| Azelaic Acid 4% - Niacinamide 4% - Benzoyl Peroxide 2.5% Cream | 30 gms | cream |  | V Pharm |  | $45 |  | SKU available upon request |
 | Acne Cream- Azelaic Acid/Niacinamide /Benzoyl Peroxide 4%/4%/2.5% | 30 mLs | cream |  | V Pharm |  | $45 |  | SKU available upon request |
 | Acne Gel - Clindamycin /Spironolactone /Benzoyl Peroxide /Niacinamide /Tretinoin 1%/2%/5%/2%/0.025% | 30 mLs | gel |  | V Pharm |  | $45 |  | SKU available upon request |
+| Azelaic Acid 4% - Niacinamide 4% - Benzoyl Peroxide 2.5% Cream | 30 gms | cream |  | V Pharm |  | $45 |  | SKU available upon request |
+| Doxycycline Hyclate 100mg Tablets | 100mg | tablet | 90 units | V Pharm | DOXY-HYC-100-VS | $51 |  |  |
+| Epiduo gel generic |  | gel | 45g | V Pharm | EPIDUO | $37.5 |  |  |
+| HYDROQUINONE/TRETINOIN/HYDROCORTISONE | 6/0.025/1% | cream |  | V Pharm | HYDQ-TRET-HYDC-VS | $1.56 |  | form inferred |
+| Sulfacetamide lotion | 4oz | lotion |  | V Pharm | SULFAC10 | $125 |  |  |
+| Tretinoin | 0.015% | cream | Cream | V Pharm | TRETCR015 | $0.94 |  |  |
+| Tretinoin | 0.024% | cream | 30mLTube | V Pharm | TRETCR0.024 | $31.25 |  |  |
+| Tretinoin | 0.024% | cream | Cream | V Pharm | TRETCR0.024 | $0.94 |  |  |
+| Tretinoin | 0.1% | cream | 30mLTube | V Pharm | TRETCR01 | $37.5 |  |  |
+| Tretinoin | 0.1% | gel | Gel | V Pharm | TRETCR0100 | $1.25 |  |  |
 | Tretinoin Gel | 0.1%/30mL Tube | gel |  | V Pharm | TRETCR0100 | $37.5 |  |  |
 
 ## Wellness / Longevity (16)
 
 | Product | Strength | Form | Package | Pharmacy | SKU | Wholesale | Tags | Notes |
 |---|---|---|---|---|---|---:|---|---|
-| NAD+ | 200mg/mL | injectable | 5ML | V Pharm | NAD200 | $43.75 |  |  |
-| NAD+Nasal Spray | 30mg/0.1mL | nasal-spray | 15ML | V Pharm | NADNS | $62.5 |  |  |
-| NAD+ Package Bundle IontoPatch Patches | 600mg/mL | patch | 6 PATCHES | V Pharm | NADPATCH | $106.25 |  |  |
+| B12 Cyanocobalamin | 1000mcg/mL - 10mL Vial | injectable | 10mL | V Pharm | B12CYAN10P | $43 |  |  |
+| Glutathione | 1500mg | injectable | vial | Peptides Supplier |  | $64 |  |  |
+| Glutathione | 2000mg (200mg/mL) - 10mL Vial | injectable | 10mL | V Pharm | GLUT200P | $45 |  |  |
 | Methylene Blue | 2.5mg | capsule |  | V Pharm | METHBLUE-2.5-VIOS | $1.17 |  |  |
 | Methylene Blue | 5mg | capsule |  | V Pharm | METHBLUE-5-VIOS | $1.25 |  |  |
 | Methylene Blue | 10mg | capsule |  | V Pharm | METHBLUE-10-VIOS | $1.95 |  |  |
 | Methylene Blue | 25mg | capsule |  | V Pharm | METHBLUE-25-VIOS | $2.73 |  |  |
 | Methylene Blue | 50mg | capsule |  | V Pharm | METHBLUE-50-VIOS | $3.75 |  |  |
 | Methylene Blue | 100mg | capsule |  | V Pharm | METHBLUE-100-VS | $4.92 |  |  |
-| Ondansetron 4mg | 4mg | injectable | 30 units | V Pharm | OND4M20 | $10 |  | form inferred |
-| NAD+ | 1000mg - 100mg/mL - 10mL Vial | injectable | 10mL | V Pharm | NAD1000P | $75 |  |  |
-| Glutathione | 2000mg (200mg/mL) - 10mL Vial | injectable | 10mL | V Pharm | GLUT200P | $45 |  |  |
-| B12 Cyanocobalamin | 1000mcg/mL - 10mL Vial | injectable | 10mL | V Pharm | B12CYAN10P | $43 |  |  |
-| Glutathione | 1500mg | injectable | vial | Peptides Supplier |  | $64 |  |  |
+| NAD+ | 200mg/mL | injectable | 5ML | V Pharm | NAD200 | $43.75 |  |  |
 | NAD+ | 500mg | injectable | vial | Peptides Supplier |  | $40 |  |  |
 | NAD+ | 1000mg | injectable | vial | Peptides Supplier |  | $55 |  |  |
+| NAD+ | 1000mg - 100mg/mL - 10mL Vial | injectable | 10mL | V Pharm | NAD1000P | $75 |  |  |
+| NAD+ Package Bundle IontoPatch Patches | 600mg/mL | patch | 6 PATCHES | V Pharm | NADPATCH | $106.25 |  |  |
+| NAD+Nasal Spray | 30mg/0.1mL | nasal-spray | 15ML | V Pharm | NADNS | $62.5 |  |  |
+| Ondansetron 4mg | 4mg | injectable | 30 units | V Pharm | OND4M20 | $10 |  | form inferred |
 
 ## Supplies & Fees (7)
 
 | Product | Strength | Form | Package | Pharmacy | SKU | Wholesale | Tags | Notes |
 |---|---|---|---|---|---|---:|---|---|
+| Cold Chain Overnight Shipping - Included |  | other |  | S Pharm |  | $0 |  |  |
+| Syringes + Alcohol Pads - Included |  | supply |  | S Pharm |  | $0 |  |  |
+| Total Processing Fee |  | other |  | S Pharm |  | $25 |  |  |
 | TRT IM Syringe Package | 5 Syringe Pack (1ML LL, 25G NEEDLE, SPIKE, ALCOHOL PADS) | supply |  | V Pharm | IM-SYRINGE-5PACK-VS | $6 |  |  |
 | TRT IM Syringe Package | 10 Syringe Pack (1ML LL, 25G NEEDLE, SPIKE, ALCOHOL PADS) | supply |  | V Pharm | IM-SYRINGE-10PACK-VS | $11 |  |  |
 | TRT SQ Syringe Package | 5 Syringe Pack (1ML LL, 30G NEEDLE, SPIKE, ALCOHOL PADS) | supply |  | V Pharm | SQ-SYRINGE-5PACK-VS | $6 |  |  |
 | TRT SQ Syringe Package | 10 Syringe Pack (1ML LL, 30G NEEDLE, SPIKE, ALCOHOL PADS) | supply |  | V Pharm | SQ-SYRINGE-10PACK-VS | $11 |  |  |
-| Total Processing Fee |  | other |  | S Pharm |  | $25 |  |  |
-| Cold Chain Overnight Shipping - Included |  | other |  | S Pharm |  | $0 |  |  |
-| Syringes + Alcohol Pads - Included |  | supply |  | S Pharm |  | $0 |  |  |

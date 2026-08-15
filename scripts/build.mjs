@@ -15,10 +15,45 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
-import { FORMULARY_CATEGORIES, PHARMACIES, loadRows } from "../lib/vocab.mjs";
+import { FORMULARY_CATEGORIES, PHARMACIES, loadRows, compareProducts } from "../lib/vocab.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const CSV_PATH = join(ROOT, "formulary.csv");
+
+// ── form icons: inline SVG (24×24 viewBox, currentColor) ────────────────
+// One glyph per FORM_TYPES value, keyed by the exact form string. Self-
+// contained (no external assets) and theme-aware — stroke follows CSS color.
+// Filled marks (spray mist, "other" dots) set fill explicitly.
+const ICON_BODY = {
+  // diagonal two-piece capsule with a split line
+  capsule: '<rect x="5" y="9" width="14" height="6" rx="3" transform="rotate(-45 12 12)"/><line x1="9.9" y1="9.9" x2="14.1" y2="14.1"/>',
+  // round pill with a score line
+  tablet: '<circle cx="12" cy="12" r="8"/><line x1="12" y1="4" x2="12" y2="20"/>',
+  // dissolvable lozenge (rounded diamond)
+  troche: '<rect x="6.5" y="6.5" width="11" height="11" rx="2.5" transform="rotate(45 12 12)"/>',
+  // squeeze tube with cap + crimped tail
+  cream: '<rect x="6" y="8" width="11" height="8" rx="1.5"/><rect x="17" y="9.5" width="2.5" height="5" rx="1"/><path d="M6 8l-2-1M6 16l-2 1"/>',
+  // gel droplet
+  gel: '<path d="M12 4s-6 7-6 11a6 6 0 0 0 12 0c0-4-6-11-6-11z"/>',
+  // pump-dispenser bottle
+  lotion: '<rect x="7" y="10" width="10" height="10" rx="2"/><rect x="9.5" y="7" width="5" height="3"/><path d="M14.5 8.5h3v-2"/>',
+  // liquid bottle with a fill line
+  solution: '<path d="M9 4h6M10 4v3M14 4v3"/><path d="M8 7h8v11a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2z"/><path d="M8 13c1.5 1 2.5-1 4 0s2.5 1 4 0"/>',
+  // syringe with graduations + needle
+  injectable: '<rect x="9" y="3" width="6" height="12" rx="1"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="8" y1="15" x2="16" y2="15"/><line x1="12" y1="15" x2="12" y2="22"/><line x1="10" y1="7" x2="14" y2="7"/><line x1="10" y1="10" x2="14" y2="10"/>',
+  // spray bottle with angled nozzle + mist
+  "nasal-spray": '<rect x="8" y="10" width="8" height="10" rx="1.5"/><path d="M11 10V7h4l1-2"/><circle cx="18.5" cy="3" r="0.9" fill="currentColor" stroke="none"/><circle cx="20" cy="5" r="0.9" fill="currentColor" stroke="none"/><circle cx="18.5" cy="6.5" r="0.9" fill="currentColor" stroke="none"/>',
+  // transdermal patch (rounded square + reservoir)
+  patch: '<rect x="5" y="5" width="14" height="14" rx="3"/><rect x="8.5" y="8.5" width="7" height="7" rx="1.5"/>',
+  // shipping box / kit
+  supply: '<path d="M4 8l8-4 8 4-8 4z"/><path d="M4 8v8l8 4 8-4V8"/><line x1="12" y1="12" x2="12" y2="20"/>',
+  // misc / unclassifiable
+  other: '<circle cx="6" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="18" cy="12" r="1.5" fill="currentColor" stroke="none"/>',
+};
+const svgWrap = (body) =>
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" ' +
+  'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + body + "</svg>";
+const FORM_ICONS = Object.fromEntries(Object.entries(ICON_BODY).map(([k, v]) => [k, svgWrap(v)]));
 
 function groupByCategory(rows) {
   const out = {};
@@ -73,7 +108,7 @@ function writeMarkdown(rows, byCat) {
     L.push("");
     L.push("| Product | Strength | Form | Package | Pharmacy | SKU | Wholesale | Tags | Notes |");
     L.push("|---|---|---|---|---|---|---:|---|---|");
-    for (const r of rs) {
+    for (const r of rs.slice().sort(compareProducts)) {
       const cost = r.wholesale_cost ? `$${r.wholesale_cost}` : "";
       L.push(
         `| ${mdEsc(r.product_name)} | ${mdEsc(r.strength)} | ${r.form} | ${mdEsc(r.package)} | ` +
@@ -90,6 +125,7 @@ function writeHtml(rows) {
   const data = JSON.stringify(rows).replace(/</g, "\\u003c");
   const cats = JSON.stringify(["All", ...FORMULARY_CATEGORIES.filter((c) => rows.some((r) => r.category === c))]);
   const pharms = JSON.stringify(["All", ...PHARMACIES]);
+  const icons = JSON.stringify(FORM_ICONS).replace(/</g, "\\u003c");
 
   const html = `<!doctype html>
 <html lang="en">
@@ -131,6 +167,8 @@ function writeHtml(rows) {
   .tag.review { background:#fbe5c8; color:#8a5a00; }
   @media (prefers-color-scheme: dark){ .tag.review{ background:#3a2e12; color:#e6b866; } }
   .cat { color:var(--accent); font-weight:600; }
+  td.form { white-space:nowrap; }
+  td.form svg { width:15px; height:15px; margin-right:6px; vertical-align:-3px; color:var(--accent); }
   .empty { color:var(--muted); padding:40px 0; text-align:center; }
 </style>
 </head>
@@ -152,6 +190,7 @@ function writeHtml(rows) {
 const ROWS = ${data};
 const CATS = ${cats};
 const PHARMS = ${pharms};
+const FORM_ICONS = ${icons};
 const COLS = [
   ["product_name","Product"],["strength","Strength"],["form","Form"],["package","Package"],
   ["pharmacy","Pharmacy"],["sku","SKU"],["wholesale_cost","Wholesale $"],["tags","Tags"],["notes","Notes"]
@@ -160,6 +199,15 @@ let activeCat = "All", sortKey = null, sortDir = 1;
 
 const el = (id)=>document.getElementById(id);
 function counts(cat){ return cat==="All"?ROWS.length:ROWS.filter(r=>r.category===cat).length; }
+function formIcon(f){ return FORM_ICONS[f] || ""; }
+function strengthNum(s){ const m=String(s||"").match(/[\\d.]+/); return m?parseFloat(m[0]):Infinity; }
+// default order: similar items grouped — by category, then product name, then strength, then pharmacy
+function groupCmp(a,b){
+  let d = CATS.indexOf(a.category)-CATS.indexOf(b.category); if(d) return d;
+  d = a.product_name.toLowerCase().localeCompare(b.product_name.toLowerCase()); if(d) return d;
+  d = strengthNum(a.strength)-strengthNum(b.strength); if(d) return d;
+  return a.pharmacy.localeCompare(b.pharmacy);
+}
 
 function renderTabs(){
   el("tabs").innerHTML = CATS.map(c =>
@@ -196,8 +244,11 @@ function render(){
     rows = rows.slice().sort((a,b)=>{
       let x=a[sortKey], y=b[sortKey];
       if(sortKey==="wholesale_cost"){ x=parseFloat(x)||0; y=parseFloat(y)||0; return (x-y)*sortDir; }
+      if(sortKey==="strength"){ return (strengthNum(x)-strengthNum(y))*sortDir; }
       return String(x).localeCompare(String(y))*sortDir;
     });
+  } else {
+    rows = rows.slice().sort(groupCmp);
   }
   el("count").textContent = rows.length + " of " + ROWS.length + " products";
   el("empty").hidden = rows.length>0;
@@ -205,7 +256,8 @@ function render(){
     if(k==="tags") return "<td>"+tagHtml(r.tags)+"</td>";
     if(k==="wholesale_cost") return '<td class="num mono">'+(r[k]?"$"+r[k]:"")+"</td>";
     if(k==="product_name") return '<td>'+r[k]+(activeCat==="All"?' <span class="cat">· '+r.category+'</span>':'')+'</td>';
-    if(k==="sku"||k==="strength"||k==="form") return '<td class="mono">'+r[k]+"</td>";
+    if(k==="form") return '<td class="form">'+formIcon(r[k])+'<span class="mono">'+r[k]+'</span></td>';
+    if(k==="sku"||k==="strength") return '<td class="mono">'+r[k]+"</td>";
     return "<td>"+(r[k]||"")+"</td>";
   }).join("")+"</tr>").join("");
 }
