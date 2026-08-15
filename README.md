@@ -22,6 +22,20 @@ open index.html            # browse (category tabs, search, pharmacy filter, sor
 
 Or with npm: `npm run check` / `npm run build`.
 
+`open index.html` is a static, read-only view. To **remove** products from the
+browser (which rewrites `formulary.csv` and rebuilds), run the local edit server
+instead:
+
+```bash
+node scripts/serve.mjs     # then open http://localhost:8000
+```
+
+Or with npm: `npm run serve`. Deletion is **off by default**: click **Delete: off**
+in the toolbar, enter the password (`1542`, or set `DELETE_PASSWORD=... npm run
+serve`), and a × appears on each row. Removing a product moves it to
+`archived.csv` (recoverable) and rebuilds; **Undo last removal** restores the
+most recent one.
+
 ## Files
 
 | File | Role |
@@ -30,6 +44,8 @@ Or with npm: `npm run check` / `npm run build`.
 | `lib/vocab.mjs` | Controlled category / form / pharmacy / tag vocabulary + CSV parser (single source of truth, imported by both scripts). |
 | `scripts/check.mjs` | Validator — vocabulary, prices, duplicates, coverage. |
 | `scripts/build.mjs` | Generator — emits the three artifacts below. |
+| `scripts/serve.mjs` | Local edit server — serves the viewer and writes password-gated removals to `formulary.csv`, archiving them to `archived.csv` (rebuilds automatically). |
+| `archived.csv` | *Generated on first removal* — soft-delete log of removed rows; **Undo** pops the last one back. |
 | `FORMULARY.md` | *Generated* — category-grouped markdown snapshot for review. |
 | `index.html` | *Generated* — self-contained interactive viewer. |
 | `formulary.json` | *Generated* — data export for any other consumer. |
@@ -73,6 +89,13 @@ are per-package. `strength` + `package` give the basis.
 2. `node scripts/check.mjs` — fix any failures.
 3. `node scripts/build.mjs` — regenerate the snapshot, viewer, and JSON.
 4. Commit the CSV **and** the regenerated files together.
+
+> **The × button:** opened as a plain file it only *dismisses* a row in that
+> browser (localStorage). Served via `node scripts/serve.mjs`, deletion is off
+> until you unlock it with the password; then × moves the product to
+> `archived.csv` and rebuilds, and **Undo last removal** restores it. The
+> password is a light gate for a localhost tool, not real auth — don't expose
+> the server to a network.
 
 **Add a category / form / pharmacy:** add it to `lib/vocab.mjs` (one place), then
 use it in the CSV. **Add a product:** add a CSV row.

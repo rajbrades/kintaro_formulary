@@ -144,6 +144,12 @@ function writeHtml(rows, blends) {
   .empty { color:var(--muted); padding:40px 0; text-align:center; }
   .hidden-bar { display:flex; align-items:center; gap:12px; padding:8px 24px; max-width:1488px; margin:0 auto; color:var(--muted); font-size:13px; }
   .hidden-bar button { background:var(--chip); border:1px solid var(--line); border-radius:6px; padding:4px 10px; color:var(--fg); font-size:12px; cursor:pointer; }
+  #del-widget { display:flex; gap:8px; align-items:center; margin-left:auto; }
+  #del-widget button { background:var(--chip); border:1px solid var(--line); border-radius:999px; padding:10px 14px; color:var(--fg); font:inherit; cursor:pointer; transition:background .2s,border-color .2s,color .2s; }
+  #del-widget button:hover { border-color:var(--line2); }
+  #del-widget button.on { background:var(--accent); color:var(--bg); border-color:var(--accent); }
+  body.served .cell-act .btn-x { display:none; }
+  body.served.del-on .cell-act .btn-x { display:inline-block; }
   .cell-act { width:32px; text-align:center; }
   .btn-x { background:none; border:none; color:var(--muted); cursor:pointer; font-size:16px; padding:2px 6px; border-radius:4px; }
   .btn-x:hover { background:var(--secondary); color:var(--fg); }
@@ -200,6 +206,7 @@ const COLS = [
 let activeCat="All",sortKey=null,sortDir=1;
 let hidden=SERVED?new Set():new Set(JSON.parse(localStorage.getItem('k_hidden')||'[]'));
 let showHidden=false;
+let deletePw=null;
 const el=(id)=>document.getElementById(id);
 function rowKey(r){return r.sku||r.product_name+r.strength+r.pharmacy;}
 function saveHidden(){localStorage.setItem('k_hidden',JSON.stringify([...hidden]));}
@@ -239,7 +246,7 @@ function render(){
   el("empty").hidden=rows.length>0;
   el("tbody").innerHTML=rows.map(r=>{const k=rowKey(r);const isH=hidden.has(k);return"<tr"+(isH?' class="hidden-row"':"")+">"+COLS.map(([col])=>{if(col==="tags")return"<td>"+tagHtml(r.tags)+"</td>";if(col==="wholesale_cost")return'<td class="num mono">'+(r[col]?"$"+r[col]:"")+"</td>";if(col==="product_name")return"<td>"+r[col]+(activeCat==="All"?' <span class="cat">\\u00b7 '+r.category+"</span>":"")+"</td>";if(col==="sku"||col==="strength"||col==="form")return'<td class="mono">'+r[col]+"</td>";return"<td>"+(r[col]||"")+"</td>";}).join("")+'<td class="cell-act"><button class="btn-x" data-key="'+k+'" data-idx="'+ROWS.indexOf(r)+'" aria-label="'+(SERVED?"Remove from CSV":(isH?"Restore":"Dismiss"))+'" title="'+(SERVED?"Remove from CSV":(isH?"Restore":"Dismiss"))+'">'+(isH?"\\u21a9":"\\u00d7")+"</button></td></tr>";}).join("");
 }
-const BCOLS=[["competitor","Competitor"],["product_name","Product"],["ingredients","Ingredients"],["retail_price","Retail Price"],["supply","Supply / Billing"],["differentiator","Differentiator"]];
+const BCOLS=[["competitor","Competitor"],["product_name","Product"],["format","Format"],["ingredients","Ingredients"],["retail_price","Retail Price"],["supply","Supply / Billing"],["differentiator","Differentiator"]];
 let blendCat="All",blendSortKey=null,blendSortDir=1;
 function blendCounts(cat){return cat==="All"?BLENDS.length:BLENDS.filter(r=>r.category===cat).length;}
 function renderBlendTabs(){
@@ -254,12 +261,12 @@ function renderBlends(){
   const q=el("bq").value.trim().toLowerCase();
   let rows=BLENDS.filter(r=>{
     if(blendCat!=="All"&&r.category!==blendCat)return false;
-    if(q){const hay=(r.competitor+" "+r.product_name+" "+r.ingredients+" "+r.differentiator+" "+r.retail_price).toLowerCase();if(!hay.includes(q))return false;}
+    if(q){const hay=(r.competitor+" "+r.product_name+" "+r.format+" "+r.ingredients+" "+r.differentiator+" "+r.retail_price).toLowerCase();if(!hay.includes(q))return false;}
     return true;
   });
   if(blendSortKey){rows=rows.slice().sort((a,b)=>String(a[blendSortKey]).localeCompare(String(b[blendSortKey]))*blendSortDir);}
   el("blend-empty").hidden=rows.length>0;
-  el("blend-tbody").innerHTML=rows.map(r=>"<tr>"+BCOLS.map(([k])=>{if(k==="product_name")return"<td>"+r[k]+(blendCat==="All"?' <span class="cat">\\u00b7 '+r.category+"</span>":"")+"</td>";return"<td>"+(r[k]||"")+"</td>";}).join("")+"</tr>").join("");
+  el("blend-tbody").innerHTML=rows.map(r=>"<tr>"+BCOLS.map(([k])=>{if(k==="product_name")return"<td>"+r[k]+(blendCat==="All"?' <span class="cat">\\u00b7 '+r.category+"</span>":"")+"</td>";if(k==="format")return'<td class="mono">'+(r[k]||"")+"</td>";return"<td>"+(r[k]||"")+"</td>";}).join("")+"</tr>").join("");
 }
 el("page-switch").querySelectorAll("button").forEach(btn=>{
   btn.onclick=()=>{
@@ -274,9 +281,24 @@ el("page-switch").querySelectorAll("button").forEach(btn=>{
 el("pharm").innerHTML=PHARMS.map(p=>'<option>'+p+'</option>').join("");
 el("q").oninput=render;el("pharm").onchange=render;el("rx").onchange=render;
 el("bq").oninput=renderBlends;
-el("tbody").addEventListener("click",async e=>{const btn=e.target.closest(".btn-x");if(!btn)return;if(SERVED){const row=ROWS[+btn.dataset.idx];if(!row)return;if(!confirm('Remove "'+row.product_name+'" from formulary.csv? This is permanent.'))return;btn.disabled=true;try{const res=await fetch('/api/remove',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(row)});const j=await res.json();if(j.ok){location.reload();}else{alert('Remove failed: '+(j.reason||'unknown'));btn.disabled=false;}}catch(err){alert('Remove failed: '+err);btn.disabled=false;}return;}const k=btn.dataset.key;if(hidden.has(k))hidden.delete(k);else hidden.add(k);saveHidden();renderHiddenBar();render();});
+function canDelete(){return SERVED&&deletePw!==null;}
+async function api(path,extra){const res=await fetch(path,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(Object.assign({password:deletePw},extra||{}))});return res.json();}
+function setupDeleteWidget(){
+  document.body.classList.add('served');
+  const w=document.createElement('div');w.id='del-widget';
+  w.innerHTML='<button id="del-toggle">\\ud83d\\udd12 Delete: off</button><input type="password" id="del-pw" placeholder="Delete password" hidden /><button id="del-go" hidden>Unlock</button><button id="del-undo" hidden>\\u21a9 Undo last removal</button>';
+  document.querySelector('.controls-inner').appendChild(w);
+  const tgl=el('del-toggle'),pw=el('del-pw'),go=el('del-go'),undo=el('del-undo');
+  function lock(){deletePw=null;document.body.classList.remove('del-on');tgl.textContent='\\ud83d\\udd12 Delete: off';tgl.classList.remove('on');pw.hidden=true;go.hidden=true;undo.hidden=true;pw.value='';}
+  function unlock(){document.body.classList.add('del-on');tgl.textContent='\\ud83d\\udd13 Delete: on';tgl.classList.add('on');pw.hidden=true;go.hidden=true;undo.hidden=false;}
+  tgl.onclick=()=>{if(deletePw!==null){lock();return;}pw.hidden=false;go.hidden=false;pw.focus();};
+  go.onclick=async()=>{const v=pw.value.trim();if(!v)return;go.disabled=true;try{const j=await api('/api/unlock',{password:v});if(j.ok){deletePw=v;unlock();}else{alert('Wrong password');pw.value='';pw.focus();}}catch(e){alert('Unlock failed: '+e);}go.disabled=false;};
+  pw.onkeydown=(e)=>{if(e.key==='Enter'){e.preventDefault();go.onclick();}};
+  undo.onclick=async()=>{if(!confirm('Restore the most recently removed product?'))return;undo.disabled=true;try{const j=await api('/api/undo');if(j.ok){location.reload();}else{alert('Undo failed: '+(j.reason||'unknown'));undo.disabled=false;}}catch(e){alert('Undo failed: '+e);undo.disabled=false;}};
+}
+el("tbody").addEventListener("click",async e=>{const btn=e.target.closest(".btn-x");if(!btn)return;if(SERVED){if(!canDelete())return;const row=ROWS[+btn.dataset.idx];if(!row)return;if(!confirm('Remove "'+row.product_name+'" from formulary.csv? It will be archived and can be undone.'))return;btn.disabled=true;try{const j=await api('/api/remove',{row:row});if(j.ok){location.reload();}else{alert('Remove failed: '+(j.reason||'unknown'));btn.disabled=false;}}catch(err){alert('Remove failed: '+err);btn.disabled=false;}return;}const k=btn.dataset.key;if(hidden.has(k))hidden.delete(k);else hidden.add(k);saveHidden();renderHiddenBar();render();});
 renderTabs();renderHead();renderHiddenBar();render();
-if(SERVED){document.querySelector('.meta').insertAdjacentHTML('beforeend',' \\u2014 <span style="color:var(--accent)">editing mode: \\u00d7 removes from CSV</span>');}
+if(SERVED){setupDeleteWidget();}
 renderBlendTabs();renderBlendHead();renderBlends();
 </script>
 </body>
