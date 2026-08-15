@@ -78,7 +78,7 @@ function writeHtml(rows, blends) {
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Kintaro Formulary</title>
+<title>Kintaro Medical</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <style>
   :root { color-scheme:dark; --bg:#0F1116; --bg2:#181B22; --fg:#ECE6D8; --muted:#898577;
@@ -89,37 +89,42 @@ function writeHtml(rows, blends) {
     --display:Fraunces,"Cormorant Garamond",Georgia,serif;
     --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
   * { box-sizing:border-box; }
+  ::selection { background:rgba(201,163,94,.3); color:var(--fg); }
   body { margin:0; min-height:100vh; font:14px/1.5 var(--sans);
-    background:radial-gradient(circle at 10% -10%,rgba(201,163,94,.18),transparent 32rem),
-      radial-gradient(circle at 88% 4%,rgba(90,42,42,.42),transparent 34rem),var(--bg);
+    background:radial-gradient(circle at 10% -10%,rgba(201,163,94,.18),transparent 32rem),var(--bg);
     color:var(--fg); }
+  ::-webkit-scrollbar { width:8px; height:8px; }
+  ::-webkit-scrollbar-track { background:var(--bg2); }
+  ::-webkit-scrollbar-thumb { background:rgba(236,230,216,.18); border-radius:4px; }
+  ::-webkit-scrollbar-thumb:hover { background:rgba(236,230,216,.28); }
   header { padding:28px 24px 30px; border-bottom:1px solid var(--line2);
     background:linear-gradient(135deg,rgba(236,230,216,.06),transparent 42%),
       linear-gradient(180deg,rgba(15,17,22,.72),rgba(15,17,22,.96)); }
   .brandbar { display:flex; align-items:center; justify-content:space-between; gap:18px; max-width:1440px; margin:0 auto 28px; }
   .wordmark { color:var(--fg); font-family:var(--display); font-size:18px; letter-spacing:.16em; line-height:1; text-transform:uppercase; }
-  .wordmark span { color:var(--accent); font-style:italic; letter-spacing:.04em; margin:0 8px; }
+  .wordmark span { color:var(--accent); font-style:normal; letter-spacing:.04em; margin:0 8px; }
   .kicker { color:var(--muted); font-family:var(--mono); font-size:11px; letter-spacing:.22em; text-transform:uppercase; }
   .hero { max-width:1440px; margin:0 auto; }
   h1 { margin:0; max-width:820px; font-family:var(--display); font-size:clamp(46px,8vw,96px); font-weight:400; letter-spacing:-.045em; line-height:.92; }
   h1 em { color:var(--accent); font-style:italic; }
   .meta { color:var(--muted); margin-top:18px; max-width:620px; font-size:16px; }
-  .page-switch { display:flex; gap:4px; padding:6px; background:var(--bg2); border-radius:999px; width:fit-content; }
+  .page-switch { display:flex; gap:4px; padding:6px; background:var(--bg2); border-radius:999px; width:fit-content; margin-top:20px; }
   .page-switch button { padding:8px 18px; border:none; border-radius:999px; cursor:pointer;
     background:transparent; color:var(--muted); font:13px/1 var(--sans); font-weight:500; transition:all .2s; }
   .page-switch button.active { background:var(--fg); color:var(--bg); }
   .page-switch button:hover:not(.active) { color:var(--fg); }
   .tabs { display:flex; gap:8px; flex-wrap:wrap; padding:18px 24px 0; max-width:1488px; margin:0 auto; }
   .tab { padding:8px 14px; border:1px solid var(--line); border-radius:999px; cursor:pointer;
-    background:var(--chip); color:var(--fg); font-size:13px; transition:background .2s,border-color .2s,color .2s; }
+    background:var(--chip); color:var(--fg); font:13px/1.5 var(--sans); transition:background .2s,border-color .2s,color .2s; }
   .tab:hover { border-color:var(--line2); }
   .tab.active { background:var(--fg); color:var(--bg); border-color:var(--fg); }
   .tab .n { opacity:.68; margin-left:6px; font-variant-numeric:tabular-nums; }
+  :focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
   .controls { display:flex; gap:12px; flex-wrap:wrap; align-items:center; padding:14px 24px; position:sticky; top:0;
     background:rgba(15,17,22,.88); border-bottom:1px solid var(--line); backdrop-filter:blur(16px); z-index:5; }
   .controls-inner { display:flex; gap:12px; flex-wrap:wrap; align-items:center; width:100%; max-width:1440px; margin:0 auto; }
   input,select { font:inherit; padding:10px 14px; border:1px solid var(--line); border-radius:999px; outline:none; background:var(--bg2); color:var(--fg); }
-  input:focus,select:focus { border-color:var(--accent); }
+  input:focus,select:focus { border-color:var(--accent); box-shadow:0 0 0 2px rgba(201,163,94,.25); outline:none; }
   input[type=search] { min-width:260px; flex:1; }
   label.mono { display:flex; align-items:center; gap:8px; color:var(--muted); }
   input[type=checkbox] { accent-color:var(--accent); }
@@ -127,7 +132,7 @@ function writeHtml(rows, blends) {
   table { border-collapse:separate; border-spacing:0; width:100%; min-width:760px; border:1px solid var(--line); border-radius:18px; }
   th,td { text-align:left; padding:10px 14px; border-bottom:1px solid var(--line); vertical-align:top; }
   th { position:sticky; top:0; background:var(--head); font-size:11px; text-transform:uppercase;
-    letter-spacing:.06em; color:var(--muted); cursor:pointer; font-weight:500; }
+    letter-spacing:.06em; color:var(--muted); cursor:pointer; font-weight:500; user-select:none; }
   th:first-child { border-top-left-radius:18px; }
   th:last-child { border-top-right-radius:18px; }
   td.num,th.num { text-align:right; font-variant-numeric:tabular-nums; }
@@ -150,25 +155,23 @@ function writeHtml(rows, blends) {
 <body>
 <header>
   <div class="brandbar">
-    <div class="wordmark">KINTARO <span>x</span> FORMULARY</div>
+    <div class="wordmark">KINTARO <span>|</span> MEDICAL</div>
     <div class="kicker">Compounded Rx Catalog</div>
   </div>
   <div class="hero">
     <h1>The <em>formulary.</em></h1>
     <div class="meta"><span id="count"></span></div>
-    <div style="margin-top:20px">
-      <div class="page-switch" id="page-switch">
-        <button class="active" data-page="formulary">Formulary</button>
-        <button data-page="blends">Potential Blends</button>
-      </div>
+    <div class="page-switch" id="page-switch">
+      <button class="active" data-page="formulary">Formulary</button>
+      <button data-page="blends">Potential Blends</button>
     </div>
   </div>
 </header>
 <div class="page active" id="page-formulary">
   <div class="tabs" id="tabs"></div>
   <div class="controls"><div class="controls-inner">
-    <input type="search" id="q" placeholder="Search product, ingredient, SKU, strength..." />
-    <select id="pharm"></select>
+    <input type="search" id="q" placeholder="Search product, ingredient, SKU, strength..." aria-label="Search formulary" />
+    <select id="pharm" aria-label="Filter by pharmacy"></select>
     <label class="mono"><input type="checkbox" id="rx" /> Rx only</label>
   </div></div>
   <div class="hidden-bar" id="hidden-bar" hidden></div>
@@ -178,7 +181,7 @@ function writeHtml(rows, blends) {
 <div class="page" id="page-blends">
   <div class="tabs" id="blend-tabs"></div>
   <div class="controls"><div class="controls-inner">
-    <input type="search" id="bq" placeholder="Search competitor, product, ingredient..." />
+    <input type="search" id="bq" placeholder="Search competitor, product, ingredient..." aria-label="Search blends" />
   </div></div>
   <div class="wrap"><table><thead id="blend-thead"></thead><tbody id="blend-tbody"></tbody></table></div>
   <div class="empty" id="blend-empty" hidden>No matching blends.</div>
@@ -189,12 +192,13 @@ const CATS = ${cats};
 const PHARMS = ${pharms};
 const BLENDS = ${blendsData};
 const BLEND_CATS = ${blendCats};
+const SERVED = location.protocol !== 'file:';
 const COLS = [
   ["product_name","Product"],["strength","Strength"],["form","Form"],["package","Package"],
   ["pharmacy","Pharmacy"],["sku","SKU"],["wholesale_cost","Wholesale $"],["tags","Tags"],["notes","Notes"]
 ];
 let activeCat="All",sortKey=null,sortDir=1;
-let hidden=new Set(JSON.parse(localStorage.getItem('k_hidden')||'[]'));
+let hidden=SERVED?new Set():new Set(JSON.parse(localStorage.getItem('k_hidden')||'[]'));
 let showHidden=false;
 const el=(id)=>document.getElementById(id);
 function rowKey(r){return r.sku||r.product_name+r.strength+r.pharmacy;}
@@ -209,12 +213,12 @@ function renderHiddenBar(){
   el('btn-clear-hidden').onclick=()=>{hidden.clear();saveHidden();showHidden=false;renderHiddenBar();render();};
 }
 function renderTabs(){
-  el("tabs").innerHTML=CATS.map(c=>'<span class="tab'+(c===activeCat?' active':'')+'" data-c="'+c+'">'+c+'<span class="n">'+counts(c)+'</span></span>').join("");
+  el("tabs").innerHTML=CATS.map(c=>'<button class="tab'+(c===activeCat?' active':'')+'" data-c="'+c+'">'+c+'<span class="n">'+counts(c)+'</span></button>').join("");
   el("tabs").querySelectorAll(".tab").forEach(t=>t.onclick=()=>{activeCat=t.dataset.c;renderTabs();render();});
 }
 function renderHead(){
-  el("thead").innerHTML="<tr>"+COLS.map(([k,l])=>'<th class="'+(k==="wholesale_cost"?"num":"")+'" data-k="'+k+'">'+l+(sortKey===k?(sortDir>0?" \\u25b2":" \\u25bc"):"")+"</th>").join("")+'<th class="cell-act"></th></tr>';
-  el("thead").querySelectorAll("th[data-k]").forEach(th=>th.onclick=()=>{const k=th.dataset.k;if(sortKey===k)sortDir*=-1;else{sortKey=k;sortDir=1;}render();});
+  el("thead").innerHTML="<tr>"+COLS.map(([k,l])=>'<th class="'+(k==="wholesale_cost"?"num":"")+'" data-k="'+k+'" tabindex="0" role="columnheader" aria-sort="'+(sortKey===k?(sortDir>0?"ascending":"descending"):"none")+'">'+l+(sortKey===k?(sortDir>0?" \\u25b2":" \\u25bc"):"")+"</th>").join("")+'<th class="cell-act"></th></tr>';
+  el("thead").querySelectorAll("th[data-k]").forEach(th=>{th.onclick=()=>{const k=th.dataset.k;if(sortKey===k)sortDir*=-1;else{sortKey=k;sortDir=1;}renderHead();render();};th.onkeydown=(e)=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();th.click();}};});
 }
 function tagHtml(tags){return tags?tags.split("|").filter(Boolean).map(t=>'<span class="tag'+(t==="review"?" review":"")+'">'+t+'</span>').join(""):"";}
 function render(){
@@ -233,18 +237,18 @@ function render(){
   if(sortKey){rows=rows.slice().sort((a,b)=>{let x=a[sortKey],y=b[sortKey];if(sortKey==="wholesale_cost"){x=parseFloat(x)||0;y=parseFloat(y)||0;return(x-y)*sortDir;}return String(x).localeCompare(String(y))*sortDir;});}
   el("count").textContent=rows.length+" of "+ROWS.length+" products";
   el("empty").hidden=rows.length>0;
-  el("tbody").innerHTML=rows.map(r=>{const k=rowKey(r);const isH=hidden.has(k);return"<tr"+(isH?' class="hidden-row"':"")+">"+COLS.map(([col])=>{if(col==="tags")return"<td>"+tagHtml(r.tags)+"</td>";if(col==="wholesale_cost")return'<td class="num mono">'+(r[col]?"$"+r[col]:"")+"</td>";if(col==="product_name")return"<td>"+r[col]+(activeCat==="All"?' <span class="cat">\\u00b7 '+r.category+"</span>":"")+"</td>";if(col==="sku"||col==="strength"||col==="form")return'<td class="mono">'+r[col]+"</td>";return"<td>"+(r[col]||"")+"</td>";}).join("")+'<td class="cell-act"><button class="btn-x" data-key="'+k+'" title="'+(isH?"Restore":"Dismiss")+'">'+(isH?"\\u21a9":"\\u00d7")+"</button></td></tr>";}).join("");
+  el("tbody").innerHTML=rows.map(r=>{const k=rowKey(r);const isH=hidden.has(k);return"<tr"+(isH?' class="hidden-row"':"")+">"+COLS.map(([col])=>{if(col==="tags")return"<td>"+tagHtml(r.tags)+"</td>";if(col==="wholesale_cost")return'<td class="num mono">'+(r[col]?"$"+r[col]:"")+"</td>";if(col==="product_name")return"<td>"+r[col]+(activeCat==="All"?' <span class="cat">\\u00b7 '+r.category+"</span>":"")+"</td>";if(col==="sku"||col==="strength"||col==="form")return'<td class="mono">'+r[col]+"</td>";return"<td>"+(r[col]||"")+"</td>";}).join("")+'<td class="cell-act"><button class="btn-x" data-key="'+k+'" data-idx="'+ROWS.indexOf(r)+'" aria-label="'+(SERVED?"Remove from CSV":(isH?"Restore":"Dismiss"))+'" title="'+(SERVED?"Remove from CSV":(isH?"Restore":"Dismiss"))+'">'+(isH?"\\u21a9":"\\u00d7")+"</button></td></tr>";}).join("");
 }
 const BCOLS=[["competitor","Competitor"],["product_name","Product"],["ingredients","Ingredients"],["retail_price","Retail Price"],["supply","Supply / Billing"],["differentiator","Differentiator"]];
 let blendCat="All",blendSortKey=null,blendSortDir=1;
 function blendCounts(cat){return cat==="All"?BLENDS.length:BLENDS.filter(r=>r.category===cat).length;}
 function renderBlendTabs(){
-  el("blend-tabs").innerHTML=BLEND_CATS.map(c=>'<span class="tab'+(c===blendCat?' active':'')+'" data-c="'+c+'">'+c+'<span class="n">'+blendCounts(c)+'</span></span>').join("");
+  el("blend-tabs").innerHTML=BLEND_CATS.map(c=>'<button class="tab'+(c===blendCat?' active':'')+'" data-c="'+c+'">'+c+'<span class="n">'+blendCounts(c)+'</span></button>').join("");
   el("blend-tabs").querySelectorAll(".tab").forEach(t=>t.onclick=()=>{blendCat=t.dataset.c;renderBlendTabs();renderBlends();});
 }
 function renderBlendHead(){
-  el("blend-thead").innerHTML="<tr>"+BCOLS.map(([k,l])=>'<th data-k="'+k+'">'+l+(blendSortKey===k?(blendSortDir>0?" \\u25b2":" \\u25bc"):"")+"</th>").join("")+"</tr>";
-  el("blend-thead").querySelectorAll("th[data-k]").forEach(th=>th.onclick=()=>{const k=th.dataset.k;if(blendSortKey===k)blendSortDir*=-1;else{blendSortKey=k;blendSortDir=1;}renderBlends();});
+  el("blend-thead").innerHTML="<tr>"+BCOLS.map(([k,l])=>'<th data-k="'+k+'" tabindex="0" role="columnheader" aria-sort="'+(blendSortKey===k?(blendSortDir>0?"ascending":"descending"):"none")+'">'+l+(blendSortKey===k?(blendSortDir>0?" \\u25b2":" \\u25bc"):"")+"</th>").join("")+"</tr>";
+  el("blend-thead").querySelectorAll("th[data-k]").forEach(th=>{th.onclick=()=>{const k=th.dataset.k;if(blendSortKey===k)blendSortDir*=-1;else{blendSortKey=k;blendSortDir=1;}renderBlendHead();renderBlends();};th.onkeydown=(e)=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();th.click();}};});
 }
 function renderBlends(){
   const q=el("bq").value.trim().toLowerCase();
@@ -270,8 +274,9 @@ el("page-switch").querySelectorAll("button").forEach(btn=>{
 el("pharm").innerHTML=PHARMS.map(p=>'<option>'+p+'</option>').join("");
 el("q").oninput=render;el("pharm").onchange=render;el("rx").onchange=render;
 el("bq").oninput=renderBlends;
-el("tbody").addEventListener("click",e=>{const r=e.target.closest(".btn-x");if(!r)return;const k=r.dataset.key;if(hidden.has(k))hidden.delete(k);else hidden.add(k);saveHidden();renderHiddenBar();render();});
+el("tbody").addEventListener("click",async e=>{const btn=e.target.closest(".btn-x");if(!btn)return;if(SERVED){const row=ROWS[+btn.dataset.idx];if(!row)return;if(!confirm('Remove "'+row.product_name+'" from formulary.csv? This is permanent.'))return;btn.disabled=true;try{const res=await fetch('/api/remove',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(row)});const j=await res.json();if(j.ok){location.reload();}else{alert('Remove failed: '+(j.reason||'unknown'));btn.disabled=false;}}catch(err){alert('Remove failed: '+err);btn.disabled=false;}return;}const k=btn.dataset.key;if(hidden.has(k))hidden.delete(k);else hidden.add(k);saveHidden();renderHiddenBar();render();});
 renderTabs();renderHead();renderHiddenBar();render();
+if(SERVED){document.querySelector('.meta').insertAdjacentHTML('beforeend',' \\u2014 <span style="color:var(--accent)">editing mode: \\u00d7 removes from CSV</span>');}
 renderBlendTabs();renderBlendHead();renderBlends();
 </script>
 </body>
