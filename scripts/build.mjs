@@ -128,6 +128,8 @@ function writeHtml(rows, blends) {
   th,td { text-align:left; padding:10px 14px; border-bottom:1px solid var(--line); vertical-align:top; }
   th { position:sticky; top:0; background:var(--head); font-size:11px; text-transform:uppercase;
     letter-spacing:.06em; color:var(--muted); cursor:pointer; font-weight:500; }
+  th:first-child { border-top-left-radius:18px; }
+  th:last-child { border-top-right-radius:18px; }
   td.num,th.num { text-align:right; font-variant-numeric:tabular-nums; }
   .mono { font-family:var(--mono); font-size:12px; }
   .tag { display:inline-block; background:var(--chip); border:1px solid var(--line); border-radius:6px;
