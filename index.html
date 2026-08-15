@@ -252,7 +252,7 @@ const ROWS = [{"category":"Hormone Therapy","product_name":"Anastrozole","active
 const CATS = ["All","Sexual Wellness","Hair Restoration","Peptide Therapy","Weight Management","Hormone Therapy","Dermatology","Wellness / Longevity","Supplies & Fees"];
 const PHARMS = ["All","V Pharm","Peptides Supplier","S Pharm"];
 const COLS = [
-  ["product_name","Product"],["strength","Strength"],["form","Form"],["package","Package"],
+  ["category","Category"],["product_name","Product"],["strength","Strength"],["form","Form"],["package","Package"],
   ["pharmacy","Pharmacy"],["sku","SKU"],["wholesale_cost","Wholesale $"],["tags","Tags"],["notes","Notes"]
 ];
 let activeCat = "All", sortKey = null, sortDir = 1;
@@ -278,7 +278,7 @@ function renderTabs(){
   el("tabs").innerHTML = CATS.map(c =>
     '<span class="tab'+(c===activeCat?' active':'')+'" data-c="'+c+'">'+c+'<span class="n">'+counts(c)+'</span></span>'
   ).join("");
-  el("tabs").querySelectorAll(".tab").forEach(t=>t.onclick=()=>{ activeCat=t.dataset.c; renderTabs(); render(); });
+  el("tabs").querySelectorAll(".tab").forEach(t=>t.onclick=()=>{ activeCat=t.dataset.c; renderTabs(); render(); el("tabs").scrollIntoView({behavior:"smooth",block:"start"}); });
 }
 function renderHead(){
   el("thead").innerHTML = "<tr>"+COLS.map(([k,l])=>
@@ -327,7 +327,8 @@ function render(){
     return '<tr'+(isHidden?' class="row-hidden"':'')+'>'+COLS.map(([k])=>{
       if(k==="tags") return "<td>"+tagHtml(r.tags)+"</td>";
       if(k==="wholesale_cost") return '<td class="num mono">'+(r[k]?"$"+r[k]:"")+"</td>";
-      if(k==="product_name") return '<td>'+r[k]+(activeCat==="All"?' <span class="cat">· '+r.category+'</span>':'')+"</td>";
+      if(k==="category") return '<td><span class="cat">'+r[k]+'</span></td>';
+      if(k==="product_name") return '<td>'+r[k]+"</td>";
       if(k==="sku"||k==="strength"||k==="form") return '<td class="mono">'+r[k]+"</td>";
       return "<td>"+(r[k]||"")+"</td>";
     }).join('')+actionCell+'</tr>';
