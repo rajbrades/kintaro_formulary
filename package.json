@@ -1,0 +1,11 @@
+{
+  "name": "kintaro-formulary",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Categorized compounded-medication formulary — CSV source of truth, generated snapshot + browsable viewer.",
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}
