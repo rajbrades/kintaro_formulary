@@ -136,7 +136,7 @@
   tbody tr:hover td { background:rgba(236,230,216,.035); }
   th {
     position:sticky;
-    top:65px;
+    top:72px;
     z-index:4;
     background:var(--head);
     color:var(--muted);
@@ -343,7 +343,12 @@ el("tbody").addEventListener("click", e=>{
   if(d){ hidden.add(d.dataset.key); saveHidden(); renderHiddenBar(); render(); }
   if(r){ hidden.delete(r.dataset.key); saveHidden(); renderHiddenBar(); render(); }
 });
-renderTabs(); renderHead(); renderHiddenBar(); render();
+function syncStickyTop(){
+  const h = document.querySelector('.controls').offsetHeight;
+  document.querySelectorAll('#thead th').forEach(th => th.style.top = h+'px');
+}
+window.addEventListener('resize', syncStickyTop);
+renderTabs(); renderHead(); renderHiddenBar(); render(); syncStickyTop();
 </script>
 </body>
 </html>
