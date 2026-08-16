@@ -74,6 +74,8 @@
   .pricing-guide dd { margin:0; color:var(--accent); font-variant-numeric:tabular-nums; text-align:right; }
   .pricing-guide-note { margin:10px 0 0; font-size:12px; }
   input[type=checkbox] { accent-color:var(--accent); }
+  .supply-note { max-width:1440px; margin:10px auto 0; padding:0 24px; color:var(--muted); font-size:12px; }
+  .supply-note strong { color:var(--fg); font-weight:500; }
   .wrap { max-width:1488px; margin:0 auto; padding:18px 24px 64px; overflow-x:auto; }
   table { border-collapse:separate; border-spacing:0; width:100%; min-width:1120px; border:1px solid var(--line); border-radius:18px; }
   th,td { text-align:left; padding:10px 14px; border-bottom:1px solid var(--line); vertical-align:top; }
@@ -120,12 +122,13 @@
     .field-label select { width:100%; max-width:none; }
     .pricing-guide { margin:14px 16px 0; }
     .pricing-guide summary { display:grid; grid-template-columns:minmax(0,1fr) auto; }
-    .pricing-guide-summary { grid-column:1 / -1; grid-row:2; margin-left:0; overflow-wrap:anywhere; }
+    .pricing-guide-summary { display:none; }
     .pricing-guide-chevron { grid-column:2; grid-row:1; }
     .pricing-guide-grid { grid-template-columns:1fr; gap:18px; }
     .pricing-guide-section + .pricing-guide-section { padding:18px 0 0; border-left:0; border-top:1px solid var(--line); }
     .pricing-guide dl div { grid-template-columns:1fr; gap:2px; }
     .pricing-guide dd { text-align:left; overflow-wrap:anywhere; }
+    .supply-note { padding-inline:16px; }
     .wrap { padding-inline:16px; }
   }
 </style>
@@ -201,6 +204,7 @@
       <option value="standard">Standard · $35</option><option value="twoDay">2-day · $20 retail</option><option value="overnight">Overnight · $35 retail</option>
     </select></label>
   </div></div>
+  <p class="supply-note"><strong>* Plan days are commercial estimates:</strong> 30 days per month. Verify package duration and prescribed quantity before setting a final price.</p>
   <div class="hidden-bar" id="hidden-bar" hidden></div>
   <div class="wrap"><table><thead id="thead"></thead><tbody id="tbody"></tbody></table></div>
   <div class="empty" id="empty" hidden>No matching products.</div>

@@ -9,6 +9,7 @@
 - Suggested retail defaults to the requested $35 standard shipping cost per order.
 - The viewer also models 2-day shipping at $15 cost / $20 retail and overnight at $25 cost / $35 retail.
 - Injectable Tirzepatide and Semaglutide orders default to cold overnight shipping at $25 Kintaro cost and $35 retail; syringes and alcohol pads are included, plus a $25 processing fee per order.
+- Plan days are commercial estimates using 30 days per month; verify package duration and prescribed quantity before setting a final price.
 
 ## Summary
 
