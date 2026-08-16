@@ -12,26 +12,27 @@ const oral = {
 const packaged = { ...oral, form: "cream", package: "30mLTube", wholesale_cost: "27.5" };
 const vcoOral = { ...oral, package: "60 units", pharmacy: "VCO", wholesale_cost: "54.2" };
 const testosterone = { ...oral, product_name: "Testosterone Cypionate", wholesale_cost: "0.88" };
+const trt = { ...oral, product_name: "TRT Injectable commercial", wholesale_cost: "20" };
 const semaglutide = { ...packaged, product_name: "Semaglutide + B12", form: "injectable", package: "2mL", wholesale_cost: "55" };
 
 assert.deepEqual(monthlyProductCost(oral), { amount: 15, basis: "30 units / month" });
 assert.deepEqual(monthlyProductCost(packaged), { amount: 27.5, basis: "1 package / month" });
 assert.deepEqual(monthlyProductCost(vcoOral), { amount: 54.2, basis: "1 package / month" });
-assert.equal(suggestedRetail(15, 1, 35), 75);
-assert.equal(suggestedRetail(15, 1, 35, 35), 90);
+assert.equal(suggestedRetail(15, 1, 35), 90);
 assert.deepEqual(orderFulfillment(oral), {
-  shippingMethod: "twoDay",
-  shippingCost: 15,
-  shippingRetail: 20,
+  shippingMethod: "standard",
+  shippingCost: 35,
+  shippingRetail: 35,
   processingFee: 0,
   suppliesIncluded: false,
 });
-assert.equal(enrichPricing(oral).pricing.plans.async[2].suggested_retail, 90);
+assert.equal(enrichPricing(oral).pricing.plans.async[2].suggested_retail, 106);
 assert.equal(enrichPricing(oral).pricing.plans.async[1].two_day_suggested_retail, 75);
 assert.equal(enrichPricing(oral).pricing.plans.async[1].overnight_suggested_retail, 90);
-assert.equal(enrichPricing(oral).pricing.plans.sync[1].suggested_retail, 85);
-assert.equal(enrichPricing(packaged).pricing.plans.async[2].suggested_retail, 117);
-assert.equal(enrichPricing(testosterone).pricing.plans.controlled[1].suggested_retail, 108);
+assert.equal(enrichPricing(oral).pricing.plans.sync[1].suggested_retail, 101);
+assert.equal(enrichPricing(packaged).pricing.plans.async[2].suggested_retail, 133);
+assert.equal(enrichPricing(testosterone).pricing.plans.controlled[1].suggested_retail, 124);
+assert.ok(enrichPricing(trt).pricing.plans.controlled);
 assert.equal(includesColdShipping(semaglutide), true);
 assert.deepEqual(orderFulfillment(semaglutide), {
   shippingMethod: "coldOvernight",

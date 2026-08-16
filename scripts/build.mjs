@@ -34,9 +34,10 @@ function writeMarkdown(rows, byCat) {
   L.push("");
   L.push("## Fulfillment");
   L.push("");
-  L.push("- Suggested retail defaults to 2-day shipping: $15 Kintaro cost and $20 retail.");
-  L.push("- Overnight shipping is $25 Kintaro cost and $35 retail.");
+  L.push("- Suggested retail defaults to the requested $35 standard shipping cost per order.");
+  L.push("- The viewer also models 2-day shipping at $15 cost / $20 retail and overnight at $25 cost / $35 retail.");
   L.push("- Injectable Tirzepatide and Semaglutide orders default to cold overnight shipping at $25 Kintaro cost and $35 retail; syringes and alcohol pads are included, plus a $25 processing fee per order.");
+  L.push("- Plan days are commercial estimates using 30 days per month; verify package duration and prescribed quantity before setting a final price.");
   L.push("");
   L.push("## Summary");
   L.push("");
@@ -141,11 +142,28 @@ function writeHtml(rows, blends) {
   label.mono { display:flex; align-items:center; gap:8px; color:var(--muted); }
   .field-label { display:flex; align-items:center; gap:8px; color:var(--muted); white-space:nowrap; }
   .field-label span { font-family:var(--mono); font-size:11px; letter-spacing:.06em; text-transform:uppercase; }
-  .pricing-strip { display:flex; align-items:center; gap:9px 18px; flex-wrap:wrap; max-width:1440px; margin:18px auto 0; padding:12px 14px; border:1px solid var(--line); border-radius:14px; background:var(--chip); color:var(--muted); font-size:12px; }
-  .pricing-strip strong { color:var(--fg); font-weight:600; }
-  .pricing-strip b { color:var(--accent); font-weight:500; }
-  .pricing-warning { margin-left:auto; color:var(--fg); }
+  .pricing-guide { max-width:1440px; margin:18px auto 0; border:1px solid var(--line); border-radius:14px; background:var(--chip); color:var(--muted); }
+  .pricing-guide summary { display:flex; align-items:center; gap:12px; min-height:44px; padding:10px 14px; cursor:pointer; list-style:none; }
+  .pricing-guide summary::-webkit-details-marker { display:none; }
+  .pricing-guide summary:hover .pricing-guide-title { color:var(--accent); }
+  .pricing-guide-title { color:var(--fg); font-weight:600; transition:color .2s; }
+  .pricing-guide-summary { margin-left:auto; font-size:12px; }
+  .pricing-guide-chevron { flex:none; width:16px; height:16px; color:var(--accent); transition:transform .2s ease-out; }
+  .pricing-guide[open] .pricing-guide-chevron { transform:rotate(180deg); }
+  @media (prefers-reduced-motion:reduce) { .pricing-guide-title,.pricing-guide-chevron { transition:none; } }
+  .pricing-guide-content { padding:4px 14px 16px; border-top:1px solid var(--line); }
+  .pricing-guide-intro { max-width:65ch; margin:12px 0 16px; color:var(--fg); }
+  .pricing-guide-grid { display:grid; grid-template-columns:1.35fr 1fr 1fr; gap:24px; }
+  .pricing-guide-section + .pricing-guide-section { padding-left:24px; border-left:1px solid var(--line); }
+  .pricing-guide h2 { margin:0 0 10px; color:var(--muted); font:500 10px/1.4 var(--mono); letter-spacing:.08em; text-transform:uppercase; }
+  .pricing-guide dl { display:grid; gap:8px; margin:0; }
+  .pricing-guide dl div { display:grid; grid-template-columns:minmax(120px,1fr) auto; gap:12px; align-items:baseline; }
+  .pricing-guide dt { color:var(--fg); }
+  .pricing-guide dd { margin:0; color:var(--accent); font-variant-numeric:tabular-nums; text-align:right; }
+  .pricing-guide-note { margin:10px 0 0; font-size:12px; }
   input[type=checkbox] { accent-color:var(--accent); }
+  .supply-note { max-width:1440px; margin:10px auto 0; padding:0 24px; color:var(--muted); font-size:12px; }
+  .supply-note strong { color:var(--fg); font-weight:500; }
   .wrap { max-width:1488px; margin:0 auto; padding:18px 24px 64px; overflow-x:auto; }
   table { border-collapse:separate; border-spacing:0; width:100%; min-width:1120px; border:1px solid var(--line); border-radius:18px; }
   th,td { text-align:left; padding:10px 14px; border-bottom:1px solid var(--line); vertical-align:top; }
@@ -190,9 +208,15 @@ function writeHtml(rows, blends) {
     input[type=search] { min-width:100%; }
     .field-label { display:grid; gap:6px; flex:1 1 100%; white-space:normal; }
     .field-label select { width:100%; max-width:none; }
-    .pricing-strip { margin:14px 16px 0; align-items:flex-start; }
-    .pricing-strip strong,.pricing-strip span { min-width:0; flex-basis:100%; overflow-wrap:anywhere; }
-    .pricing-warning { margin-left:0; }
+    .pricing-guide { margin:14px 16px 0; }
+    .pricing-guide summary { display:grid; grid-template-columns:minmax(0,1fr) auto; }
+    .pricing-guide-summary { display:none; }
+    .pricing-guide-chevron { grid-column:2; grid-row:1; }
+    .pricing-guide-grid { grid-template-columns:1fr; gap:18px; }
+    .pricing-guide-section + .pricing-guide-section { padding:18px 0 0; border-left:0; border-top:1px solid var(--line); }
+    .pricing-guide dl div { grid-template-columns:1fr; gap:2px; }
+    .pricing-guide dd { text-align:left; overflow-wrap:anywhere; }
+    .supply-note { padding-inline:16px; }
     .wrap { padding-inline:16px; }
   }
 </style>
@@ -207,23 +231,52 @@ function writeHtml(rows, blends) {
     <h1>The <em>formulary.</em></h1>
     <div class="meta"><span id="count"></span></div>
     <div class="page-switch" id="page-switch">
-      <button class="active" data-page="formulary">Formulary</button>
-      <button data-page="blends">Potential Blends</button>
+      <button class="active" data-page="formulary" aria-pressed="true">Formulary</button>
+      <button data-page="blends" aria-pressed="false">Potential Blends</button>
     </div>
   </div>
 </header>
 <div class="page active" id="page-formulary">
   <div class="tabs" id="tabs"></div>
-  <div class="pricing-strip" aria-label="Suggested retail pricing inputs">
-    <strong>Cost-covering retail estimate</strong>
-    <span>2-day shipping <b>$15 cost · $20 retail</b></span>
-    <span>Overnight shipping <b>$25 cost · $35 retail</b></span>
-    <span>Injectable Tirzepatide/Semaglutide <b>cold overnight · $25 cost / $35 retail · supplies included · $25 processing</b></span>
-    <span>Medical branch <b>2.5%</b></span>
-    <span>Merchant processing <b>3%</b></span>
-    <span>Testosterone consult <b>$55 synchronous</b></span>
-    <span class="pricing-warning">Product cost included · no profit margin added</span>
-  </div>
+  <details class="pricing-guide">
+    <summary>
+      <span class="pricing-guide-title">Pricing assumptions</span>
+      <span class="pricing-guide-summary">Cost-covering estimate · $35 standard shipping · no medication margin</span>
+      <svg class="pricing-guide-chevron" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="pricing-guide-content">
+      <p class="pricing-guide-intro">Suggested retail includes product cost plus the fulfillment, consult, and transaction costs below.</p>
+      <div class="pricing-guide-grid">
+        <section class="pricing-guide-section" aria-labelledby="pricing-fulfillment">
+          <h2 id="pricing-fulfillment">Fulfillment</h2>
+          <dl>
+            <div><dt>Standard shipping</dt><dd>$35 cost · $35 retail</dd></div>
+            <div><dt>Optional 2-day shipping</dt><dd>$15 cost · $20 retail</dd></div>
+            <div><dt>Overnight shipping</dt><dd>$25 cost · $35 retail</dd></div>
+            <div><dt>Cold overnight</dt><dd>$25 cost · $35 retail</dd></div>
+          </dl>
+          <p class="pricing-guide-note">Injectable Tirzepatide and Semaglutide include supplies and add a $25 processing fee. Optional shipping retail may exceed shipping cost.</p>
+        </section>
+        <section class="pricing-guide-section" aria-labelledby="pricing-consults">
+          <h2 id="pricing-consults">Consults</h2>
+          <dl>
+            <div><dt>Non-controlled · async</dt><dd>$35</dd></div>
+            <div><dt>Non-controlled · sync</dt><dd>$45</dd></div>
+            <div><dt>Testosterone · sync</dt><dd>$55</dd></div>
+          </dl>
+        </section>
+        <section class="pricing-guide-section" aria-labelledby="pricing-fees">
+          <h2 id="pricing-fees">Transaction</h2>
+          <dl>
+            <div><dt>Medical branch</dt><dd>2.5%</dd></div>
+            <div><dt>Merchant processing</dt><dd>3%</dd></div>
+            <div><dt>Medication margin</dt><dd>None</dd></div>
+            <div><dt>Plan days</dt><dd>30 / month; verify package and prescribed quantity</dd></div>
+          </dl>
+        </section>
+      </div>
+    </div>
+  </details>
   <div class="controls"><div class="controls-inner">
     <input type="search" id="q" placeholder="Search product, ingredient, SKU, strength..." aria-label="Search formulary" />
     <select id="pharm" aria-label="Filter by pharmacy"></select>
@@ -236,9 +289,10 @@ function writeHtml(rows, blends) {
       <option value="async">Asynchronous · $35</option><option value="sync">Synchronous · $45</option>
     </select></label>
     <label class="field-label"><span>Shipping</span><select id="shipping" aria-label="Select shipping cost for non-cold-chain orders">
-      <option value="twoDay">2-day · $20 retail</option><option value="overnight">Overnight · $35 retail</option>
+      <option value="standard">Standard · $35</option><option value="twoDay">2-day · $20 retail</option><option value="overnight">Overnight · $35 retail</option>
     </select></label>
   </div></div>
+  <p class="supply-note"><strong>* Plan days are commercial estimates:</strong> 30 days per month. Verify package duration and prescribed quantity before setting a final price.</p>
   <div class="hidden-bar" id="hidden-bar" hidden></div>
   <div class="wrap"><table><thead id="thead"></thead><tbody id="tbody"></tbody></table></div>
   <div class="empty" id="empty" hidden>No matching products.</div>
@@ -259,7 +313,7 @@ const BLENDS = ${blendsData};
 const BLEND_CATS = ${blendCats};
 const SERVED = location.protocol !== 'file:';
 const COLS = [
-  ["product_name","Product"],["suggested_retail","Suggested retail"],["days_supply","Est. days"],
+  ["product_name","Product"],["suggested_retail","Suggested retail"],["days_supply","Plan days*"],
   ["strength","Strength"],["form","Form"],["package","Package"],["pharmacy","Pharmacy"],
   ["sku","SKU"],["wholesale_cost","Wholesale $"],["tags","Tags"],["notes","Notes"]
 ];
@@ -276,8 +330,8 @@ function selectedPlan(r){
   const consult=r.pricing.plans.controlled?"controlled":el("consult").value;
   return r.pricing.plans[consult][el("plan").value];
 }
-function selectedRetail(r,plan){return el("shipping").value==="overnight"?plan?.overnight_suggested_retail:plan?.two_day_suggested_retail;}
-function fulfillmentNote(r){const f=r.pricing.fulfillment;if(f.shipping_method==="coldOvernight")return"cold overnight · $35 retail shipping + syringes/pads included · $25 processing";return el("shipping").value==="overnight"?"overnight · $35 retail shipping":"2-day · $20 retail shipping";}
+function selectedRetail(r,plan){const shipping=el("shipping").value;if(shipping==="overnight")return plan?.overnight_suggested_retail;if(shipping==="twoDay")return plan?.two_day_suggested_retail;return plan?.suggested_retail;}
+function fulfillmentNote(r){const f=r.pricing.fulfillment;if(f.shipping_method==="coldOvernight")return"cold overnight · $35 retail shipping + syringes/pads included · $25 processing";const shipping=el("shipping").value;return shipping==="overnight"?"overnight · $35 retail shipping":shipping==="twoDay"?"2-day · $20 retail shipping":"standard · $35 shipping";}
 function sortValue(r,key){const plan=selectedPlan(r);if(key==="suggested_retail")return selectedRetail(r,plan)??-1;return key==="days_supply"?(plan?.days_supply??-1):r[key];}
 function renderHiddenBar(){
   const bar=el('hidden-bar');
@@ -288,7 +342,7 @@ function renderHiddenBar(){
   el('btn-clear-hidden').onclick=()=>{hidden.clear();saveHidden();showHidden=false;renderHiddenBar();render();};
 }
 function renderTabs(){
-  el("tabs").innerHTML=CATS.map(c=>'<button class="tab'+(c===activeCat?' active':'')+'" data-c="'+c+'">'+c+'<span class="n">'+counts(c)+'</span></button>').join("");
+  el("tabs").innerHTML=CATS.map(c=>'<button class="tab'+(c===activeCat?' active':'')+'" data-c="'+c+'" aria-pressed="'+(c===activeCat)+'">'+c+'<span class="n">'+counts(c)+'</span></button>').join("");
   el("tabs").querySelectorAll(".tab").forEach(t=>t.onclick=()=>{activeCat=t.dataset.c;renderTabs();render();});
 }
 function renderHead(){
@@ -312,7 +366,7 @@ function render(){
   if(sortKey){rows=rows.slice().sort((a,b)=>{let x=sortValue(a,sortKey),y=sortValue(b,sortKey);if(["wholesale_cost","days_supply","suggested_retail"].includes(sortKey)){x=parseFloat(x)||0;y=parseFloat(y)||0;return(x-y)*sortDir;}return String(x).localeCompare(String(y))*sortDir;});}
   el("count").textContent=rows.length+" of "+ROWS.length+" products";
   el("empty").hidden=rows.length>0;
-  el("tbody").innerHTML=rows.map(r=>{const k=rowKey(r);const isH=hidden.has(k),plan=selectedPlan(r),retail=selectedRetail(r,plan);return"<tr"+(isH?' class="hidden-row"':"")+">"+COLS.map(([col])=>{if(col==="tags")return"<td>"+tagHtml(r.tags)+"</td>";if(col==="wholesale_cost")return'<td class="num mono">'+(r[col]?"$"+r[col]:"")+"</td>";if(col==="days_supply")return'<td class="num mono">'+(plan?plan.days_supply:"")+"</td>";if(col==="suggested_retail")return'<td class="num price" title="'+(r.pricing?r.pricing.product_cost_basis+"; "+r.pricing.consult_type:"")+'">'+(plan?"$"+retail:"")+(plan?'<span class="price-note">'+fulfillmentNote(r)+(r.pricing.plans.controlled?' · sync $55':'')+'</span>':"")+"</td>";if(col==="product_name")return"<td>"+r[col]+(activeCat==="All"?' <span class="cat">\\u00b7 '+r.category+"</span>":"")+"</td>";if(col==="sku"||col==="strength"||col==="form")return'<td class="mono">'+r[col]+"</td>";return"<td>"+(r[col]||"")+"</td>";}).join("")+'<td class="cell-act"><button class="btn-x" data-key="'+k+'" data-idx="'+ROWS.indexOf(r)+'" aria-label="'+(SERVED?"Remove from CSV":(isH?"Restore":"Dismiss"))+'" title="'+(SERVED?"Remove from CSV":(isH?"Restore":"Dismiss"))+'">'+(isH?"\\u21a9":"\\u00d7")+"</button></td></tr>";}).join("");
+  el("tbody").innerHTML=rows.map(r=>{const k=rowKey(r);const isH=hidden.has(k),plan=selectedPlan(r),retail=selectedRetail(r,plan);return"<tr"+(isH?' class="hidden-row"':"")+">"+COLS.map(([col])=>{if(col==="tags")return"<td>"+tagHtml(r.tags)+"</td>";if(col==="wholesale_cost")return'<td class="num mono">'+(r[col]?"$"+r[col]:"")+"</td>";if(col==="days_supply")return'<td class="num mono">'+(plan?plan.days_supply:"")+"</td>";if(col==="suggested_retail")return'<td class="num price" title="'+(r.pricing?r.pricing.product_cost_basis+"; "+r.pricing.consult_type:"")+'">'+(plan?"$"+retail:"")+(plan?'<span class="price-note">'+r.pricing.product_cost_basis+' · '+fulfillmentNote(r)+(r.pricing.plans.controlled?' · sync $55':'')+'</span>':"")+"</td>";if(col==="product_name")return"<td>"+r[col]+(activeCat==="All"?' <span class="cat">\\u00b7 '+r.category+"</span>":"")+"</td>";if(col==="sku"||col==="strength"||col==="form")return'<td class="mono">'+r[col]+"</td>";return"<td>"+(r[col]||"")+"</td>";}).join("")+'<td class="cell-act"><button class="btn-x" data-key="'+k+'" data-idx="'+ROWS.indexOf(r)+'" aria-label="'+(SERVED?"Remove from CSV":(isH?"Restore":"Dismiss"))+'" title="'+(SERVED?"Remove from CSV":(isH?"Restore":"Dismiss"))+'">'+(isH?"\\u21a9":"\\u00d7")+"</button></td></tr>";}).join("");
 }
 const BCOLS=[["competitor","Competitor"],["product_name","Product"],["format","Format"],["ingredients","Ingredients"],["retail_price","Retail Price"],["supply","Supply / Billing"],["differentiator","Differentiator"]];
 let blendCat="All",blendSortKey=null,blendSortDir=1;
@@ -338,8 +392,8 @@ function renderBlends(){
 }
 el("page-switch").querySelectorAll("button").forEach(btn=>{
   btn.onclick=()=>{
-    el("page-switch").querySelectorAll("button").forEach(b=>b.classList.remove("active"));
-    btn.classList.add("active");
+    el("page-switch").querySelectorAll("button").forEach(b=>{b.classList.remove("active");b.setAttribute("aria-pressed","false");});
+    btn.classList.add("active");btn.setAttribute("aria-pressed","true");
     document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
     el("page-"+btn.dataset.page).classList.add("active");
     if(btn.dataset.page==="blends")el("count").textContent=BLENDS.length+" competitor blends";
