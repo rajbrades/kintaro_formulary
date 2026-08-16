@@ -5,7 +5,7 @@
   "type": "module",
   "description": "Categorized compounded-medication formulary — CSV source of truth, generated snapshot + browsable viewer.",
   "scripts": {
-    "check": "node scripts/check.mjs",
+    "check": "node scripts/check.mjs && node scripts/check-pricing.mjs",
     "build": "node scripts/build.mjs",
     "serve": "node scripts/serve.mjs"
   }

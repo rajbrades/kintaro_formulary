@@ -9,14 +9,15 @@ dependencies.
 rebuild — everything downstream regenerates.
 
 Origin: seeded from three telehealth pharmacy price sheets
-(`TeleLaunch_Pharmacy_Pricing.xlsx`, tabs *V Pharm*, *Peptides*, *S Pharm*),
-**410 products** categorized into 9 clinical categories.
+(`TeleLaunch_Pharmacy_Pricing.xlsx`, tabs *V Pharm*, *Peptides*, *S Pharm*) and
+expanded with `Official VCO Peptide Pricing Catalog 2026.xlsx`, **551 products**
+categorized into 9 clinical categories.
 
 ## Quick start
 
 ```bash
-node scripts/check.mjs     # validate the CSV
-node scripts/build.mjs     # regenerate FORMULARY.md, index.html, formulary.json
+npm run check              # validate the CSV and pricing model
+npm run build              # regenerate FORMULARY.md, index.html, formulary.json
 open index.html            # browse (category tabs, search, pharmacy filter, sortable prices)
 ```
 
@@ -43,6 +44,8 @@ most recent one.
 | `formulary.csv` | **Source of truth** — hand-edited. |
 | `lib/vocab.mjs` | Controlled category / form / pharmacy / tag vocabulary + CSV parser (single source of truth, imported by both scripts). |
 | `scripts/check.mjs` | Validator — vocabulary, prices, duplicates, coverage. |
+| `lib/pricing.mjs` | Shared cost-covering retail model and 30/60/120/180-day estimates. |
+| `scripts/check-pricing.mjs` | Small assertion-based regression check for pricing calculations. |
 | `scripts/build.mjs` | Generator — emits the three artifacts below. |
 | `scripts/serve.mjs` | Local edit server — serves the viewer and writes password-gated removals to `formulary.csv`, archiving them to `archived.csv` (rebuilds automatically). |
 | `archived.csv` | *Generated on first removal* — soft-delete log of removed rows; **Undo** pops the last one back. |
@@ -71,17 +74,39 @@ column (no duplicate rows). Full breakdown in [`FORMULARY.md`](FORMULARY.md).
 | `strength` | optional | e.g. `20mg`, `1MG/ML`, `1.25mg/5mg per ml`. |
 | `form` | yes | `capsule`·`tablet`·`troche`·`cream`·`gel`·`lotion`·`solution`·`injectable`·`nasal-spray`·`patch`·`supply`·`other`. |
 | `package` | optional | e.g. `30mLTube`, `5mL`, `4 Patches`. |
-| `pharmacy` | yes | `V Pharm`·`Peptides Supplier`·`S Pharm`. |
+| `pharmacy` | yes | `V Pharm`·`Peptides Supplier`·`S Pharm`·`VCO`. |
 | `sku` | optional | Supplier SKU; blank when "available upon request". |
 | `wholesale_cost` | optional | Pharmacy cost from the source sheet (numeric). See caveat. |
-| `retail_price` | optional | **Left blank** — fill to layer your own margin. |
+| `retail_price` | optional | Manual final retail override; generated suggested prices are calculated separately. |
 | `rx_required` | yes | `yes` / `no`. |
 | `tags` | optional | Pipe-separated secondary-use tags (see `lib/vocab.mjs`). Use `review` to flag rows needing a human decision. |
 | `notes` | optional | Free text: `form inferred`, ship restrictions, review reasons, etc. |
 
 **Price caveat:** `wholesale_cost` is verbatim from each pharmacy's sheet and the
-**basis differs** — V Pharm oral prices are per-unit (per pill); creams/vials/kits
-are per-package. `strength` + `package` give the basis.
+**basis differs** — V Pharm oral prices without a package are treated as per-unit
+(per pill/troche); all other prices are treated as per-package. VCO `TBD` and
+blank prices remain blank for review. `strength` + `package` give the source basis.
+
+## Suggested retail model
+
+The generated viewer, JSON, and Markdown snapshot include cost-covering retail
+estimates for one-time 30-day, 60-day, 120-day, and 180-day supplies. The model
+uses:
+
+- $35 asynchronous provider consult for non-controlled medications by default;
+  the viewer can switch these rows to the $45 synchronous consult.
+- $55 synchronous provider consult for Testosterone rows.
+- $35 standard shipping per order for generated suggestions.
+- Injectable Tirzepatide and Semaglutide orders include cold overnight shipping, syringes, and alcohol pads, plus a $25 processing fee per order.
+- The viewer also offers optional $15 two-day and $25 overnight scenarios for other orders.
+- 2.5% medical-branch fee plus 3% merchant fee on the full transaction.
+- Product cost scaled by supply length: 30 units per month for unpackaged V Pharm
+  oral products, otherwise one package per month.
+
+The formula is `ceil((consult + fulfillment + product cost) / (1 - 0.025 - 0.03))`, where fulfillment is the applicable shipping charge or the Tirzepatide/Semaglutide processing fee.
+These are operational estimates, not clinical dispensing instructions, and do
+not include a profit margin. Confirm package duration and prescribed quantity
+before using a suggestion as a final patient price.
 
 ## Maintaining it (living document)
 
@@ -104,9 +129,11 @@ use it in the CSV. **Add a product:** add a CSV row.
 
 - **~36 rows carry a `form inferred` note** where the source sheet didn't state a
   dosage form; it was inferred from the SKU (e.g. `…CAP`, `…TROCHE`, `…CREA`).
-- **6 rows are tagged `review`** (Spironolactone × 4, Estriol+tretinoin,
-  Dihexa/Tesofensine) — ambiguous primary category, listed at the top of
-  `FORMULARY.md`.
-- The source workbook's *Example of Profits* tab is a margin model and is
-  intentionally **not** part of the drug list; the blank `retail_price` column is
-  where margin belongs.
+- **23 rows are tagged `review`** — the original 6 ambiguous rows plus 17 VCO
+  rows with `TBD`/blank prices or source price-verification notes.
+- The VCO import preserves its source category and description in `notes`. Its
+  ambiguous `Pill/Tablet/Capsule` form is normalized to `capsule`, and `Spray`
+  is normalized to `nasal-spray`; both decisions are noted on affected rows.
+- The source workbook's *Example of Profits* tab is not part of the drug list.
+  The generated suggested prices cover the configured inputs only; use
+  `retail_price` when a reviewed final price or added margin is available.

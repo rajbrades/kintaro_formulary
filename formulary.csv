@@ -406,6 +406,147 @@ Weight Management,Semaglutide + Glycine,Semaglutide 3.75mg + Glycine 12.5mg 2.5m
 Weight Management,Semaglutide + Glycine,Semaglutide 6.25mg + Glycine 12.5mg 2.5mL,6.25mg + Glycine 12.5mg 2.5mL,injectable,2.5mL,S Pharm,,25,,yes,glp-1,
 Weight Management,Semaglutide + Glycine,Semaglutide 8.75mg + Glycine 17.5mg 3.5mL,8.75mg + Glycine 17.5mg 3.5mL,injectable,3.5mL,S Pharm,,35,,yes,glp-1,
 Weight Management,Semaglutide + Glycine,Semaglutide 10mg + Glycine 10mg 2mL,10mg + Glycine 10mg 2mL,injectable,2mL,S Pharm,,40,,yes,glp-1,
-Supplies & Fees,Total Processing Fee,,,other,,S Pharm,,25,,no,,
-Supplies & Fees,Cold Chain Overnight Shipping - Included,,,other,,S Pharm,,0,,no,,
-Supplies & Fees,Syringes + Alcohol Pads - Included,,,supply,,S Pharm,,0,,no,,
+Supplies & Fees,Tirzepatide/Semaglutide Processing Fee,,,other,,S Pharm,,25,,no,,Injectable Tirzepatide and Semaglutide orders only
+Supplies & Fees,Cold Chain Overnight Shipping - Included,,,other,,S Pharm,,0,,no,,Injectable Tirzepatide and Semaglutide orders only
+Supplies & Fees,Syringes + Alcohol Pads - Included,,,supply,,S Pharm,,0,,no,,Injectable Tirzepatide and Semaglutide orders only
+Weight Management,5-Amino-1mq,,2mg/mL / 10MG,injectable,5mL,VCO,,50.8,,yes,,VCO 2026 source category: Allergy. Nicotinamide N-methyltransferase inhibitor for metabolic optimization.
+Weight Management,5-Amino-1mq,,50MG,capsule,60 units,VCO,,54.2,,yes,,"VCO 2026 source category: Allergy. Nicotinamide N-methyltransferase inhibitor for metabolic optimization. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Weight Management,BAM15,,60MG,capsule,1 units,VCO,,217.4,,yes,,"VCO 2026 source category: Allergy. Mitochondrial uncoupler that increases energy expenditure. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Peptide Therapy,PNC-27,,1mg/mL / 5MG,injectable,5mL,VCO,,62.7,,yes,,VCO 2026 source category: Allergy. Anticancer peptide with selective activity against tumor cells.
+Peptide Therapy,PNC-27,,10MG,capsule,1 units,VCO,,91.6,,yes,,"VCO 2026 source category: Allergy. Anticancer peptide with selective activity against tumor cells. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Peptide Therapy,VIP,,2mg/mL / 10MG,injectable,5mL,VCO,,96.7,,yes,,VCO 2026 source category: Allergy. Vasoactive Intestinal Peptide with diverse physiological effects.
+Peptide Therapy,VIP,,1mg/mL / 5MG,injectable,5mL,VCO,,66.1,,yes,,VCO 2026 source category: Allergy. Vasoactive Intestinal Peptide with diverse physiological effects.
+Wellness / Longevity,ARA-290,,2mg/mL / 10MG,injectable,5mL,VCO,,49.1,,yes,,VCO 2026 source category: Anti-Aging & Longevity. Tissue-protective peptide derived from erythropoietin.
+Wellness / Longevity,ARA-290,,3mg/mL / 15MG,injectable,5mL,VCO,,54.2,,yes,,VCO 2026 source category: Anti-Aging & Longevity. Tissue-protective peptide derived from erythropoietin.
+Wellness / Longevity,ARA-290,,10mg/mL / 50MG,injectable,5mL,VCO,,122.2,,yes,,VCO 2026 source category: Anti-Aging & Longevity. Tissue-protective peptide derived from erythropoietin.
+Wellness / Longevity,ARA-290,,1mg/mL / 5MG,injectable,5mL,VCO,,45.7,,yes,,VCO 2026 source category: Anti-Aging & Longevity. Tissue-protective peptide derived from erythropoietin.
+Wellness / Longevity,FOXO4,,2mg/mL / 10MG,injectable,5mL,VCO,,118.8,,yes,,VCO 2026 source category: Anti-Aging & Longevity. Cell-penetrating peptide targeting senescent cells.
+Wellness / Longevity,FOXO4,,8mg/mL / 40MG,injectable,5mL,VCO,,190.2,,yes,,VCO 2026 source category: Anti-Aging & Longevity. Cell-penetrating peptide targeting senescent cells.
+Wellness / Longevity,Glutathione,,300mg/mL / 1500,injectable,5mL,VCO,,49.1,,yes,,VCO 2026 source category: Anti-Aging & Longevity. Master antioxidant tripeptide for detoxification and cellular protection.
+Wellness / Longevity,Glutathione,,5MG,nasal-spray,,VCO,,47.4,,yes,,"VCO 2026 source category: Anti-Aging & Longevity. Master antioxidant tripeptide for detoxification and cellular protection. Nasal route inferred from source ""Spray""."
+Wellness / Longevity,Snap-8,,2mg/mL / 10MG,injectable,5mL,VCO,,49.1,,yes,,VCO 2026 source category: Anti-Aging & Longevity. Cosmetic peptide that reduces facial wrinkles.
+Wellness / Longevity,Thymalin (Thymulin),,10MG,capsule,1 units,VCO,,45.7,,yes,,"VCO 2026 source category: Anti-Aging & Longevity. Thymic peptide extract supporting immune system function. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Supplies & Fees,Bac Water,,N/A / 10ML,injectable,5mL,VCO,,27.0,,no,,VCO 2026 source category: Consumables. Bacteriostatic water; diluent for reconstituting peptides.
+Supplies & Fees,Bac Water,,N/A / 3ML,injectable,5mL,VCO,,21.9,,no,,VCO 2026 source category: Consumables. Bacteriostatic water; diluent for reconstituting peptides.
+Supplies & Fees,Bac Water,,N/A / 5ML,injectable,5mL,VCO,,27.0,,no,,VCO 2026 source category: Consumables. Bacteriostatic water; diluent for reconstituting peptides.
+Hormone Therapy,Arimidex/Adex,,.1MG,capsule,60 units,VCO,,66.1,,yes,aromatase-inhibitor,"VCO 2026 source category: Hormones. Anastrozole, reversible aromatase inhibitor. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Hormone Therapy,Arimidex/Adex,,.5MG,capsule,60 units,VCO,,55.9,,yes,aromatase-inhibitor,"VCO 2026 source category: Hormones. Anastrozole, reversible aromatase inhibitor. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Peptide Therapy,CJC-1295 No DAC + IPA,,1mg/1mg/mL / 5/5MG,injectable,5mL,VCO,,49.1,,yes,,VCO 2026 source category: Hormones. GHRH analog stimulating natural pituitary GH secretion.
+Peptide Therapy,CJC-1295 No DAC + IPA,,2mg/2mg/mL / 10/10MG,injectable,5mL,VCO,,113.7,,yes,,VCO 2026 source category: Hormones. GHRH analog stimulating natural pituitary GH secretion.
+Hormone Therapy,Clomiphene,,12.5MG,capsule,60 units,VCO,,47.4,,yes,fertility,"VCO 2026 source category: Hormones. SERM that stimulates gonadotropin release. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Hormone Therapy,Clomiphene,,50MG,capsule,60 units,VCO,,55.9,,yes,fertility,"VCO 2026 source category: Hormones. SERM that stimulates gonadotropin release. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Hormone Therapy,DHEA,,25mg,capsule,90 units,VCO,,69.5,,yes,,"VCO 2026 source category: Hormones. DHEA hormone precursor. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Hormone Therapy,Enclomiphene,,12.5MG,capsule,60 units,VCO,,54.2,,yes,fertility,"VCO 2026 source category: Hormones. SERM that stimulates gonadotropin release. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Hormone Therapy,Enclomiphene,,25MG,capsule,60 units,VCO,,72.9,,yes,fertility,"VCO 2026 source category: Hormones. SERM that stimulates gonadotropin release. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Hormone Therapy,Exemestane,,10MG,capsule,60 units,VCO,,62.7,,yes,aromatase-inhibitor,"VCO 2026 source category: Hormones. Steroidal aromatase inhibitor. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Peptide Therapy,Follistatin,,0.2mg/mL / 1MG,injectable,5mL,VCO,,123.9,,yes,,VCO 2026 source category: Hormones. Protein that inhibits myostatin and activin.
+Peptide Therapy,GHRP-2,,2mg/mL / 10MG,injectable,5mL,VCO,,45.7,,yes,,VCO 2026 source category: Hormones. GH-releasing peptide acting on ghrelin receptors.
+Peptide Therapy,GHRP-2,,1mg/mL / 5MG,injectable,5mL,VCO,,33.8,,yes,,VCO 2026 source category: Hormones. GH-releasing peptide acting on ghrelin receptors.
+Peptide Therapy,GHRP-6,,2mg/mL / 10MG,injectable,5mL,VCO,,42.3,,yes,,VCO 2026 source category: Hormones. GH-releasing peptide with appetite-stimulating properties.
+Peptide Therapy,GHRP-6,,1mg/mL / 5MG,injectable,5mL,VCO,,33.8,,yes,,VCO 2026 source category: Hormones. GH-releasing peptide with appetite-stimulating properties.
+Hormone Therapy,Gonadorelin,,2mg/mL / 10MG,injectable,5mL,VCO,,37.2,,yes,fertility,VCO 2026 source category: Hormones. Synthetic GnRH stimulating natural LH and FSH release.
+Hormone Therapy,HCG,,2000IU/mL / 10KIU,injectable,5mL,VCO,,76.3,,yes,fertility,VCO 2026 source category: Hormones. Human Chorionic Gonadotropin mimicking LH activity.
+Hormone Therapy,HCG,,300IU/mL / 1500IU,injectable,5mL,VCO,,42.3,,yes,fertility,VCO 2026 source category: Hormones. Human Chorionic Gonadotropin mimicking LH activity.
+Hormone Therapy,HCG,,1000IU/mL / 5KIU,injectable,5mL,VCO,,50.8,,yes,fertility,VCO 2026 source category: Hormones. Human Chorionic Gonadotropin mimicking LH activity.
+Peptide Therapy,Hexarelin,,2mg/mL / 10MG,injectable,5mL,VCO,,57.6,,yes,,VCO 2026 source category: Hormones. Potent GH secretagogue with cardioprotective properties.
+Peptide Therapy,Hexarelin,,1mg/mL / 5MG,injectable,5mL,VCO,,37.2,,yes,,VCO 2026 source category: Hormones. Potent GH secretagogue with cardioprotective properties.
+Hormone Therapy,HGH Somatropin,,6IU/mL / 30IU(10MG),injectable,5mL,VCO,,140.9,,yes,anabolic,VCO 2026 source category: Hormones. Recombinant human growth hormone.
+Hormone Therapy,HMG,,75 IU,injectable,5mL,VCO,,61.0,,yes,fertility,VCO 2026 source category: Hormones. Human Menopausal Gonadotropin containing FSH and LH.
+Hormone Therapy,Letrozole,,1MG,capsule,60 units,VCO,,55.9,,yes,aromatase-inhibitor,"VCO 2026 source category: Hormones. Potent aromatase inhibitor. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Peptide Therapy,MGF,,0.4mg/mL / 2MG,injectable,5mL,VCO,,45.7,,yes,,VCO 2026 source category: Hormones. Splice variant of IGF-1 produced in response to muscle stress.
+Peptide Therapy,PEG-MGF,,0.4mg/mL / 2MG,injectable,5mL,VCO,,49.1,,yes,,VCO 2026 source category: Hormones. Splice variant of IGF-1 produced in response to muscle stress.
+Peptide Therapy,PEG-MGF,,1mg/mL / 5MG,injectable,5mL,VCO,,54.2,,yes,,VCO 2026 source category: Hormones. Splice variant of IGF-1 produced in response to muscle stress.
+Wellness / Longevity,Pramipexole,,.2MG,capsule,60 units,VCO,,49.1,,yes,,"VCO 2026 source category: Hormones. Dopamine agonist supporting dopaminergic function. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Hormone Therapy,Raloxifene,,20MG,capsule,60 units,VCO,,62.7,,yes,,"VCO 2026 source category: Hormones. SERM with tissue-specific effects. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Peptide Therapy,Sermorelin,,2mg/mL / 10MG,injectable,5mL,VCO,,69.5,,yes,,VCO 2026 source category: Hormones. GHRH analog stimulating natural GH release.
+Peptide Therapy,Sermorelin,,3mg/mL / 15MG,injectable,5mL,VCO,,103.5,,yes,,VCO 2026 source category: Hormones. GHRH analog stimulating natural GH release.
+Peptide Therapy,Sermorelin,,1mg/mL / 5MG,injectable,5mL,VCO,,49.1,,yes,,VCO 2026 source category: Hormones. GHRH analog stimulating natural GH release.
+Peptide Therapy,Sermorelin,,0.1mg/mL / 500mcg,injectable,5mL,VCO,,93.3,,yes,,VCO 2026 source category: Hormones. GHRH analog stimulating natural GH release.
+Peptide Therapy,Sermorelin,,15MG,nasal-spray,,VCO,,98.4,,yes,,"VCO 2026 source category: Hormones. GHRH analog stimulating natural GH release. Nasal route inferred from source ""Spray""."
+Hormone Therapy,T3,,100MCG,capsule,60 units,VCO,,47.4,,yes,,"VCO 2026 source category: Hormones. Liothyronine, the active thyroid hormone. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Hormone Therapy,Tamoxifen,,20MG,capsule,60 units,VCO,,62.7,,yes,,"VCO 2026 source category: Hormones. SERM blocking estrogen in breast tissue. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Wellness / Longevity,Telmisartan,,40MG,capsule,60 units,VCO,,50.8,,yes,,"VCO 2026 source category: Hormones. Angiotensin receptor blocker with PPAR-gamma activation. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Peptide Therapy,Tesamorelin,,2mg/mL / 10MG,injectable,5mL,VCO,,79.7,,yes,,VCO 2026 source category: Hormones. GHRH analog clinically proven to reduce visceral adipose tissue.
+Wellness / Longevity,Naltrexone,,1.5mg,capsule,30 units,VCO,,69.5,,yes,,"VCO 2026 source category: Immune. Opioid receptor antagonist supporting addiction treatment and immune modulation. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Wellness / Longevity,Naltrexone,,3mg,capsule,30 units,VCO,,69.5,,yes,,"VCO 2026 source category: Immune. Opioid receptor antagonist supporting addiction treatment and immune modulation. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Wellness / Longevity,Naltrexone,,4.5mg,capsule,30 units,VCO,,69.5,,yes,,"VCO 2026 source category: Immune. Opioid receptor antagonist supporting addiction treatment and immune modulation. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Wellness / Longevity,Naltrexone,,50mg,capsule,30 units,VCO,,154.5,,yes,,"VCO 2026 source category: Immune. Opioid receptor antagonist supporting addiction treatment and immune modulation. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Wellness / Longevity,Naltrexone,,50mg,capsule,100 units,VCO,,154.5,,yes,,"VCO 2026 source category: Immune. Opioid receptor antagonist supporting addiction treatment and immune modulation. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Wellness / Longevity,Bromantane,,50MG,capsule,60 units,VCO,,59.3,,yes,,"VCO 2026 source category: Mental Health. Synthetic adaptogen with stimulant and anxiolytic properties. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Wellness / Longevity,Cerebrolysin,,12mg/mL / 60MG,injectable,5mL,VCO,,105.2,,yes,,VCO 2026 source category: Mental Health. Porcine brain-derived peptide preparation with neurotrophic factors.
+Wellness / Longevity,Cerebrolysin Spray,,5MG,nasal-spray,,VCO,,47.4,,yes,,"VCO 2026 source category: Mental Health. Porcine brain-derived peptide preparation with neurotrophic factors. Nasal route inferred from source ""Spray""."
+Wellness / Longevity,"CRL-40,941 (Fladrafinil)",,25MG,capsule,60 units,VCO,,62.7,,yes,,"VCO 2026 source category: Mental Health. Fluorinated eugeroic compound promoting wakefulness. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Wellness / Longevity,DMAA,,12.5MG,capsule,60 units,VCO,,62.7,,yes,,"VCO 2026 source category: Mental Health. Sympathomimetic amine with stimulant properties. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Wellness / Longevity,Methylene Blue,,15MG/ML (30ML),solution,2mL,VCO,,62.7,,yes,,VCO 2026 source category: Mental Health. Redox-active compound supporting mitochondrial function.
+Wellness / Longevity,NAD+,,200mg/mL / 1000MG,injectable,5mL,VCO,,57.6,,yes,,VCO 2026 source category: Mental Health. Coenzyme for cellular metabolism.
+Wellness / Longevity,NAD+,,100mg/mL / 500MG,injectable,5mL,VCO,,45.7,,yes,,VCO 2026 source category: Mental Health. Coenzyme for cellular metabolism.
+Wellness / Longevity,NAD+,,5MG,nasal-spray,,VCO,,54.2,,yes,,"VCO 2026 source category: Mental Health. Coenzyme for cellular metabolism. Nasal route inferred from source ""Spray""."
+Wellness / Longevity,NAD+,,500MG,capsule,60 units,VCO,,45.7,,yes,,"VCO 2026 source category: Mental Health. Coenzyme for cellular metabolism. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Wellness / Longevity,NAD+,,1000MG,capsule,60 units,VCO,,57.6,,yes,,"VCO 2026 source category: Mental Health. Coenzyme for cellular metabolism. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Wellness / Longevity,P21,,1mg/mL / 5MG,injectable,5mL,VCO,,118.8,,yes,,VCO 2026 source category: Mental Health. Synthetic peptide mimicking CNTF.
+Wellness / Longevity,Phenibut,,300MG,capsule,60 units,VCO,,59.3,,yes,,"VCO 2026 source category: Mental Health. GABA-B receptor agonist with anxiolytic effects. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Weight Management,Metformin,,500mg,capsule,90 units,VCO,,52.5,,yes,,"VCO 2026 source category: Metabolic. Biguanide medication for diabetes management. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Hormone Therapy,191-AA,,3IU/mL / 15IU,injectable,5mL,VCO,,47.4,,yes,anabolic,VCO 2026 source category: Other. 191 amino acid human growth hormone (somatropin).
+Peptide Therapy,ACE-031,,0.2mg/mL / 1MG,injectable,5mL,VCO,,96.7,,yes,,VCO 2026 source category: Other. Activin receptor decoy that inhibits myostatin signaling.
+Weight Management,AICAR,,10mg/mL / 50MG,injectable,5mL,VCO,,49.1,,yes,,VCO 2026 source category: Other. AMPK activator mimicking exercise effects.
+Weight Management,GW501516 (Cardarine),,10MG,capsule,60 units,VCO,,62.7,,yes,,"VCO 2026 source category: Other. PPAR-delta agonist enhancing metabolic function. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Hormone Therapy,LGD4033,,5MG,capsule,60 units,VCO,,62.7,,yes,anabolic,"VCO 2026 source category: Other. Selective androgen receptor modulator (SARM). Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Weight Management,Lipo-C (Methionine/Inositol/Choline/L-Carn/B12),Methionine / Inositol / Choline / L-Carn / B12,,injectable,5mL,VCO,,62.7,,yes,lipotropic|injectable,VCO 2026 source category: Other. Lipotropic injection blend.
+Hormone Therapy,MK-2866 (Ostarine),,12.5MG,capsule,60 units,VCO,,55.9,,yes,anabolic,"VCO 2026 source category: Other. SARM supporting muscle preservation. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Wellness / Longevity,MK-777,,10MG,capsule,60 units,VCO,,71.2,,yes,,"VCO 2026 source category: Other. Research compound supporting metabolic and anabolic function. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Wellness / Longevity,Ondansetron,,Default,capsule,,VCO,,11.7,,yes,,"VCO 2026 source category: Other. Antiemetic. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Hormone Therapy,Rad 140 (Testolone),,10MG,capsule,60 units,VCO,,62.7,,yes,anabolic,"VCO 2026 source category: Other. Potent SARM with strong anabolic effects. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Hormone Therapy,S23,,10MG,capsule,60 units,VCO,,67.8,,yes,anabolic,"VCO 2026 source category: Other. Potent SARM with strong binding affinity. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Hormone Therapy,S4 (Andarine),,12.5MG,capsule,60 units,VCO,,67.8,,yes,anabolic,"VCO 2026 source category: Other. SARM supporting muscle development and fat oxidation. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Wellness / Longevity,SR9009 (Stenabolic),,10MG,capsule,60 units,VCO,,71.2,,yes,,"VCO 2026 source category: Other. Rev-ErbA agonist affecting circadian rhythm and metabolism. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Hormone Therapy,YK11,,5MG,capsule,60 units,VCO,,71.2,,yes,anabolic,"VCO 2026 source category: Other. SARM and myostatin inhibitor. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Peptide Therapy,BPC-157,,2mg/mL / 10MG,injectable,5mL,VCO,,49.1,,yes,,VCO 2026 source category: Pain Management. Synthetic pentadecapeptide promoting accelerated tissue healing.
+Peptide Therapy,BPC-157,,3mg/mL / 15MG,injectable,5mL,VCO,,66.1,,yes,,VCO 2026 source category: Pain Management. Synthetic pentadecapeptide promoting accelerated tissue healing.
+Peptide Therapy,BPC-157,,4mg/mL / 20MG,injectable,5mL,VCO,,78.0,,yes,,VCO 2026 source category: Pain Management. Synthetic pentadecapeptide promoting accelerated tissue healing.
+Peptide Therapy,BPC-157,,1mg/mL / 5MG,injectable,5mL,VCO,,37.0,,yes,review,VCO 2026 source category: Pain Management. Synthetic pentadecapeptide promoting accelerated tissue healing. Price not clearly aligned in source PDF; inferred from layout - please verify
+Peptide Therapy,GHK-CU,,20mg/mL / 100MG,injectable,5mL,VCO,,47.4,,yes,,VCO 2026 source category: Pain Management. Copper peptide complex with regenerative and anti-aging properties.
+Peptide Therapy,GHK-CU,,10mg/mL / 50MG,injectable,5mL,VCO,,33.8,,yes,,VCO 2026 source category: Pain Management. Copper peptide complex with regenerative and anti-aging properties.
+Peptide Therapy,Glow,,27/5/10,injectable,5mL,VCO,,83.1,,yes,,VCO 2026 source category: Pain Management. Regenerative blend: GHK-CU(27mg)+BPC-157(5mg)+TB-500(10mg).
+Peptide Therapy,Klow,,50/10/10/10,injectable,5mL,VCO,,78.0,,yes,review,VCO 2026 source category: Pain Management. Blend: GHK-CU(50mg)+TB-500(10mg)+BPC-157(10mg)+KPV(10mg). Price not clearly aligned in source PDF; inferred from layout - please verify
+Peptide Therapy,APEX (Tesamorelin/CJC-1295/Ipamorelin/BPC-157),Tesamorelin / CJC-1295 / Ipamorelin / BPC-157,10mg|6mg|12mg|10mg,injectable,5mL,VCO,,256.5,,yes,,"VCO 2026 source category: Peptide Blend. Synergistic peptide blend for GH optimization, muscle, fat loss, healing."
+Peptide Therapy,Atlas (CJC-1295/Ipamorelin/Tesamorelin/IGF-1 LR3),CJC-1295 / Ipamorelin / Tesamorelin / IGF-1 LR3,6mg|12mg|10mg|1mg,injectable,5mL,VCO,,256.5,,yes,,"VCO 2026 source category: Peptide Blend. Comprehensive anabolic blend for muscle, fat metabolism, recovery."
+Peptide Therapy,Bodhi (Semax/Selank/BPC-157/KPV),Semax / Selank / BPC-157 / KPV,5mg|5mg|10mg|5mg,injectable,5mL,VCO,,,,yes,review,VCO 2026 source category: Peptide Blend. Gut-brain wellness blend. Price TBD in source workbook.
+Peptide Therapy,Crave (PT-141/Oxytocin/Kisspeptin-10),PT-141 / Oxytocin / Kisspeptin-10,10mg|10mg|10mg,injectable,5mL,VCO,,,,yes,review,VCO 2026 source category: Peptide Blend. Sexual wellness blend. Price TBD in source workbook.
+Peptide Therapy,Empress (MOTS-c/BPC-157/GHK-CU/Kisspeptin-10),MOTS-c / BPC-157 / GHK-CU / Kisspeptin-10,10mg|10mg|50mg|10mg,injectable,5mL,VCO,,,,yes,review,"VCO 2026 source category: Peptide Blend. Metabolic, tissue repair, skin, hormonal blend. Price TBD in source workbook."
+Peptide Therapy,Fountain of Youth (GHK-CU/BPC-157/TB500/Epitalon),GHK-CU / BPC-157 / TB500 / Epitalon,50mg|10mg|10mg|10mg,injectable,5mL,VCO,,256.5,,yes,,"VCO 2026 source category: Peptide Blend. Anti-aging blend for skin, repair, regeneration, longevity."
+Peptide Therapy,Hyperion (Ipamorelin/Tesamorelin),Ipamorelin / Tesamorelin,10mg|10mg,injectable,5mL,VCO,,256.5,,yes,,"VCO 2026 source category: Peptide Blend. Dual-action GH blend for fat loss, muscle, metabolism."
+Peptide Therapy,Hypnøs (DSIP/Selank/CJC-1295/Ipamorelin),DSIP / Selank / CJC-1295 / Ipamorelin,5mg|5mg|6mg|12mg,injectable,5mL,VCO,,,,yes,review,VCO 2026 source category: Peptide Blend. Sleep-optimized recovery blend. Price TBD in source workbook.
+Peptide Therapy,Inferno (AOD-9604/CJC-1295/Ipamorelin/MOTS-c),AOD-9604 / CJC-1295 / Ipamorelin / MOTS-c,10mg|6mg|12mg|10mg,injectable,5mL,VCO,,,,yes,review,"VCO 2026 source category: Peptide Blend. Aggressive metabolic blend for fat loss, recomposition. Price TBD in source workbook."
+Peptide Therapy,Kali (BPC-157/MOTS-C/5-Amino-1MQ/Tesamorelin),BPC-157 / MOTS-C / 5-Amino-1MQ / Tesamorelin,10mg|10mg|10mg|10mg,injectable,5mL,VCO,,,,yes,review,VCO 2026 source category: Peptide Blend. Multi-pathway metabolic transformation blend. Price TBD in source workbook.
+Peptide Therapy,Love & Happiness (Oxytocin/PT-141),Oxytocin / PT-141,10mg|10mg,injectable,5mL,VCO,,,,yes,review,"VCO 2026 source category: Peptide Blend. Intimacy blend for sexual wellness, bonding, mood. Price TBD in source workbook."
+Peptide Therapy,Lucid (Semax/Selank/MOTS-c/Tesamorelin),Semax / Selank / MOTS-c / Tesamorelin,5mg|5mg|10mg|10mg,injectable,5mL,VCO,,,,yes,review,VCO 2026 source category: Peptide Blend. Nootropic-metabolic blend. Price TBD in source workbook.
+Peptide Therapy,Prometheus (CJC-1295/Ipamorelin),CJC-1295 / Ipamorelin,6mg|12mg,injectable,5mL,VCO,,256.5,,yes,,"VCO 2026 source category: Peptide Blend. GH secretagogue blend for muscle, fat metabolism, recovery."
+Peptide Therapy,Samson & Delilah (GHK-CU/CJC-1295/Ipamorelin/TB-500),GHK-CU / CJC-1295 / Ipamorelin / TB-500,50mg|6mg|12mg|10mg,injectable,5mL,VCO,,,,yes,review,VCO 2026 source category: Peptide Blend. Growth and recovery blend. Price TBD in source workbook.
+Peptide Therapy,Selene (GHK-CU/Tesamorelin),GHK-CU / Tesamorelin,50mg|10mg,injectable,5mL,VCO,,,,yes,review,VCO 2026 source category: Peptide Blend. Anti-aging rejuvenation blend. Price TBD in source workbook.
+Peptide Therapy,Sentinel (Thymosin Alpha-1/BPC-157/KPV/LL-37),Thymosin Alpha-1 / BPC-157 / KPV / LL-37,5mg|10mg|5mg|5mg,injectable,5mL,VCO,,,,yes,review,VCO 2026 source category: Peptide Blend. Immune defense blend. Price TBD in source workbook.
+Sexual Wellness,Dapoxetine HCL,,7.5MG,capsule,60 units,VCO,,62.7,,yes,,"VCO 2026 source category: Sexual Health. SSRI for on-demand use supporting ejaculatory control. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Sexual Wellness,Oxytocin,,2MG,nasal-spray,,VCO,,37.2,,yes,,"VCO 2026 source category: Sexual Health. Neuropeptide hormone involved in social bonding. Nasal route inferred from source ""Spray""."
+Sexual Wellness,Oxytocin,,10MG,capsule,1 units,VCO,,40.6,,yes,,"VCO 2026 source category: Sexual Health. Neuropeptide hormone involved in social bonding. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Sexual Wellness,Sildenafil,,30mg,capsule,1 units,VCO,,23.6,,yes,,"VCO 2026 source category: Sexual Health. PDE5 inhibitor enhancing blood flow. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Sexual Wellness,Sildenafil,,55mg,capsule,1 units,VCO,,30.4,,yes,,"VCO 2026 source category: Sexual Health. PDE5 inhibitor enhancing blood flow. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Sexual Wellness,Sildenafil,,105mg,capsule,1 units,VCO,,44.0,,yes,,"VCO 2026 source category: Sexual Health. PDE5 inhibitor enhancing blood flow. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Sexual Wellness,Tadalafil (Cialis),,10MG,capsule,60 units,VCO,,55.9,,yes,,"VCO 2026 source category: Sexual Health. PDE5 inhibitor with extended duration of action. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
+Dermatology,Botulinum toxin,,100iu,injectable,5mL,VCO,,159.6,,yes,,VCO 2026 source category: Skin Care. Neurotoxin that temporarily reduces muscle activity.
+Peptide Therapy,Dermorphin,,1mg/mL / 5MG,injectable,5mL,VCO,,38.9,,yes,,VCO 2026 source category: Skin Care. Potent opioid peptide with analgesic properties.
+Wellness / Longevity,B12 Injection,,1000mcg/mL / 1000mcg/mL,injectable,1mL,VCO,,57.6,,yes,,VCO 2026 source category: Vitamins & Supplements. Cyanocobalamin/methylcobalamin for B12 supplementation.
+Weight Management,AOD-9604 (non-gelling),,1.2mg/mL / 6MG,injectable,5mL,VCO,,42.3,,yes,,VCO 2026 source category: Weight Loss. Modified HGH fragment (176-191) promoting fat metabolism.
+Weight Management,Cagrilintide,,2mg/mL / 10MG,injectable,5mL,VCO,,79.7,,yes,amylin,VCO 2026 source category: Weight Loss. Long-acting amylin analog enhancing satiety signaling.
+Weight Management,Cagrilintide,,1mg/mL / 5MG,injectable,5mL,VCO,,62.7,,yes,amylin,VCO 2026 source category: Weight Loss. Long-acting amylin analog enhancing satiety signaling.
+Weight Management,Cagrilintide + Sema,,0.5/0.5mg/mL / 2.5mg/2.5mg,injectable,5mL,VCO,,79.7,,yes,amylin|glp-1,VCO 2026 source category: Weight Loss. Amylin analog + GLP-1 agonist combination.
+Weight Management,Cagrilintide + Sema,,1mg/1mg/mL / 5mg/5mg,injectable,5mL,VCO,,89.9,,yes,amylin|glp-1,VCO 2026 source category: Weight Loss. Amylin analog + GLP-1 agonist combination.
+Weight Management,CagriSema,,1mg/1mg/mL / 5/5MG,injectable,5mL,VCO,,62.7,,yes,amylin|glp-1,VCO 2026 source category: Weight Loss. Cagrilintide + semaglutide dual-mechanism therapy.
+Weight Management,CagriSema,,2mg/2mg/mL / 10/10MG,injectable,5mL,VCO,,93.3,,yes,amylin|glp-1,VCO 2026 source category: Weight Loss. Cagrilintide + semaglutide dual-mechanism therapy.
+Weight Management,Liraglutide,,2mg/mL / 10MG,injectable,5mL,VCO,,57.6,,yes,glp-1,VCO 2026 source category: Weight Loss. GLP-1 receptor agonist for weight management.
+Weight Management,Liraglutide,,4mg/mL / 20MG,injectable,5mL,VCO,,83.1,,yes,glp-1,VCO 2026 source category: Weight Loss. GLP-1 receptor agonist for weight management.
+Weight Management,Mazdutide,,2mg/mL / 10MG,injectable,5mL,VCO,,110.3,,yes,glp-1,VCO 2026 source category: Weight Loss. Dual GLP-1/glucagon receptor agonist.
+Weight Management,MOTS-C,,2mg/mL / 10MG,injectable,5mL,VCO,,42.3,,yes,,VCO 2026 source category: Weight Loss. Mitochondrial-derived peptide regulating metabolic homeostasis.
+Weight Management,Retatrutide,,4mg/mL / 20MG,injectable,5mL,VCO,,90.0,,yes,glp-1|review,VCO 2026 source category: Weight Loss. Investigational triple agonist (GIP/GLP-1/glucagon). Price not clearly aligned in source PDF; inferred from layout - please verify
+Weight Management,Retatrutide,,2mg/mL / 10MG,injectable,5mL,VCO,,70.0,,yes,glp-1|review,VCO 2026 source category: Weight Loss. Investigational triple agonist (GIP/GLP-1/glucagon). Price not clearly aligned in source PDF; inferred from layout - please verify
+Weight Management,Retatrutide,,12mg/mL / 60mg,injectable,5mL,VCO,,,,yes,glp-1|review,VCO 2026 source category: Weight Loss. Investigational triple agonist (GIP/GLP-1/glucagon). Price TBD in source workbook.
+Weight Management,Retatrutide,,4.8mg/mL / 24mg,injectable,5mL,VCO,,,,yes,glp-1|review,VCO 2026 source category: Weight Loss. Investigational triple agonist (GIP/GLP-1/glucagon). Price blank in source workbook.
+Weight Management,Survodutide,,2mg/mL / 10MG,injectable,5mL,VCO,,144.3,,yes,glp-1,VCO 2026 source category: Weight Loss. Dual GLP-1/glucagon receptor agonist.
