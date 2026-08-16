@@ -96,14 +96,14 @@ uses:
 - $35 asynchronous provider consult for non-controlled medications by default;
   the viewer can switch these rows to the $45 synchronous consult.
 - $55 synchronous provider consult for Testosterone rows.
-- $35 standard shipping per order for generated suggestions.
-- Injectable Tirzepatide and Semaglutide orders include cold overnight shipping, syringes, and alcohol pads, plus a $25 processing fee per order.
-- The viewer also offers optional $15 two-day and $25 overnight scenarios for other orders.
+- Two-day shipping costs Kintaro $15 and is charged at $20 retail by default.
+- Overnight shipping costs Kintaro $25 and is charged at $35 retail.
+- Injectable Tirzepatide and Semaglutide orders default to cold overnight shipping at $25 Kintaro cost and $35 retail; syringes and alcohol pads are included, plus a $25 processing fee per order.
 - 2.5% medical-branch fee plus 3% merchant fee on the full transaction.
 - Product cost scaled by supply length: 30 units per month for unpackaged V Pharm
   oral products, otherwise one package per month.
 
-The formula is `ceil((consult + fulfillment + product cost) / (1 - 0.025 - 0.03))`, where fulfillment is the applicable shipping charge or the Tirzepatide/Semaglutide processing fee.
+The formula is `ceil((consult + fulfillment + product cost) / (1 - 0.025 - 0.03))`, where fulfillment is the applicable retail shipping charge plus any Tirzepatide/Semaglutide processing fee. Shipping cost and retail charge are tracked separately.
 These are operational estimates, not clinical dispensing instructions, and do
 not include a profit margin. Confirm package duration and prescribed quantity
 before using a suggestion as a final patient price.

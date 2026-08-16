@@ -34,9 +34,9 @@ function writeMarkdown(rows, byCat) {
   L.push("");
   L.push("## Fulfillment");
   L.push("");
-  L.push("- Suggested retail uses the configured $35 standard shipping cost per order.");
-  L.push("- Injectable Tirzepatide and Semaglutide orders include cold overnight shipping, syringes, and alcohol pads; add a $25 processing fee per order.");
-  L.push("- The viewer also offers optional 2-day ($15) and overnight ($25) scenarios for other orders.");
+  L.push("- Suggested retail defaults to 2-day shipping: $15 Kintaro cost and $20 retail.");
+  L.push("- Overnight shipping is $25 Kintaro cost and $35 retail.");
+  L.push("- Injectable Tirzepatide and Semaglutide orders default to cold overnight shipping at $25 Kintaro cost and $35 retail; syringes and alcohol pads are included, plus a $25 processing fee per order.");
   L.push("");
   L.push("## Summary");
   L.push("");
@@ -191,8 +191,8 @@ function writeHtml(rows, blends) {
     .field-label { display:grid; gap:6px; flex:1 1 100%; white-space:normal; }
     .field-label select { width:100%; max-width:none; }
     .pricing-strip { margin:14px 16px 0; align-items:flex-start; }
-    .pricing-strip span { min-width:0; overflow-wrap:anywhere; }
-    .pricing-warning { margin-left:0; flex-basis:100%; }
+    .pricing-strip strong,.pricing-strip span { min-width:0; flex-basis:100%; overflow-wrap:anywhere; }
+    .pricing-warning { margin-left:0; }
     .wrap { padding-inline:16px; }
   }
 </style>
@@ -216,8 +216,9 @@ function writeHtml(rows, blends) {
   <div class="tabs" id="tabs"></div>
   <div class="pricing-strip" aria-label="Suggested retail pricing inputs">
     <strong>Cost-covering retail estimate</strong>
-    <span>Standard shipping <b>$35 / order</b></span>
-    <span>Injectable Tirzepatide/Semaglutide <b>cold shipping + supplies included · $25 processing</b></span>
+    <span>2-day shipping <b>$15 cost · $20 retail</b></span>
+    <span>Overnight shipping <b>$25 cost · $35 retail</b></span>
+    <span>Injectable Tirzepatide/Semaglutide <b>cold overnight · $25 cost / $35 retail · supplies included · $25 processing</b></span>
     <span>Medical branch <b>2.5%</b></span>
     <span>Merchant processing <b>3%</b></span>
     <span>Testosterone consult <b>$55 synchronous</b></span>
@@ -235,7 +236,7 @@ function writeHtml(rows, blends) {
       <option value="async">Asynchronous · $35</option><option value="sync">Synchronous · $45</option>
     </select></label>
     <label class="field-label"><span>Shipping</span><select id="shipping" aria-label="Select shipping cost for non-cold-chain orders">
-      <option value="standard">Standard · $35</option><option value="twoDay">2-day · $15</option><option value="overnight">Overnight · $25</option>
+      <option value="twoDay">2-day · $20 retail</option><option value="overnight">Overnight · $35 retail</option>
     </select></label>
   </div></div>
   <div class="hidden-bar" id="hidden-bar" hidden></div>
@@ -275,8 +276,8 @@ function selectedPlan(r){
   const consult=r.pricing.plans.controlled?"controlled":el("consult").value;
   return r.pricing.plans[consult][el("plan").value];
 }
-function selectedRetail(r,plan){const shipping=el("shipping").value;if(shipping==="overnight")return plan?.overnight_suggested_retail;if(shipping==="twoDay")return plan?.two_day_suggested_retail;return plan?.suggested_retail;}
-function fulfillmentNote(r){const f=r.pricing.fulfillment;if(f.shipping_method==="coldOvernight")return"cold overnight + syringes/pads included · $25 processing";const shipping=el("shipping").value;return shipping==="overnight"?"overnight · $25 shipping":shipping==="twoDay"?"2-day · $15 shipping":"standard · $35 shipping";}
+function selectedRetail(r,plan){return el("shipping").value==="overnight"?plan?.overnight_suggested_retail:plan?.two_day_suggested_retail;}
+function fulfillmentNote(r){const f=r.pricing.fulfillment;if(f.shipping_method==="coldOvernight")return"cold overnight · $35 retail shipping + syringes/pads included · $25 processing";return el("shipping").value==="overnight"?"overnight · $35 retail shipping":"2-day · $20 retail shipping";}
 function sortValue(r,key){const plan=selectedPlan(r);if(key==="suggested_retail")return selectedRetail(r,plan)??-1;return key==="days_supply"?(plan?.days_supply??-1):r[key];}
 function renderHiddenBar(){
   const bar=el('hidden-bar');
@@ -366,7 +367,7 @@ function setupDeleteWidget(){
 }
 el("tbody").addEventListener("click",async e=>{const btn=e.target.closest(".btn-x");if(!btn)return;if(SERVED){if(!canDelete())return;const row=ROWS[+btn.dataset.idx];if(!row)return;if(!confirm('Remove "'+row.product_name+'" from formulary.csv? It will be archived and can be undone.'))return;btn.disabled=true;try{const j=await api('/api/remove',{row:row});if(j.ok){location.reload();}else{alert('Remove failed: '+(j.reason||'unknown'));btn.disabled=false;}}catch(err){alert('Remove failed: '+err);btn.disabled=false;}return;}const k=btn.dataset.key;if(hidden.has(k))hidden.delete(k);else hidden.add(k);saveHidden();renderHiddenBar();render();});
 renderTabs();renderHead();renderHiddenBar();render();
-if(SERVED){setupDeleteWidget();}else{const n=document.createElement('span');n.style.cssText='margin-left:auto;color:var(--muted);font-size:12px';n.textContent='Deletion disabled — run "npm run serve" and open http://localhost:8000';document.querySelector('.controls-inner').appendChild(n);}
+if(SERVED){setupDeleteWidget();}else{const n=document.createElement('span');n.style.cssText='margin-left:auto;min-width:0;color:var(--muted);font-size:12px;text-align:right;overflow-wrap:anywhere';n.textContent='Deletion disabled — run "npm run serve" and open http://localhost:8000';document.querySelector('.controls-inner').appendChild(n);}
 renderBlendTabs();renderBlendHead();renderBlends();
 </script>
 </body>
