@@ -77,15 +77,17 @@ column (no duplicate rows). Full breakdown in [`FORMULARY.md`](FORMULARY.md).
 | `pharmacy` | yes | `V Pharm`·`Peptides Supplier`·`S Pharm`·`VCO`. |
 | `sku` | optional | Supplier SKU; blank when "available upon request". |
 | `wholesale_cost` | optional | Pharmacy cost from the source sheet (numeric). See caveat. |
+| `wholesale_basis` | yes | `per_unit` · `per_30_day` · `per_package` · `unknown`; controls how product cost is calculated. |
 | `retail_price` | optional | Manual final retail override; generated suggested prices are calculated separately. |
 | `rx_required` | yes | `yes` / `no`. |
 | `tags` | optional | Pipe-separated secondary-use tags (see `lib/vocab.mjs`). Use `review` to flag rows needing a human decision. |
 | `notes` | optional | Free text: `form inferred`, ship restrictions, review reasons, etc. |
 
-**Price caveat:** `wholesale_cost` is verbatim from each pharmacy's sheet and the
-**basis differs** — V Pharm oral prices without a package are treated as per-unit
-(per pill/troche); all other prices are treated as per-package. VCO `TBD` and
-blank prices remain blank for review. `strength` + `package` give the source basis.
+**Price caveat:** `wholesale_cost` is verbatim from each pharmacy's sheet and its
+basis is explicit in `wholesale_basis`. `per_unit` is multiplied by 30 for a
+30-day plan; `per_30_day` is already the full 30-day product cost; and
+`per_package` uses one package per month as a visible assumption. Rows without a
+confirmed price use `unknown` and do not receive a suggested retail price.
 
 ## Suggested retail model
 
@@ -100,8 +102,8 @@ uses:
 - Optional scenarios retain two-day shipping at $15 cost / $20 retail and overnight shipping at $25 cost / $35 retail.
 - Injectable Tirzepatide and Semaglutide orders default to cold overnight shipping at $25 Kintaro cost and $35 retail; syringes and alcohol pads are included, plus a $25 processing fee per order.
 - 2.5% medical-branch fee plus 3% merchant fee on the full transaction.
-- Product cost scaled by supply length: 30 units per month for unpackaged V Pharm
-  oral products, otherwise one package per month.
+- Product cost scaled from each row's explicit `wholesale_basis`; dosage form no
+  longer determines whether a quote is per-unit or a complete 30-day supply.
 
 The formula is `ceil((consult + fulfillment + product cost) / (1 - 0.025 - 0.03))`, where fulfillment is the applicable retail shipping charge plus any Tirzepatide/Semaglutide processing fee. Shipping cost and retail charge are tracked separately.
 These are operational estimates, not clinical dispensing instructions, and do

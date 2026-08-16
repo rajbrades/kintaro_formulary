@@ -1,5 +1,7 @@
 import assert from "node:assert/strict";
-import { enrichPricing, includesColdShipping, monthlyProductCost, orderFulfillment, suggestedRetail } from "../lib/pricing.mjs";
+import { readFileSync } from "node:fs";
+import { PRICING_MODEL, enrichPricing, includesColdShipping, monthlyProductCost, orderFulfillment, suggestedRetail } from "../lib/pricing.mjs";
+import { loadRows } from "../lib/vocab.mjs";
 
 const oral = {
   category: "Hormone Therapy",
@@ -8,16 +10,20 @@ const oral = {
   package: "",
   pharmacy: "V Pharm",
   wholesale_cost: "0.5",
+  wholesale_basis: "per_unit",
 };
-const packaged = { ...oral, form: "cream", package: "30mLTube", wholesale_cost: "27.5" };
-const vcoOral = { ...oral, package: "60 units", pharmacy: "VCO", wholesale_cost: "54.2" };
+const packaged = { ...oral, form: "cream", package: "30mLTube", wholesale_cost: "27.5", wholesale_basis: "per_package" };
+const vcoOral = { ...oral, package: "60 units", pharmacy: "VCO", wholesale_cost: "54.2", wholesale_basis: "per_package" };
 const testosterone = { ...oral, product_name: "Testosterone Cypionate", wholesale_cost: "0.88" };
 const trt = { ...oral, product_name: "TRT Injectable commercial", wholesale_cost: "20" };
 const semaglutide = { ...packaged, product_name: "Semaglutide + B12", form: "injectable", package: "2mL", wholesale_cost: "55" };
+const tirzepatideOdt = { ...oral, category: "Weight Management", product_name: "Tirzepatide Oral Dissolving Tablets", strength: "8MG", form: "troche", package: "30 troches", wholesale_cost: "156.25", wholesale_basis: "per_30_day" };
 
-assert.deepEqual(monthlyProductCost(oral), { amount: 15, basis: "30 units / month" });
-assert.deepEqual(monthlyProductCost(packaged), { amount: 27.5, basis: "1 package / month" });
-assert.deepEqual(monthlyProductCost(vcoOral), { amount: 54.2, basis: "1 package / month" });
+assert.deepEqual(monthlyProductCost(oral), { amount: 15, basis: "$0.5 / unit × 30" });
+assert.deepEqual(monthlyProductCost(packaged), { amount: 27.5, basis: "30mLTube / month (assumed)" });
+assert.deepEqual(monthlyProductCost(vcoOral), { amount: 54.2, basis: "60 units / month (assumed)" });
+assert.deepEqual(monthlyProductCost(tirzepatideOdt), { amount: 156.25, basis: "30-day supply" });
+assert.equal(enrichPricing(tirzepatideOdt).pricing.plans.async[1].suggested_retail, 240);
 assert.equal(suggestedRetail(15, 1, 35), 90);
 assert.deepEqual(orderFulfillment(oral), {
   shippingMethod: "standard",
@@ -46,5 +52,18 @@ assert.equal(enrichPricing(semaglutide).pricing.plans.async[1].overnight_suggest
 assert.equal(includesColdShipping({ ...semaglutide, form: "troche" }), false);
 assert.throws(() => orderFulfillment(oral, "sameDay"), /Unknown shipping method/);
 assert.equal(enrichPricing({ ...oral, wholesale_cost: "" }).pricing, null);
+
+const rows = loadRows(readFileSync(new URL("../formulary.csv", import.meta.url), "utf8"));
+const odt8 = rows.find((row) => row.sku === "TZT-ODT-8-VS");
+assert.equal(odt8.package, "30 troches");
+assert.equal(odt8.wholesale_basis, "per_30_day");
+assert.equal(monthlyProductCost(odt8).amount, 156.25);
+for (const [productName, method] of [["2-Day Shipping", "twoDay"], ["Overnight Shipping", "overnight"]]) {
+  const row = rows.find((candidate) => candidate.product_name === productName);
+  assert.ok(row, `${productName} must be listed under Supplies & Fees`);
+  assert.equal(row.category, "Supplies & Fees");
+  assert.equal(Number(row.wholesale_cost), PRICING_MODEL.shipping[method].cost);
+  assert.equal(Number(row.retail_price), PRICING_MODEL.shipping[method].retail);
+}
 
 console.log("[pricing] PASS");

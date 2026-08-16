@@ -15,6 +15,7 @@ import {
   FORMULARY_CATEGORIES,
   FORM_TYPES,
   PHARMACIES,
+  WHOLESALE_BASES,
   SUGGESTED_TAGS,
   EXPECTED_HEADER,
   parseCsv,
@@ -44,6 +45,7 @@ function main() {
   const formSet = new Set(FORM_TYPES);
   const pharmSet = new Set(PHARMACIES);
   const tagSet = new Set(SUGGESTED_TAGS);
+  const basisSet = new Set(WHOLESALE_BASES);
 
   const failures = [];
   const unknownTags = new Set();
@@ -59,7 +61,7 @@ function main() {
       failures.push(`line ${line}: ${r.length} columns (expected ${EXPECTED_HEADER.length})`);
       return;
     }
-    const [category, product_name, , strength, form, pkg, pharmacy, sku, wholesale_cost, , rx, tags] = r;
+    const [category, product_name, , strength, form, pkg, pharmacy, sku, wholesale_cost, wholesale_basis, , rx, tags] = r;
     if (!product_name) failures.push(`line ${line}: product_name empty`);
     if (!catSet.has(category)) failures.push(`line ${line}: unknown category "${category}"`);
     if (!formSet.has(form)) failures.push(`line ${line}: unknown form "${form}"`);
@@ -68,6 +70,8 @@ function main() {
     if (wholesale_cost && !Number.isFinite(Number(wholesale_cost))) {
       failures.push(`line ${line}: non-numeric wholesale_cost "${wholesale_cost}"`);
     }
+    if (!basisSet.has(wholesale_basis)) failures.push(`line ${line}: invalid wholesale_basis "${wholesale_basis}"`);
+    if (wholesale_cost && wholesale_basis === "unknown") failures.push(`line ${line}: priced row cannot have unknown wholesale_basis`);
     const key = [product_name, strength, form, pkg, pharmacy, wholesale_cost].join("¦");
     if (seen.has(key)) failures.push(`line ${line}: duplicate of line ${seen.get(key)} (${product_name} ${strength})`);
     else seen.set(key, line);
