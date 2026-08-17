@@ -314,10 +314,11 @@ const BLENDS = ${blendsData};
 const BLEND_CATS = ${blendCats};
 const SERVED = location.protocol !== 'file:';
 const COLS = [
-  ["product_name","Product"],["suggested_retail","Suggested retail"],["days_supply","Plan days*"],
+  ["product_name","Product"],["suggested_retail","Suggested retail"],["gross_margin","Gross margin"],["days_supply","Plan days*"],
   ["strength","Strength"],["form","Form"],["package","Package"],["pharmacy","Pharmacy"],
   ["sku","SKU"],["wholesale_cost","Wholesale $"],["wholesale_basis","Wholesale basis"],["tags","Tags"],["notes","Notes"]
 ];
+const NUMCOLS=["wholesale_cost","days_supply","suggested_retail","gross_margin"];
 let activeCat="All",sortKey=null,sortDir=1;
 let hidden=SERVED?new Set():new Set(JSON.parse(localStorage.getItem('k_hidden')||'[]'));
 let showHidden=false;
@@ -334,7 +335,8 @@ function selectedPlan(r){
 }
 function selectedRetail(r,plan){if(!plan)return r.retail_price;const shipping=el("shipping").value;if(shipping==="overnight")return plan.overnight_suggested_retail;if(shipping==="twoDay")return plan.two_day_suggested_retail;return plan.suggested_retail;}
 function fulfillmentNote(r){const f=r.pricing.fulfillment;if(f.shipping_method==="coldOvernight")return"cold overnight · $35 retail shipping + syringes/pads included · $25 processing";const shipping=el("shipping").value;return shipping==="overnight"?"overnight · $35 retail shipping":shipping==="twoDay"?"2-day · $20 retail shipping":"standard · $35 shipping";}
-function sortValue(r,key){const plan=selectedPlan(r);if(key==="suggested_retail")return selectedRetail(r,plan)??-1;return key==="days_supply"?(plan?.days_supply??-1):r[key];}
+function grossMargin(r,plan,retail){if(!plan||!retail)return null;const profit=retail-plan.product_cost;return{profit,pct:profit/retail*100};}
+function sortValue(r,key){const plan=selectedPlan(r);if(key==="suggested_retail")return selectedRetail(r,plan)??-1;if(key==="gross_margin"){const gm=grossMargin(r,plan,selectedRetail(r,plan));return gm?gm.pct:-1;}return key==="days_supply"?(plan?.days_supply??-1):r[key];}
 function renderHiddenBar(){
   const bar=el('hidden-bar');
   if(hidden.size===0){bar.hidden=true;showHidden=false;return;}
@@ -348,7 +350,7 @@ function renderTabs(){
   el("tabs").querySelectorAll(".tab").forEach(t=>t.onclick=()=>{activeCat=t.dataset.c;renderTabs();render();});
 }
 function renderHead(){
-  el("thead").innerHTML="<tr>"+COLS.map(([k,l])=>'<th class="'+(["wholesale_cost","days_supply","suggested_retail"].includes(k)?"num":"")+'" data-k="'+k+'" tabindex="0" role="columnheader" aria-sort="'+(sortKey===k?(sortDir>0?"ascending":"descending"):"none")+'">'+l+(sortKey===k?(sortDir>0?" \\u25b2":" \\u25bc"):"")+"</th>").join("")+'<th class="cell-act"></th></tr>';
+  el("thead").innerHTML="<tr>"+COLS.map(([k,l])=>'<th class="'+(NUMCOLS.includes(k)?"num":"")+'" data-k="'+k+'" tabindex="0" role="columnheader" aria-sort="'+(sortKey===k?(sortDir>0?"ascending":"descending"):"none")+'">'+l+(sortKey===k?(sortDir>0?" \\u25b2":" \\u25bc"):"")+"</th>").join("")+'<th class="cell-act"></th></tr>';
   el("thead").querySelectorAll("th[data-k]").forEach(th=>{th.onclick=()=>{const k=th.dataset.k;if(sortKey===k)sortDir*=-1;else{sortKey=k;sortDir=1;}renderHead();render();};th.onkeydown=(e)=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();th.click();}};});
 }
 function tagHtml(tags){return tags?tags.split("|").filter(Boolean).map(t=>'<span class="tag'+(t==="review"?" review":"")+'">'+t+'</span>').join(""):"";}
@@ -365,10 +367,10 @@ function render(){
     if(q){const hay=(r.product_name+" "+r.active_ingredients+" "+r.sku+" "+r.strength+" "+r.tags+" "+r.notes).toLowerCase();if(!hay.includes(q))return false;}
     return true;
   });
-  if(sortKey){rows=rows.slice().sort((a,b)=>{let x=sortValue(a,sortKey),y=sortValue(b,sortKey);if(["wholesale_cost","days_supply","suggested_retail"].includes(sortKey)){x=parseFloat(x)||0;y=parseFloat(y)||0;return(x-y)*sortDir;}return String(x).localeCompare(String(y))*sortDir;});}
+  if(sortKey){rows=rows.slice().sort((a,b)=>{let x=sortValue(a,sortKey),y=sortValue(b,sortKey);if(NUMCOLS.includes(sortKey)){x=parseFloat(x)||0;y=parseFloat(y)||0;return(x-y)*sortDir;}return String(x).localeCompare(String(y))*sortDir;});}
   el("count").textContent=rows.length+" of "+ROWS.length+" products";
   el("empty").hidden=rows.length>0;
-  el("tbody").innerHTML=rows.map(r=>{const k=rowKey(r);const isH=hidden.has(k),plan=selectedPlan(r),retail=selectedRetail(r,plan);return"<tr"+(isH?' class="hidden-row"':"")+">"+COLS.map(([col])=>{if(col==="tags")return"<td>"+tagHtml(r.tags)+"</td>";if(col==="wholesale_cost")return'<td class="num mono">'+(r[col]?"$"+r[col]:"")+"</td>";if(col==="wholesale_basis")return'<td class="mono">'+basisLabel(r)+"</td>";if(col==="days_supply")return'<td class="num mono">'+(plan?plan.days_supply:"")+"</td>";if(col==="suggested_retail")return'<td class="num price" title="'+(r.pricing?r.pricing.product_cost_basis+"; "+r.pricing.consult_type:"")+'">'+(retail?"$"+retail:"")+(plan?'<span class="price-note">'+r.pricing.product_cost_basis+' · '+fulfillmentNote(r)+(r.pricing.plans.controlled?' · sync $55':'')+'</span>':"")+"</td>";if(col==="product_name")return"<td>"+r[col]+(activeCat==="All"?' <span class="cat">\\u00b7 '+r.category+"</span>":"")+"</td>";if(col==="sku"||col==="strength"||col==="form")return'<td class="mono">'+r[col]+"</td>";return"<td>"+(r[col]||"")+"</td>";}).join("")+'<td class="cell-act"><button class="btn-x" data-key="'+k+'" data-idx="'+ROWS.indexOf(r)+'" aria-label="'+(SERVED?"Remove from CSV":(isH?"Restore":"Dismiss"))+'" title="'+(SERVED?"Remove from CSV":(isH?"Restore":"Dismiss"))+'">'+(isH?"\\u21a9":"\\u00d7")+"</button></td></tr>";}).join("");
+  el("tbody").innerHTML=rows.map(r=>{const k=rowKey(r);const isH=hidden.has(k),plan=selectedPlan(r),retail=selectedRetail(r,plan);return"<tr"+(isH?' class="hidden-row"':"")+">"+COLS.map(([col])=>{if(col==="tags")return"<td>"+tagHtml(r.tags)+"</td>";if(col==="wholesale_cost")return'<td class="num mono">'+(r[col]?"$"+r[col]:"")+"</td>";if(col==="wholesale_basis")return'<td class="mono">'+basisLabel(r)+"</td>";if(col==="days_supply")return'<td class="num mono">'+(plan?plan.days_supply:"")+"</td>";if(col==="suggested_retail")return'<td class="num price" title="'+(r.pricing?r.pricing.product_cost_basis+"; "+r.pricing.consult_type:"")+'">'+(retail?"$"+retail:"")+(plan?'<span class="price-note">'+r.pricing.product_cost_basis+' · '+fulfillmentNote(r)+(r.pricing.plans.controlled?' · sync $55':'')+'</span>':"")+"</td>";if(col==="gross_margin"){const gm=grossMargin(r,plan,retail);return'<td class="num mono" title="Suggested retail minus product cost ($'+(plan?plan.product_cost:"")+')">'+(gm?"$"+gm.profit.toFixed(0)+'<span class="price-note">'+gm.pct.toFixed(0)+'% margin</span>':"")+"</td>";}if(col==="product_name")return"<td>"+r[col]+(activeCat==="All"?' <span class="cat">\\u00b7 '+r.category+"</span>":"")+"</td>";if(col==="sku"||col==="strength"||col==="form")return'<td class="mono">'+r[col]+"</td>";return"<td>"+(r[col]||"")+"</td>";}).join("")+'<td class="cell-act"><button class="btn-x" data-key="'+k+'" data-idx="'+ROWS.indexOf(r)+'" aria-label="'+(SERVED?"Remove from CSV":(isH?"Restore":"Dismiss"))+'" title="'+(SERVED?"Remove from CSV":(isH?"Restore":"Dismiss"))+'">'+(isH?"\\u21a9":"\\u00d7")+"</button></td></tr>";}).join("");
 }
 const BCOLS=[["competitor","Competitor"],["product_name","Product"],["format","Format"],["ingredients","Ingredients"],["retail_price","Retail Price"],["supply","Supply / Billing"],["differentiator","Differentiator"]];
 let blendCat="All",blendSortKey=null,blendSortDir=1;
