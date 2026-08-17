@@ -95,7 +95,7 @@ function writeHtml(rows, blends) {
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <style>
   :root { color-scheme:dark; --bg:#0F1116; --bg2:#181B22; --fg:#ECE6D8; --muted:#898577;
-    --accent:#C9A35E; --accent-deep:#8E7038; --secondary:#5A2A2A;
+    --accent:#C9A35E; --accent-deep:#8E7038; --secondary:#5A2A2A; --pos:#7FB069; --neg:#D9776B;
     --line:rgba(236,230,216,.14); --line2:rgba(236,230,216,.28);
     --chip:rgba(236,230,216,.06); --head:rgba(24,27,34,.96);
     --sans:"Inter Tight",system-ui,-apple-system,sans-serif;
@@ -179,6 +179,7 @@ function writeHtml(rows, blends) {
   .price.overridden .retail-edit { border-color:var(--accent); }
   .price.overridden .price-note { color:var(--accent); }
   .reset-price { margin-left:6px; background:none; border:0; padding:0; color:var(--accent); font:inherit; font-size:10px; text-decoration:underline; cursor:pointer; }
+  .nm-val.pos { color:var(--pos); } .nm-val.neg { color:var(--neg); }
   .mono { font-family:var(--mono); font-size:12px; }
   .tag { display:inline-block; background:var(--chip); border:1px solid var(--line); border-radius:6px;
     padding:2px 8px; margin:1px 2px 1px 0; font-size:11px; color:var(--muted); }
@@ -297,7 +298,7 @@ function writeHtml(rows, blends) {
       <option value="standard">Standard · 2-day · $15</option><option value="priority">Priority · overnight · $25</option>
     </select></label>
   </div></div>
-  <p class="supply-note"><strong>* Plan days are commercial estimates:</strong> 30 days per month. Verify package duration and prescribed quantity before setting a final price. <strong>Edit any suggested retail price</strong> to override it — gross margin updates automatically; overrides are saved in this browser.</p>
+  <p class="supply-note"><strong>* Plan days are commercial estimates:</strong> 30 days per month. Verify package duration and prescribed quantity before setting a final price. <strong>Edit any suggested retail price</strong> to override it — gross and net margin update automatically; overrides are saved in this browser. <strong>Gross margin</strong> = retail − medication cost. <strong>Net margin</strong> = retail − all costs (medication + shipping + consult + fees + any processing), so at the cost-covering suggested price it sits near $0.</p>
   <div class="hidden-bar" id="hidden-bar" hidden></div>
   <div class="wrap"><table><thead id="thead"></thead><tbody id="tbody"></tbody></table></div>
   <div class="empty" id="empty" hidden>No matching products.</div>
@@ -312,17 +313,18 @@ function writeHtml(rows, blends) {
 </div>
 <script>
 const ROWS = ${data};
+const PRICE_MODEL = ${JSON.stringify({ feeRate: PRICING_MODEL.medicalBranchRate + PRICING_MODEL.merchantRate, shipping: PRICING_MODEL.shipping })};
 const CATS = ${cats};
 const PHARMS = ${pharms};
 const BLENDS = ${blendsData};
 const BLEND_CATS = ${blendCats};
 const SERVED = location.protocol !== 'file:';
 const COLS = [
-  ["product_name","Product"],["suggested_retail","Suggested retail"],["gross_margin","Gross margin"],["days_supply","Plan days*"],
+  ["product_name","Product"],["suggested_retail","Suggested retail"],["gross_margin","Gross margin"],["net_margin","Net margin"],["days_supply","Plan days*"],
   ["strength","Strength"],["form","Form"],["package","Package"],["pharmacy","Pharmacy"],
   ["sku","SKU"],["wholesale_cost","Wholesale $"],["wholesale_basis","Wholesale basis"],["tags","Tags"],["notes","Notes"]
 ];
-const NUMCOLS=["wholesale_cost","days_supply","suggested_retail","gross_margin"];
+const NUMCOLS=["wholesale_cost","days_supply","suggested_retail","gross_margin","net_margin"];
 let activeCat="All",sortKey=null,sortDir=1;
 let hidden=SERVED?new Set():new Set(JSON.parse(localStorage.getItem('k_hidden')||'[]'));
 let showHidden=false;
@@ -345,7 +347,10 @@ function priceKey(r){const consult=(r.pricing&&r.pricing.plans.controlled)?"cont
 function effectiveRetail(r,plan){const base=selectedRetail(r,plan);if(!plan)return base;const o=priceOverrides[priceKey(r)];return o!=null?o:base;}
 function grossMargin(r,plan,retail){if(!plan||!retail)return null;const profit=retail-plan.product_cost;return{profit,pct:profit/retail*100};}
 function marginCellInner(r,plan,retail){const gm=grossMargin(r,plan,retail);return gm?"$"+gm.profit.toFixed(0)+'<span class="price-note">'+gm.pct.toFixed(0)+'% margin</span>':"";}
-function sortValue(r,key){const plan=selectedPlan(r);if(key==="suggested_retail")return effectiveRetail(r,plan)??-1;if(key==="gross_margin"){const gm=grossMargin(r,plan,effectiveRetail(r,plan));return gm?gm.pct:-1;}return key==="days_supply"?(plan?.days_supply??-1):r[key];}
+function shippingCost(r){const f=r.pricing.fulfillment;const m=f.shipping_method==="coldOvernight"?"coldOvernight":el("shipping").value;return PRICE_MODEL.shipping[m].cost;}
+function netMargin(r,plan,retail){if(!plan||!retail)return null;const ship=shippingCost(r);const proc=r.pricing.fulfillment.processing_fee||0;const fees=retail*PRICE_MODEL.feeRate;const cost=plan.product_cost+ship+plan.consult_cost+proc+fees;const profit=retail-cost;return{profit,pct:profit/retail*100,cost:cost,med:plan.product_cost,ship:ship,consult:plan.consult_cost,proc:proc,fees:fees};}
+function netMarginCellInner(r,plan,retail){const nm=netMargin(r,plan,retail);if(!nm)return"";const sign=nm.profit<0?"-$"+Math.abs(nm.profit).toFixed(0):"$"+nm.profit.toFixed(0);const cls=nm.profit<-0.5?"neg":nm.profit>0.5?"pos":"";return'<span class="nm-val '+cls+'">'+sign+'</span><span class="price-note">'+nm.pct.toFixed(0)+'% net · all-in $'+nm.cost.toFixed(0)+'</span>';}
+function sortValue(r,key){const plan=selectedPlan(r);if(key==="suggested_retail")return effectiveRetail(r,plan)??-1;if(key==="gross_margin"){const gm=grossMargin(r,plan,effectiveRetail(r,plan));return gm?gm.pct:-1;}if(key==="net_margin"){const nm=netMargin(r,plan,effectiveRetail(r,plan));return nm?nm.pct:-1e9;}return key==="days_supply"?(plan?.days_supply??-1):r[key];}
 function renderHiddenBar(){
   const bar=el('hidden-bar');
   if(hidden.size===0){bar.hidden=true;showHidden=false;return;}
@@ -379,7 +384,7 @@ function render(){
   if(sortKey){rows=rows.slice().sort((a,b)=>{let x=sortValue(a,sortKey),y=sortValue(b,sortKey);if(NUMCOLS.includes(sortKey)){x=parseFloat(x)||0;y=parseFloat(y)||0;return(x-y)*sortDir;}return String(x).localeCompare(String(y))*sortDir;});}
   el("count").textContent=rows.length+" of "+ROWS.length+" products";
   el("empty").hidden=rows.length>0;
-  el("tbody").innerHTML=rows.map(r=>{const k=rowKey(r);const isH=hidden.has(k),plan=selectedPlan(r),retail=effectiveRetail(r,plan);return"<tr"+(isH?' class="hidden-row"':"")+">"+COLS.map(([col])=>{if(col==="tags")return"<td>"+tagHtml(r.tags)+"</td>";if(col==="wholesale_cost")return'<td class="num mono">'+(r[col]?"$"+r[col]:"")+"</td>";if(col==="wholesale_basis")return'<td class="mono">'+basisLabel(r)+"</td>";if(col==="days_supply")return'<td class="num mono">'+(plan?plan.days_supply:"")+"</td>";if(col==="suggested_retail"){if(!plan)return'<td class="num price">'+(retail?"$"+retail:"")+"</td>";const pk=priceKey(r),ov=priceOverrides[pk]!=null,note=ov?'custom price <button class="reset-price" data-key="'+pk+'" title="Reset to suggested $'+selectedRetail(r,plan)+'">reset</button>':r.pricing.product_cost_basis+' · '+fulfillmentNote(r)+(r.pricing.plans.controlled?' · sync $55':'');return'<td class="num price'+(ov?" overridden":"")+'" title="'+r.pricing.product_cost_basis+"; "+r.pricing.consult_type+'"><input class="retail-edit" type="number" inputmode="decimal" min="0" step="1" value="'+retail+'" data-key="'+pk+'" data-idx="'+ROWS.indexOf(r)+'" aria-label="Retail price" /><span class="price-note">'+note+"</span></td>";}if(col==="gross_margin")return'<td class="num mono cell-margin" title="Retail minus product cost ($'+(plan?plan.product_cost:"")+')">'+marginCellInner(r,plan,retail)+"</td>";if(col==="product_name")return"<td>"+r[col]+(activeCat==="All"?' <span class="cat">\\u00b7 '+r.category+"</span>":"")+"</td>";if(col==="sku"||col==="strength"||col==="form")return'<td class="mono">'+r[col]+"</td>";return"<td>"+(r[col]||"")+"</td>";}).join("")+'<td class="cell-act"><button class="btn-x" data-key="'+k+'" data-idx="'+ROWS.indexOf(r)+'" aria-label="'+(SERVED?"Remove from CSV":(isH?"Restore":"Dismiss"))+'" title="'+(SERVED?"Remove from CSV":(isH?"Restore":"Dismiss"))+'">'+(isH?"\\u21a9":"\\u00d7")+"</button></td></tr>";}).join("");
+  el("tbody").innerHTML=rows.map(r=>{const k=rowKey(r);const isH=hidden.has(k),plan=selectedPlan(r),retail=effectiveRetail(r,plan);return"<tr"+(isH?' class="hidden-row"':"")+">"+COLS.map(([col])=>{if(col==="tags")return"<td>"+tagHtml(r.tags)+"</td>";if(col==="wholesale_cost")return'<td class="num mono">'+(r[col]?"$"+r[col]:"")+"</td>";if(col==="wholesale_basis")return'<td class="mono">'+basisLabel(r)+"</td>";if(col==="days_supply")return'<td class="num mono">'+(plan?plan.days_supply:"")+"</td>";if(col==="suggested_retail"){if(!plan)return'<td class="num price">'+(retail?"$"+retail:"")+"</td>";const pk=priceKey(r),ov=priceOverrides[pk]!=null,note=ov?'custom price <button class="reset-price" data-key="'+pk+'" title="Reset to suggested $'+selectedRetail(r,plan)+'">reset</button>':r.pricing.product_cost_basis+' · '+fulfillmentNote(r)+(r.pricing.plans.controlled?' · sync $55':'');return'<td class="num price'+(ov?" overridden":"")+'" title="'+r.pricing.product_cost_basis+"; "+r.pricing.consult_type+'"><input class="retail-edit" type="number" inputmode="decimal" min="0" step="1" value="'+retail+'" data-key="'+pk+'" data-idx="'+ROWS.indexOf(r)+'" aria-label="Retail price" /><span class="price-note">'+note+"</span></td>";}if(col==="gross_margin")return'<td class="num mono cell-margin" title="Retail minus product cost ($'+(plan?plan.product_cost:"")+')">'+marginCellInner(r,plan,retail)+"</td>";if(col==="net_margin"){const nm=plan?netMargin(r,plan,retail):null;const t=nm?"All-in cost $"+nm.cost.toFixed(0)+" = med $"+nm.med.toFixed(0)+" + shipping $"+nm.ship+" + consult $"+nm.consult+(nm.proc?" + processing $"+nm.proc:"")+" + fees $"+nm.fees.toFixed(0):"Retail minus all costs";return'<td class="num mono cell-net" title="'+t+'">'+netMarginCellInner(r,plan,retail)+"</td>";}if(col==="product_name")return"<td>"+r[col]+(activeCat==="All"?' <span class="cat">\\u00b7 '+r.category+"</span>":"")+"</td>";if(col==="sku"||col==="strength"||col==="form")return'<td class="mono">'+r[col]+"</td>";return"<td>"+(r[col]||"")+"</td>";}).join("")+'<td class="cell-act"><button class="btn-x" data-key="'+k+'" data-idx="'+ROWS.indexOf(r)+'" aria-label="'+(SERVED?"Remove from CSV":(isH?"Restore":"Dismiss"))+'" title="'+(SERVED?"Remove from CSV":(isH?"Restore":"Dismiss"))+'">'+(isH?"\\u21a9":"\\u00d7")+"</button></td></tr>";}).join("");
 }
 const BCOLS=[["competitor","Competitor"],["product_name","Product"],["format","Format"],["ingredients","Ingredients"],["retail_price","Retail Price"],["supply","Supply / Billing"],["differentiator","Differentiator"]];
 let blendCat="All",blendSortKey=null,blendSortDir=1;
@@ -433,7 +438,7 @@ function setupDeleteWidget(){
   undo.onclick=async()=>{if(!confirm('Restore the most recently removed product?'))return;undo.disabled=true;try{const j=await api('/api/undo');if(j.ok){location.reload();}else{alert('Undo failed: '+(j.reason||'unknown'));undo.disabled=false;}}catch(e){alert('Undo failed: '+e);undo.disabled=false;}};
 }
 el("tbody").addEventListener("click",async e=>{const btn=e.target.closest(".btn-x");if(!btn)return;if(SERVED){if(!canDelete())return;const row=ROWS[+btn.dataset.idx];if(!row)return;if(!confirm('Remove "'+row.product_name+'" from formulary.csv? It will be archived and can be undone.'))return;btn.disabled=true;try{const j=await api('/api/remove',{row:row});if(j.ok){location.reload();}else{alert('Remove failed: '+(j.reason||'unknown'));btn.disabled=false;}}catch(err){alert('Remove failed: '+err);btn.disabled=false;}return;}const k=btn.dataset.key;if(hidden.has(k))hidden.delete(k);else hidden.add(k);saveHidden();renderHiddenBar();render();});
-el("tbody").addEventListener("input",e=>{const inp=e.target.closest(".retail-edit");if(!inp)return;const tr=inp.closest("tr"),r=ROWS[+inp.dataset.idx],plan=selectedPlan(r),v=parseFloat(inp.value);if(Number.isFinite(v)&&v>=0)priceOverrides[inp.dataset.key]=v;else delete priceOverrides[inp.dataset.key];saveOverrides();const cell=tr.querySelector(".cell-margin");if(cell)cell.innerHTML=marginCellInner(r,plan,Number.isFinite(v)&&v>=0?v:selectedRetail(r,plan));});
+el("tbody").addEventListener("input",e=>{const inp=e.target.closest(".retail-edit");if(!inp)return;const tr=inp.closest("tr"),r=ROWS[+inp.dataset.idx],plan=selectedPlan(r),v=parseFloat(inp.value);if(Number.isFinite(v)&&v>=0)priceOverrides[inp.dataset.key]=v;else delete priceOverrides[inp.dataset.key];saveOverrides();const rt=Number.isFinite(v)&&v>=0?v:selectedRetail(r,plan);const gc=tr.querySelector(".cell-margin");if(gc)gc.innerHTML=marginCellInner(r,plan,rt);const nc=tr.querySelector(".cell-net");if(nc)nc.innerHTML=netMarginCellInner(r,plan,rt);});
 el("tbody").addEventListener("change",e=>{const inp=e.target.closest(".retail-edit");if(!inp)return;const r=ROWS[+inp.dataset.idx],plan=selectedPlan(r),v=parseFloat(inp.value);if(!Number.isFinite(v)||v<0||v===selectedRetail(r,plan))delete priceOverrides[inp.dataset.key];else priceOverrides[inp.dataset.key]=v;saveOverrides();render();});
 el("tbody").addEventListener("click",e=>{const rb=e.target.closest(".reset-price");if(!rb)return;delete priceOverrides[rb.dataset.key];saveOverrides();render();});
 renderTabs();renderHead();renderHiddenBar();render();
