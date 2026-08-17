@@ -297,8 +297,11 @@ function writeHtml(rows, blends) {
     <label class="field-label"><span>Shipping</span><select id="shipping" aria-label="Select shipping cost for non-cold-chain orders">
       <option value="standard">Standard · 2-day · $15</option><option value="priority">Priority · overnight · $25</option>
     </select></label>
+    <label class="field-label"><span>Target margin</span><select id="margin" aria-label="Select target net margin built into suggested retail">
+      <option value="0">Cost-covering · 0%</option><option value="0.2">20% net margin</option><option value="0.3">30% net margin</option>
+    </select></label>
   </div></div>
-  <p class="supply-note"><strong>* Plan days are commercial estimates:</strong> 30 days per month. Verify package duration and prescribed quantity before setting a final price. <strong>Edit any suggested retail price</strong> to override it — gross and net margin update automatically; overrides are saved in this browser. <strong>Gross margin</strong> = retail − medication cost. <strong>Net margin</strong> = retail − all costs (medication + shipping + consult + fees + any processing), so at the cost-covering suggested price it sits near $0.</p>
+  <p class="supply-note"><strong>* Plan days are commercial estimates:</strong> 30 days per month. Verify package duration and prescribed quantity before setting a final price. <strong>Edit any suggested retail price</strong> to override it — gross and net margin update automatically; overrides are saved in this browser. <strong>Gross margin</strong> = retail − medication cost. <strong>Net margin</strong> = retail − all costs (medication + shipping + consult + fees + any processing), so at the cost-covering suggested price it sits near $0. Use <strong>Target margin</strong> to build 20% or 30% net profit into the suggested retail instead.</p>
   <div class="hidden-bar" id="hidden-bar" hidden></div>
   <div class="wrap"><table><thead id="thead"></thead><tbody id="tbody"></tbody></table></div>
   <div class="empty" id="empty" hidden>No matching products.</div>
@@ -341,8 +344,10 @@ function selectedPlan(r){
   const consult=r.pricing.plans.controlled?"controlled":el("consult").value;
   return r.pricing.plans[consult][el("plan").value];
 }
-function selectedRetail(r,plan){if(!plan)return r.retail_price;const shipping=el("shipping").value;if(shipping==="priority")return plan.priority_suggested_retail;return plan.suggested_retail;}
-function fulfillmentNote(r){const f=r.pricing.fulfillment;if(f.shipping_method==="coldOvernight")return"cold overnight · $35 retail shipping + syringes/pads included · $25 processing";const shipping=el("shipping").value;return shipping==="priority"?"priority · overnight · $25 retail shipping":"standard · 2-day · $15 shipping";}
+function currentMargin(){return parseFloat(el("margin").value)||0;}
+function suggestedRetailAt(r,plan,m){const f=r.pricing.fulfillment;const cold=f.shipping_method==="coldOvernight";const shipRetail=cold?PRICE_MODEL.shipping.coldOvernight.retail:PRICE_MODEL.shipping[el("shipping").value].retail;const proc=f.processing_fee||0;const num=plan.product_cost+plan.consult_cost+shipRetail+proc;return Math.ceil(num/(1-PRICE_MODEL.feeRate-m));}
+function selectedRetail(r,plan){if(!plan)return r.retail_price;const m=currentMargin();if(m===0)return el("shipping").value==="priority"?plan.priority_suggested_retail:plan.suggested_retail;return suggestedRetailAt(r,plan,m);}
+function fulfillmentNote(r){const f=r.pricing.fulfillment;const m=currentMargin();const mn=m>0?" · "+Math.round(m*100)+"% margin":"";if(f.shipping_method==="coldOvernight")return"cold overnight · $35 retail shipping + syringes/pads included · $25 processing"+mn;const shipping=el("shipping").value;return(shipping==="priority"?"priority · overnight · $25 retail shipping":"standard · 2-day · $15 shipping")+mn;}
 function priceKey(r){const consult=(r.pricing&&r.pricing.plans.controlled)?"controlled":el("consult").value;return rowKey(r)+"|"+consult+"|"+el("plan").value;}
 function effectiveRetail(r,plan){const base=selectedRetail(r,plan);if(!plan)return base;const o=priceOverrides[priceKey(r)];return o!=null?o:base;}
 function grossMargin(r,plan,retail){if(!plan||!retail)return null;const profit=retail-plan.product_cost;return{profit,pct:profit/retail*100};}
@@ -420,7 +425,7 @@ el("page-switch").querySelectorAll("button").forEach(btn=>{
 });
 el("pharm").innerHTML=PHARMS.map(p=>'<option>'+p+'</option>').join("");
 el("q").oninput=render;el("pharm").onchange=render;el("rx").onchange=render;
-el("plan").onchange=()=>{renderHead();render();};el("consult").onchange=render;el("shipping").onchange=render;
+el("plan").onchange=()=>{renderHead();render();};el("consult").onchange=render;el("shipping").onchange=render;el("margin").onchange=render;
 el("bq").oninput=renderBlends;
 function canDelete(){return SERVED&&deletePw!==null;}
 async function api(path,extra){let res;try{res=await fetch(path,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(Object.assign({password:deletePw},extra||{}))});}catch(_){return{ok:false,reason:'edit server not reachable — run "npm run serve"'};}try{return await res.json();}catch(_){return{ok:false,reason:'not the formulary edit server — run "npm run serve"'};}}
