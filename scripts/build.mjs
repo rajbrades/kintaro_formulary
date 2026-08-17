@@ -34,9 +34,9 @@ function writeMarkdown(rows, byCat) {
   L.push("");
   L.push("## Fulfillment");
   L.push("");
-  L.push("- Suggested retail defaults to the requested $35 standard shipping cost per order.");
-  L.push("- The viewer also models 2-day shipping at $15 cost / $20 retail and overnight at $25 cost / $35 retail.");
-  L.push("- Injectable Tirzepatide and Semaglutide orders default to cold overnight shipping at $25 Kintaro cost and $35 retail; syringes and alcohol pads are included, plus a $25 processing fee per order.");
+  L.push("- Suggested retail defaults to Standard shipping (2-day) at $15 Kintaro cost / $15 retail per order.");
+  L.push("- The viewer also models Priority shipping (overnight) at $20 cost / $25 retail.");
+  L.push("- Injectable Tirzepatide and Semaglutide orders default to cold overnight shipping at $20 Kintaro cost and $25 retail; syringes and alcohol pads are included, plus a $25 processing fee per order.");
   L.push("- Plan days are commercial estimates using 30 days per month; verify package duration and prescribed quantity before setting a final price.");
   L.push("");
   L.push("## Summary");
@@ -246,7 +246,7 @@ function writeHtml(rows, blends) {
   <details class="pricing-guide">
     <summary>
       <span class="pricing-guide-title">Pricing assumptions</span>
-      <span class="pricing-guide-summary">Cost-covering estimate · $35 standard shipping · no medication margin</span>
+      <span class="pricing-guide-summary">Cost-covering estimate · $15 standard (2-day) shipping · no medication margin</span>
       <svg class="pricing-guide-chevron" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </summary>
     <div class="pricing-guide-content">
@@ -255,10 +255,9 @@ function writeHtml(rows, blends) {
         <section class="pricing-guide-section" aria-labelledby="pricing-fulfillment">
           <h2 id="pricing-fulfillment">Fulfillment</h2>
           <dl>
-            <div><dt>Standard shipping</dt><dd>$35 cost · $35 retail</dd></div>
-            <div><dt>Optional 2-day shipping</dt><dd>$15 cost · $20 retail</dd></div>
-            <div><dt>Overnight shipping</dt><dd>$25 cost · $35 retail</dd></div>
-            <div><dt>Cold overnight</dt><dd>$25 cost · $35 retail</dd></div>
+            <div><dt>Standard shipping (2-day)</dt><dd>$15 cost · $15 retail</dd></div>
+            <div><dt>Priority shipping (overnight)</dt><dd>$20 cost · $25 retail</dd></div>
+            <div><dt>Cold overnight</dt><dd>$20 cost · $25 retail</dd></div>
           </dl>
           <p class="pricing-guide-note">Injectable Tirzepatide and Semaglutide include supplies and add a $25 processing fee. Optional shipping retail may exceed shipping cost.</p>
         </section>
@@ -295,7 +294,7 @@ function writeHtml(rows, blends) {
       <option value="async">Asynchronous · $35</option><option value="sync">Synchronous · $45</option>
     </select></label>
     <label class="field-label"><span>Shipping</span><select id="shipping" aria-label="Select shipping cost for non-cold-chain orders">
-      <option value="standard">Standard · $35</option><option value="twoDay">2-day · $20 retail</option><option value="overnight">Overnight · $35 retail</option>
+      <option value="standard">Standard · 2-day · $15</option><option value="priority">Priority · overnight · $25</option>
     </select></label>
   </div></div>
   <p class="supply-note"><strong>* Plan days are commercial estimates:</strong> 30 days per month. Verify package duration and prescribed quantity before setting a final price. <strong>Edit any suggested retail price</strong> to override it — gross margin updates automatically; overrides are saved in this browser.</p>
@@ -340,8 +339,8 @@ function selectedPlan(r){
   const consult=r.pricing.plans.controlled?"controlled":el("consult").value;
   return r.pricing.plans[consult][el("plan").value];
 }
-function selectedRetail(r,plan){if(!plan)return r.retail_price;const shipping=el("shipping").value;if(shipping==="overnight")return plan.overnight_suggested_retail;if(shipping==="twoDay")return plan.two_day_suggested_retail;return plan.suggested_retail;}
-function fulfillmentNote(r){const f=r.pricing.fulfillment;if(f.shipping_method==="coldOvernight")return"cold overnight · $35 retail shipping + syringes/pads included · $25 processing";const shipping=el("shipping").value;return shipping==="overnight"?"overnight · $35 retail shipping":shipping==="twoDay"?"2-day · $20 retail shipping":"standard · $35 shipping";}
+function selectedRetail(r,plan){if(!plan)return r.retail_price;const shipping=el("shipping").value;if(shipping==="priority")return plan.priority_suggested_retail;return plan.suggested_retail;}
+function fulfillmentNote(r){const f=r.pricing.fulfillment;if(f.shipping_method==="coldOvernight")return"cold overnight · $25 retail shipping + syringes/pads included · $25 processing";const shipping=el("shipping").value;return shipping==="priority"?"priority · overnight · $25 retail shipping":"standard · 2-day · $15 shipping";}
 function priceKey(r){const consult=(r.pricing&&r.pricing.plans.controlled)?"controlled":el("consult").value;return rowKey(r)+"|"+consult+"|"+el("plan").value;}
 function effectiveRetail(r,plan){const base=selectedRetail(r,plan);if(!plan)return base;const o=priceOverrides[priceKey(r)];return o!=null?o:base;}
 function grossMargin(r,plan,retail){if(!plan||!retail)return null;const profit=retail-plan.product_cost;return{profit,pct:profit/retail*100};}

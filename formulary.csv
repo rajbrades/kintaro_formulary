@@ -408,8 +408,8 @@ Weight Management,Semaglutide + Glycine,Semaglutide 8.75mg + Glycine 17.5mg 3.5m
 Weight Management,Semaglutide + Glycine,Semaglutide 10mg + Glycine 10mg 2mL,10mg + Glycine 10mg 2mL,injectable,2mL,S Pharm,,40,per_package,,yes,glp-1,
 Supplies & Fees,Tirzepatide/Semaglutide Processing Fee,,,other,,S Pharm,,25,per_package,,no,,Injectable Tirzepatide and Semaglutide orders only
 Supplies & Fees,Cold Chain Overnight Shipping - Included,,,other,,S Pharm,,0,per_package,,no,,Injectable Tirzepatide and Semaglutide orders only
-Supplies & Fees,2-Day Shipping,,,other,,S Pharm,,15,per_package,20,no,,Optional per-order shipping
-Supplies & Fees,Overnight Shipping,,,other,,S Pharm,,25,per_package,35,no,,Optional per-order shipping
+Supplies & Fees,Standard Shipping (2-Day),,,other,,S Pharm,,15,per_package,15,no,,Default per-order shipping
+Supplies & Fees,Priority Shipping (Overnight),,,other,,S Pharm,,20,per_package,25,no,,Optional per-order shipping
 Supplies & Fees,Syringes + Alcohol Pads - Included,,,supply,,S Pharm,,0,per_package,,no,,Injectable Tirzepatide and Semaglutide orders only
 Weight Management,5-Amino-1mq,,2mg/mL / 10MG,injectable,5mL,VCO,,50.8,per_package,,yes,,VCO 2026 source category: Allergy. Nicotinamide N-methyltransferase inhibitor for metabolic optimization.
 Weight Management,5-Amino-1mq,,50MG,capsule,60 units,VCO,,54.2,per_package,,yes,,"VCO 2026 source category: Allergy. Nicotinamide N-methyltransferase inhibitor for metabolic optimization. Form normalized to capsule from source ""Pill/Tablet/Capsule""."
