@@ -42,13 +42,13 @@ assert.ok(enrichPricing(trt).pricing.plans.controlled);
 assert.equal(includesColdShipping(semaglutide), true);
 assert.deepEqual(orderFulfillment(semaglutide), {
   shippingMethod: "coldOvernight",
-  shippingCost: 20,
-  shippingRetail: 25,
+  shippingCost: 35,
+  shippingRetail: 35,
   processingFee: 25,
   suppliesIncluded: true,
 });
-assert.equal(enrichPricing(semaglutide).pricing.plans.async[1].suggested_retail, 149);
-assert.equal(enrichPricing(semaglutide).pricing.plans.async[1].priority_suggested_retail, 149);
+assert.equal(enrichPricing(semaglutide).pricing.plans.async[1].suggested_retail, 159);
+assert.equal(enrichPricing(semaglutide).pricing.plans.async[1].priority_suggested_retail, 159);
 assert.equal(includesColdShipping({ ...semaglutide, form: "troche" }), false);
 assert.throws(() => orderFulfillment(oral, "sameDay"), /Unknown shipping method/);
 assert.equal(enrichPricing({ ...oral, wholesale_cost: "" }).pricing, null);

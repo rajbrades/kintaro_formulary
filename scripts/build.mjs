@@ -36,7 +36,7 @@ function writeMarkdown(rows, byCat) {
   L.push("");
   L.push("- Suggested retail defaults to Standard shipping (2-day) at $15 Kintaro cost / $15 retail per order.");
   L.push("- The viewer also models Priority shipping (overnight) at $20 cost / $25 retail.");
-  L.push("- Injectable Tirzepatide and Semaglutide orders default to cold overnight shipping at $20 Kintaro cost and $25 retail; syringes and alcohol pads are included, plus a $25 processing fee per order.");
+  L.push("- Injectable Tirzepatide and Semaglutide orders default to cold overnight shipping at $35 Kintaro cost and $35 retail; syringes and alcohol pads are included, plus a $25 processing fee per order.");
   L.push("- Plan days are commercial estimates using 30 days per month; verify package duration and prescribed quantity before setting a final price.");
   L.push("");
   L.push("## Summary");
@@ -257,7 +257,7 @@ function writeHtml(rows, blends) {
           <dl>
             <div><dt>Standard shipping (2-day)</dt><dd>$15 cost · $15 retail</dd></div>
             <div><dt>Priority shipping (overnight)</dt><dd>$20 cost · $25 retail</dd></div>
-            <div><dt>Cold overnight</dt><dd>$20 cost · $25 retail</dd></div>
+            <div><dt>Cold overnight</dt><dd>$35 cost · $35 retail</dd></div>
           </dl>
           <p class="pricing-guide-note">Injectable Tirzepatide and Semaglutide include supplies and add a $25 processing fee. Optional shipping retail may exceed shipping cost.</p>
         </section>
@@ -340,7 +340,7 @@ function selectedPlan(r){
   return r.pricing.plans[consult][el("plan").value];
 }
 function selectedRetail(r,plan){if(!plan)return r.retail_price;const shipping=el("shipping").value;if(shipping==="priority")return plan.priority_suggested_retail;return plan.suggested_retail;}
-function fulfillmentNote(r){const f=r.pricing.fulfillment;if(f.shipping_method==="coldOvernight")return"cold overnight · $25 retail shipping + syringes/pads included · $25 processing";const shipping=el("shipping").value;return shipping==="priority"?"priority · overnight · $25 retail shipping":"standard · 2-day · $15 shipping";}
+function fulfillmentNote(r){const f=r.pricing.fulfillment;if(f.shipping_method==="coldOvernight")return"cold overnight · $35 retail shipping + syringes/pads included · $25 processing";const shipping=el("shipping").value;return shipping==="priority"?"priority · overnight · $25 retail shipping":"standard · 2-day · $15 shipping";}
 function priceKey(r){const consult=(r.pricing&&r.pricing.plans.controlled)?"controlled":el("consult").value;return rowKey(r)+"|"+consult+"|"+el("plan").value;}
 function effectiveRetail(r,plan){const base=selectedRetail(r,plan);if(!plan)return base;const o=priceOverrides[priceKey(r)];return o!=null?o:base;}
 function grossMargin(r,plan,retail){if(!plan||!retail)return null;const profit=retail-plan.product_cost;return{profit,pct:profit/retail*100};}

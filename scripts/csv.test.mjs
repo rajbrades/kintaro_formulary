@@ -6,8 +6,8 @@ import { removeFormularyRow, appendRow, popLastRow, parseCsv, EXPECTED_HEADER } 
 const csv =
   [
     EXPECTED_HEADER.join(","),
-    'Hair Restoration,"Minoxidil, Fin",fin+min,5mg,capsule,30ct,V Pharm,SKU1,1.23,,yes,,note',
-    "Sexual Wellness,Tadalafil,,20mg,tablet,10ct,S Pharm,SKU2,2.00,,yes,,",
+    'Hair Restoration,"Minoxidil, Fin",fin+min,5mg,capsule,30ct,V Pharm,SKU1,1.23,per_unit,,yes,,note',
+    "Sexual Wellness,Tadalafil,,20mg,tablet,10ct,S Pharm,SKU2,2.00,per_unit,,yes,,",
   ].join("\n") + "\n";
 
 const target = {
@@ -20,6 +20,7 @@ const target = {
   pharmacy: "V Pharm",
   sku: "SKU1",
   wholesale_cost: "1.23",
+  wholesale_basis: "per_unit",
   retail_price: "",
   rx_required: "yes",
   tags: "",

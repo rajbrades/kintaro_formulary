@@ -24,6 +24,10 @@
       "priority": {
         "cost": 20,
         "retail": 25
+      },
+      "coldOvernight": {
+        "cost": 35,
+        "retail": 35
       }
     },
     "glp1ProcessingFee": 25,
@@ -15642,39 +15646,13 @@
           "product_cost_basis": "1ml / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 45,
-                "suggested_retail": 138,
-                "priority_suggested_retail": 138
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 90,
-                "suggested_retail": 186,
-                "priority_suggested_retail": 186
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 180,
-                "suggested_retail": 281,
-                "priority_suggested_retail": 281
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 270,
-                "suggested_retail": 376,
-                "priority_suggested_retail": 376
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 45,
@@ -15698,6 +15676,32 @@
                 "product_cost": 270,
                 "suggested_retail": 387,
                 "priority_suggested_retail": 387
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 45,
+                "suggested_retail": 159,
+                "priority_suggested_retail": 159
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 90,
+                "suggested_retail": 207,
+                "priority_suggested_retail": 207
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 180,
+                "suggested_retail": 302,
+                "priority_suggested_retail": 302
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 270,
+                "suggested_retail": 397,
+                "priority_suggested_retail": 397
               }
             }
           }
@@ -15723,39 +15727,13 @@
           "product_cost_basis": "2ml / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 55,
-                "suggested_retail": 149,
-                "priority_suggested_retail": 149
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 110,
-                "suggested_retail": 207,
-                "priority_suggested_retail": 207
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 220,
-                "suggested_retail": 323,
-                "priority_suggested_retail": 323
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 330,
-                "suggested_retail": 440,
-                "priority_suggested_retail": 440
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 55,
@@ -15779,6 +15757,32 @@
                 "product_cost": 330,
                 "suggested_retail": 450,
                 "priority_suggested_retail": 450
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 55,
+                "suggested_retail": 170,
+                "priority_suggested_retail": 170
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 110,
+                "suggested_retail": 228,
+                "priority_suggested_retail": 228
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 220,
+                "suggested_retail": 344,
+                "priority_suggested_retail": 344
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 330,
+                "suggested_retail": 461,
+                "priority_suggested_retail": 461
               }
             }
           }
@@ -15804,39 +15808,13 @@
           "product_cost_basis": "2ml / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 58,
-                "suggested_retail": 152,
-                "priority_suggested_retail": 152
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 116,
-                "suggested_retail": 213,
-                "priority_suggested_retail": 213
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 232,
-                "suggested_retail": 336,
-                "priority_suggested_retail": 336
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 348,
-                "suggested_retail": 459,
-                "priority_suggested_retail": 459
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 58,
@@ -15860,6 +15838,32 @@
                 "product_cost": 348,
                 "suggested_retail": 469,
                 "priority_suggested_retail": 469
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 58,
+                "suggested_retail": 173,
+                "priority_suggested_retail": 173
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 116,
+                "suggested_retail": 234,
+                "priority_suggested_retail": 234
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 232,
+                "suggested_retail": 357,
+                "priority_suggested_retail": 357
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 348,
+                "suggested_retail": 480,
+                "priority_suggested_retail": 480
               }
             }
           }
@@ -15885,39 +15889,13 @@
           "product_cost_basis": "4ml / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 70,
-                "suggested_retail": 165,
-                "priority_suggested_retail": 165
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 140,
-                "suggested_retail": 239,
-                "priority_suggested_retail": 239
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 280,
-                "suggested_retail": 387,
-                "priority_suggested_retail": 387
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 420,
-                "suggested_retail": 535,
-                "priority_suggested_retail": 535
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 70,
@@ -15941,6 +15919,32 @@
                 "product_cost": 420,
                 "suggested_retail": 545,
                 "priority_suggested_retail": 545
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 70,
+                "suggested_retail": 186,
+                "priority_suggested_retail": 186
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 140,
+                "suggested_retail": 260,
+                "priority_suggested_retail": 260
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 280,
+                "suggested_retail": 408,
+                "priority_suggested_retail": 408
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 420,
+                "suggested_retail": 556,
+                "priority_suggested_retail": 556
               }
             }
           }
@@ -15966,39 +15970,13 @@
           "product_cost_basis": "2ml / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 55,
-                "suggested_retail": 149,
-                "priority_suggested_retail": 149
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 110,
-                "suggested_retail": 207,
-                "priority_suggested_retail": 207
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 220,
-                "suggested_retail": 323,
-                "priority_suggested_retail": 323
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 330,
-                "suggested_retail": 440,
-                "priority_suggested_retail": 440
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 55,
@@ -16022,6 +16000,32 @@
                 "product_cost": 330,
                 "suggested_retail": 450,
                 "priority_suggested_retail": 450
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 55,
+                "suggested_retail": 170,
+                "priority_suggested_retail": 170
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 110,
+                "suggested_retail": 228,
+                "priority_suggested_retail": 228
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 220,
+                "suggested_retail": 344,
+                "priority_suggested_retail": 344
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 330,
+                "suggested_retail": 461,
+                "priority_suggested_retail": 461
               }
             }
           }
@@ -16047,39 +16051,13 @@
           "product_cost_basis": "2ml / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 58,
-                "suggested_retail": 152,
-                "priority_suggested_retail": 152
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 116,
-                "suggested_retail": 213,
-                "priority_suggested_retail": 213
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 232,
-                "suggested_retail": 336,
-                "priority_suggested_retail": 336
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 348,
-                "suggested_retail": 459,
-                "priority_suggested_retail": 459
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 58,
@@ -16103,6 +16081,32 @@
                 "product_cost": 348,
                 "suggested_retail": 469,
                 "priority_suggested_retail": 469
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 58,
+                "suggested_retail": 173,
+                "priority_suggested_retail": 173
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 116,
+                "suggested_retail": 234,
+                "priority_suggested_retail": 234
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 232,
+                "suggested_retail": 357,
+                "priority_suggested_retail": 357
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 348,
+                "suggested_retail": 480,
+                "priority_suggested_retail": 480
               }
             }
           }
@@ -16128,39 +16132,13 @@
           "product_cost_basis": "4ml / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 70,
-                "suggested_retail": 165,
-                "priority_suggested_retail": 165
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 140,
-                "suggested_retail": 239,
-                "priority_suggested_retail": 239
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 280,
-                "suggested_retail": 387,
-                "priority_suggested_retail": 387
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 420,
-                "suggested_retail": 535,
-                "priority_suggested_retail": 535
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 70,
@@ -16184,6 +16162,32 @@
                 "product_cost": 420,
                 "suggested_retail": 545,
                 "priority_suggested_retail": 545
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 70,
+                "suggested_retail": 186,
+                "priority_suggested_retail": 186
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 140,
+                "suggested_retail": 260,
+                "priority_suggested_retail": 260
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 280,
+                "suggested_retail": 408,
+                "priority_suggested_retail": 408
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 420,
+                "suggested_retail": 556,
+                "priority_suggested_retail": 556
               }
             }
           }
@@ -16209,39 +16213,13 @@
           "product_cost_basis": "1mL / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 78,
-                "suggested_retail": 173,
-                "priority_suggested_retail": 173
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 156,
-                "suggested_retail": 256,
-                "priority_suggested_retail": 256
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 312,
-                "suggested_retail": 421,
-                "priority_suggested_retail": 421
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 468,
-                "suggested_retail": 586,
-                "priority_suggested_retail": 586
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 78,
@@ -16265,6 +16243,32 @@
                 "product_cost": 468,
                 "suggested_retail": 596,
                 "priority_suggested_retail": 596
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 78,
+                "suggested_retail": 194,
+                "priority_suggested_retail": 194
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 156,
+                "suggested_retail": 277,
+                "priority_suggested_retail": 277
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 312,
+                "suggested_retail": 442,
+                "priority_suggested_retail": 442
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 468,
+                "suggested_retail": 607,
+                "priority_suggested_retail": 607
               }
             }
           }
@@ -16290,39 +16294,13 @@
           "product_cost_basis": "2.5mL / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 96,
-                "suggested_retail": 192,
-                "priority_suggested_retail": 192
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 192,
-                "suggested_retail": 294,
-                "priority_suggested_retail": 294
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 384,
-                "suggested_retail": 497,
-                "priority_suggested_retail": 497
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 576,
-                "suggested_retail": 700,
-                "priority_suggested_retail": 700
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 96,
@@ -16346,6 +16324,32 @@
                 "product_cost": 576,
                 "suggested_retail": 711,
                 "priority_suggested_retail": 711
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 96,
+                "suggested_retail": 213,
+                "priority_suggested_retail": 213
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 192,
+                "suggested_retail": 315,
+                "priority_suggested_retail": 315
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 384,
+                "suggested_retail": 518,
+                "priority_suggested_retail": 518
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 576,
+                "suggested_retail": 721,
+                "priority_suggested_retail": 721
               }
             }
           }
@@ -16371,39 +16375,13 @@
           "product_cost_basis": "1mL / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 120,
-                "suggested_retail": 217,
-                "priority_suggested_retail": 217
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 240,
-                "suggested_retail": 344,
-                "priority_suggested_retail": 344
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 480,
-                "suggested_retail": 598,
-                "priority_suggested_retail": 598
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 720,
-                "suggested_retail": 852,
-                "priority_suggested_retail": 852
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 120,
@@ -16427,6 +16405,32 @@
                 "product_cost": 720,
                 "suggested_retail": 863,
                 "priority_suggested_retail": 863
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 120,
+                "suggested_retail": 239,
+                "priority_suggested_retail": 239
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 240,
+                "suggested_retail": 366,
+                "priority_suggested_retail": 366
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 480,
+                "suggested_retail": 620,
+                "priority_suggested_retail": 620
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 720,
+                "suggested_retail": 874,
+                "priority_suggested_retail": 874
               }
             }
           }
@@ -16452,39 +16456,13 @@
           "product_cost_basis": "2.5mL / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 138,
-                "suggested_retail": 236,
-                "priority_suggested_retail": 236
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 276,
-                "suggested_retail": 383,
-                "priority_suggested_retail": 383
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 552,
-                "suggested_retail": 675,
-                "priority_suggested_retail": 675
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 828,
-                "suggested_retail": 967,
-                "priority_suggested_retail": 967
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 138,
@@ -16508,6 +16486,32 @@
                 "product_cost": 828,
                 "suggested_retail": 977,
                 "priority_suggested_retail": 977
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 138,
+                "suggested_retail": 258,
+                "priority_suggested_retail": 258
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 276,
+                "suggested_retail": 404,
+                "priority_suggested_retail": 404
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 552,
+                "suggested_retail": 696,
+                "priority_suggested_retail": 696
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 828,
+                "suggested_retail": 988,
+                "priority_suggested_retail": 988
               }
             }
           }
@@ -16533,39 +16537,13 @@
           "product_cost_basis": "1ml / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 60,
-                "suggested_retail": 154,
-                "priority_suggested_retail": 154
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 120,
-                "suggested_retail": 217,
-                "priority_suggested_retail": 217
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 240,
-                "suggested_retail": 344,
-                "priority_suggested_retail": 344
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 360,
-                "suggested_retail": 471,
-                "priority_suggested_retail": 471
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 60,
@@ -16589,6 +16567,32 @@
                 "product_cost": 360,
                 "suggested_retail": 482,
                 "priority_suggested_retail": 482
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 60,
+                "suggested_retail": 175,
+                "priority_suggested_retail": 175
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 120,
+                "suggested_retail": 239,
+                "priority_suggested_retail": 239
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 240,
+                "suggested_retail": 366,
+                "priority_suggested_retail": 366
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 360,
+                "suggested_retail": 493,
+                "priority_suggested_retail": 493
               }
             }
           }
@@ -16614,39 +16618,13 @@
           "product_cost_basis": "2ml / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 78,
-                "suggested_retail": 173,
-                "priority_suggested_retail": 173
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 156,
-                "suggested_retail": 256,
-                "priority_suggested_retail": 256
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 312,
-                "suggested_retail": 421,
-                "priority_suggested_retail": 421
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 468,
-                "suggested_retail": 586,
-                "priority_suggested_retail": 586
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 78,
@@ -16670,6 +16648,32 @@
                 "product_cost": 468,
                 "suggested_retail": 596,
                 "priority_suggested_retail": 596
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 78,
+                "suggested_retail": 194,
+                "priority_suggested_retail": 194
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 156,
+                "suggested_retail": 277,
+                "priority_suggested_retail": 277
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 312,
+                "suggested_retail": 442,
+                "priority_suggested_retail": 442
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 468,
+                "suggested_retail": 607,
+                "priority_suggested_retail": 607
               }
             }
           }
@@ -16695,39 +16699,13 @@
           "product_cost_basis": "2ml / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 93,
-                "suggested_retail": 189,
-                "priority_suggested_retail": 189
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 186,
-                "suggested_retail": 287,
-                "priority_suggested_retail": 287
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 372,
-                "suggested_retail": 484,
-                "priority_suggested_retail": 484
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 558,
-                "suggested_retail": 681,
-                "priority_suggested_retail": 681
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 93,
@@ -16751,6 +16729,32 @@
                 "product_cost": 558,
                 "suggested_retail": 692,
                 "priority_suggested_retail": 692
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 93,
+                "suggested_retail": 210,
+                "priority_suggested_retail": 210
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 186,
+                "suggested_retail": 308,
+                "priority_suggested_retail": 308
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 372,
+                "suggested_retail": 505,
+                "priority_suggested_retail": 505
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 558,
+                "suggested_retail": 702,
+                "priority_suggested_retail": 702
               }
             }
           }
@@ -16776,39 +16780,13 @@
           "product_cost_basis": "4ml / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 114,
-                "suggested_retail": 211,
-                "priority_suggested_retail": 211
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 228,
-                "suggested_retail": 332,
-                "priority_suggested_retail": 332
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 456,
-                "suggested_retail": 573,
-                "priority_suggested_retail": 573
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 684,
-                "suggested_retail": 814,
-                "priority_suggested_retail": 814
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 114,
@@ -16832,6 +16810,32 @@
                 "product_cost": 684,
                 "suggested_retail": 825,
                 "priority_suggested_retail": 825
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 114,
+                "suggested_retail": 232,
+                "priority_suggested_retail": 232
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 228,
+                "suggested_retail": 353,
+                "priority_suggested_retail": 353
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 456,
+                "suggested_retail": 594,
+                "priority_suggested_retail": 594
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 684,
+                "suggested_retail": 835,
+                "priority_suggested_retail": 835
               }
             }
           }
@@ -16857,39 +16861,13 @@
           "product_cost_basis": "2ml / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 78,
-                "suggested_retail": 173,
-                "priority_suggested_retail": 173
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 156,
-                "suggested_retail": 256,
-                "priority_suggested_retail": 256
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 312,
-                "suggested_retail": 421,
-                "priority_suggested_retail": 421
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 468,
-                "suggested_retail": 586,
-                "priority_suggested_retail": 586
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 78,
@@ -16913,6 +16891,32 @@
                 "product_cost": 468,
                 "suggested_retail": 596,
                 "priority_suggested_retail": 596
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 78,
+                "suggested_retail": 194,
+                "priority_suggested_retail": 194
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 156,
+                "suggested_retail": 277,
+                "priority_suggested_retail": 277
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 312,
+                "suggested_retail": 442,
+                "priority_suggested_retail": 442
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 468,
+                "suggested_retail": 607,
+                "priority_suggested_retail": 607
               }
             }
           }
@@ -16938,39 +16942,13 @@
           "product_cost_basis": "2ml / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 93,
-                "suggested_retail": 189,
-                "priority_suggested_retail": 189
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 186,
-                "suggested_retail": 287,
-                "priority_suggested_retail": 287
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 372,
-                "suggested_retail": 484,
-                "priority_suggested_retail": 484
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 558,
-                "suggested_retail": 681,
-                "priority_suggested_retail": 681
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 93,
@@ -16994,6 +16972,32 @@
                 "product_cost": 558,
                 "suggested_retail": 692,
                 "priority_suggested_retail": 692
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 93,
+                "suggested_retail": 210,
+                "priority_suggested_retail": 210
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 186,
+                "suggested_retail": 308,
+                "priority_suggested_retail": 308
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 372,
+                "suggested_retail": 505,
+                "priority_suggested_retail": 505
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 558,
+                "suggested_retail": 702,
+                "priority_suggested_retail": 702
               }
             }
           }
@@ -17019,39 +17023,13 @@
           "product_cost_basis": "4ml / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 114,
-                "suggested_retail": 211,
-                "priority_suggested_retail": 211
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 228,
-                "suggested_retail": 332,
-                "priority_suggested_retail": 332
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 456,
-                "suggested_retail": 573,
-                "priority_suggested_retail": 573
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 684,
-                "suggested_retail": 814,
-                "priority_suggested_retail": 814
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 114,
@@ -17075,6 +17053,32 @@
                 "product_cost": 684,
                 "suggested_retail": 825,
                 "priority_suggested_retail": 825
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 114,
+                "suggested_retail": 232,
+                "priority_suggested_retail": 232
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 228,
+                "suggested_retail": 353,
+                "priority_suggested_retail": 353
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 456,
+                "suggested_retail": 594,
+                "priority_suggested_retail": 594
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 684,
+                "suggested_retail": 835,
+                "priority_suggested_retail": 835
               }
             }
           }
@@ -17100,39 +17104,13 @@
           "product_cost_basis": "2mL / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 78,
-                "suggested_retail": 173,
-                "priority_suggested_retail": 173
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 156,
-                "suggested_retail": 256,
-                "priority_suggested_retail": 256
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 312,
-                "suggested_retail": 421,
-                "priority_suggested_retail": 421
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 468,
-                "suggested_retail": 586,
-                "priority_suggested_retail": 586
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 78,
@@ -17156,6 +17134,32 @@
                 "product_cost": 468,
                 "suggested_retail": 596,
                 "priority_suggested_retail": 596
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 78,
+                "suggested_retail": 194,
+                "priority_suggested_retail": 194
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 156,
+                "suggested_retail": 277,
+                "priority_suggested_retail": 277
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 312,
+                "suggested_retail": 442,
+                "priority_suggested_retail": 442
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 468,
+                "suggested_retail": 607,
+                "priority_suggested_retail": 607
               }
             }
           }
@@ -17181,39 +17185,13 @@
           "product_cost_basis": "2mL / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 168,
-                "suggested_retail": 268,
-                "priority_suggested_retail": 268
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 336,
-                "suggested_retail": 446,
-                "priority_suggested_retail": 446
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 672,
-                "suggested_retail": 802,
-                "priority_suggested_retail": 802
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 1008,
-                "suggested_retail": 1157,
-                "priority_suggested_retail": 1157
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 168,
@@ -17237,6 +17215,32 @@
                 "product_cost": 1008,
                 "suggested_retail": 1168,
                 "priority_suggested_retail": 1168
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 168,
+                "suggested_retail": 289,
+                "priority_suggested_retail": 289
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 336,
+                "suggested_retail": 467,
+                "priority_suggested_retail": 467
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 672,
+                "suggested_retail": 823,
+                "priority_suggested_retail": 823
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 1008,
+                "suggested_retail": 1178,
+                "priority_suggested_retail": 1178
               }
             }
           }
@@ -17262,39 +17266,13 @@
           "product_cost_basis": "4mL / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 198,
-                "suggested_retail": 300,
-                "priority_suggested_retail": 300
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 396,
-                "suggested_retail": 509,
-                "priority_suggested_retail": 509
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 792,
-                "suggested_retail": 929,
-                "priority_suggested_retail": 929
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 1188,
-                "suggested_retail": 1348,
-                "priority_suggested_retail": 1348
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 198,
@@ -17318,6 +17296,32 @@
                 "product_cost": 1188,
                 "suggested_retail": 1358,
                 "priority_suggested_retail": 1358
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 198,
+                "suggested_retail": 321,
+                "priority_suggested_retail": 321
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 396,
+                "suggested_retail": 531,
+                "priority_suggested_retail": 531
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 792,
+                "suggested_retail": 950,
+                "priority_suggested_retail": 950
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 1188,
+                "suggested_retail": 1369,
+                "priority_suggested_retail": 1369
               }
             }
           }
@@ -17343,39 +17347,13 @@
           "product_cost_basis": "1mL / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 126,
-                "suggested_retail": 224,
-                "priority_suggested_retail": 224
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 252,
-                "suggested_retail": 357,
-                "priority_suggested_retail": 357
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 504,
-                "suggested_retail": 624,
-                "priority_suggested_retail": 624
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 756,
-                "suggested_retail": 890,
-                "priority_suggested_retail": 890
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 126,
@@ -17399,6 +17377,32 @@
                 "product_cost": 756,
                 "suggested_retail": 901,
                 "priority_suggested_retail": 901
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 126,
+                "suggested_retail": 245,
+                "priority_suggested_retail": 245
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 252,
+                "suggested_retail": 378,
+                "priority_suggested_retail": 378
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 504,
+                "suggested_retail": 645,
+                "priority_suggested_retail": 645
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 756,
+                "suggested_retail": 912,
+                "priority_suggested_retail": 912
               }
             }
           }
@@ -17424,39 +17428,13 @@
           "product_cost_basis": "3mL / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 156,
-                "suggested_retail": 256,
-                "priority_suggested_retail": 256
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 312,
-                "suggested_retail": 421,
-                "priority_suggested_retail": 421
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 624,
-                "suggested_retail": 751,
-                "priority_suggested_retail": 751
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 936,
-                "suggested_retail": 1081,
-                "priority_suggested_retail": 1081
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 156,
@@ -17480,6 +17458,32 @@
                 "product_cost": 936,
                 "suggested_retail": 1092,
                 "priority_suggested_retail": 1092
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 156,
+                "suggested_retail": 277,
+                "priority_suggested_retail": 277
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 312,
+                "suggested_retail": 442,
+                "priority_suggested_retail": 442
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 624,
+                "suggested_retail": 772,
+                "priority_suggested_retail": 772
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 936,
+                "suggested_retail": 1102,
+                "priority_suggested_retail": 1102
               }
             }
           }
@@ -17505,39 +17509,13 @@
           "product_cost_basis": "3mL / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 186,
-                "suggested_retail": 287,
-                "priority_suggested_retail": 287
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 372,
-                "suggested_retail": 484,
-                "priority_suggested_retail": 484
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 744,
-                "suggested_retail": 878,
-                "priority_suggested_retail": 878
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 1116,
-                "suggested_retail": 1271,
-                "priority_suggested_retail": 1271
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 186,
@@ -17561,6 +17539,32 @@
                 "product_cost": 1116,
                 "suggested_retail": 1282,
                 "priority_suggested_retail": 1282
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 186,
+                "suggested_retail": 308,
+                "priority_suggested_retail": 308
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 372,
+                "suggested_retail": 505,
+                "priority_suggested_retail": 505
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 744,
+                "suggested_retail": 899,
+                "priority_suggested_retail": 899
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 1116,
+                "suggested_retail": 1293,
+                "priority_suggested_retail": 1293
               }
             }
           }
@@ -17991,39 +17995,13 @@
           "product_cost_basis": "vial / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 40,
-                "suggested_retail": 133,
-                "priority_suggested_retail": 133
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 80,
-                "suggested_retail": 175,
-                "priority_suggested_retail": 175
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 160,
-                "suggested_retail": 260,
-                "priority_suggested_retail": 260
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 240,
-                "suggested_retail": 344,
-                "priority_suggested_retail": 344
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 40,
@@ -18047,6 +18025,32 @@
                 "product_cost": 240,
                 "suggested_retail": 355,
                 "priority_suggested_retail": 355
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 40,
+                "suggested_retail": 154,
+                "priority_suggested_retail": 154
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 80,
+                "suggested_retail": 196,
+                "priority_suggested_retail": 196
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 160,
+                "suggested_retail": 281,
+                "priority_suggested_retail": 281
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 240,
+                "suggested_retail": 366,
+                "priority_suggested_retail": 366
               }
             }
           }
@@ -18072,39 +18076,13 @@
           "product_cost_basis": "vial / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 43,
-                "suggested_retail": 136,
-                "priority_suggested_retail": 136
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 86,
-                "suggested_retail": 181,
-                "priority_suggested_retail": 181
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 172,
-                "suggested_retail": 272,
-                "priority_suggested_retail": 272
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 258,
-                "suggested_retail": 363,
-                "priority_suggested_retail": 363
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 43,
@@ -18128,6 +18106,32 @@
                 "product_cost": 258,
                 "suggested_retail": 374,
                 "priority_suggested_retail": 374
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 43,
+                "suggested_retail": 157,
+                "priority_suggested_retail": 157
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 86,
+                "suggested_retail": 203,
+                "priority_suggested_retail": 203
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 172,
+                "suggested_retail": 294,
+                "priority_suggested_retail": 294
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 258,
+                "suggested_retail": 385,
+                "priority_suggested_retail": 385
               }
             }
           }
@@ -18153,39 +18157,13 @@
           "product_cost_basis": "vial / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 60,
-                "suggested_retail": 154,
-                "priority_suggested_retail": 154
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 120,
-                "suggested_retail": 217,
-                "priority_suggested_retail": 217
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 240,
-                "suggested_retail": 344,
-                "priority_suggested_retail": 344
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 360,
-                "suggested_retail": 471,
-                "priority_suggested_retail": 471
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 60,
@@ -18209,6 +18187,32 @@
                 "product_cost": 360,
                 "suggested_retail": 482,
                 "priority_suggested_retail": 482
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 60,
+                "suggested_retail": 175,
+                "priority_suggested_retail": 175
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 120,
+                "suggested_retail": 239,
+                "priority_suggested_retail": 239
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 240,
+                "suggested_retail": 366,
+                "priority_suggested_retail": 366
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 360,
+                "suggested_retail": 493,
+                "priority_suggested_retail": 493
               }
             }
           }
@@ -18234,39 +18238,13 @@
           "product_cost_basis": "vial / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 80,
-                "suggested_retail": 175,
-                "priority_suggested_retail": 175
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 160,
-                "suggested_retail": 260,
-                "priority_suggested_retail": 260
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 320,
-                "suggested_retail": 429,
-                "priority_suggested_retail": 429
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 480,
-                "suggested_retail": 598,
-                "priority_suggested_retail": 598
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 80,
@@ -18290,6 +18268,32 @@
                 "product_cost": 480,
                 "suggested_retail": 609,
                 "priority_suggested_retail": 609
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 80,
+                "suggested_retail": 196,
+                "priority_suggested_retail": 196
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 160,
+                "suggested_retail": 281,
+                "priority_suggested_retail": 281
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 320,
+                "suggested_retail": 450,
+                "priority_suggested_retail": 450
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 480,
+                "suggested_retail": 620,
+                "priority_suggested_retail": 620
               }
             }
           }
@@ -18315,39 +18319,13 @@
           "product_cost_basis": "vial / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 120,
-                "suggested_retail": 217,
-                "priority_suggested_retail": 217
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 240,
-                "suggested_retail": 344,
-                "priority_suggested_retail": 344
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 480,
-                "suggested_retail": 598,
-                "priority_suggested_retail": 598
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 720,
-                "suggested_retail": 852,
-                "priority_suggested_retail": 852
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 120,
@@ -18371,6 +18349,32 @@
                 "product_cost": 720,
                 "suggested_retail": 863,
                 "priority_suggested_retail": 863
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 120,
+                "suggested_retail": 239,
+                "priority_suggested_retail": 239
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 240,
+                "suggested_retail": 366,
+                "priority_suggested_retail": 366
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 480,
+                "suggested_retail": 620,
+                "priority_suggested_retail": 620
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 720,
+                "suggested_retail": 874,
+                "priority_suggested_retail": 874
               }
             }
           }
@@ -18396,39 +18400,13 @@
           "product_cost_basis": "1mL / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 35,
-                "suggested_retail": 127,
-                "priority_suggested_retail": 127
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 70,
-                "suggested_retail": 165,
-                "priority_suggested_retail": 165
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 140,
-                "suggested_retail": 239,
-                "priority_suggested_retail": 239
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 210,
-                "suggested_retail": 313,
-                "priority_suggested_retail": 313
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 35,
@@ -18452,6 +18430,32 @@
                 "product_cost": 210,
                 "suggested_retail": 323,
                 "priority_suggested_retail": 323
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 35,
+                "suggested_retail": 149,
+                "priority_suggested_retail": 149
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 70,
+                "suggested_retail": 186,
+                "priority_suggested_retail": 186
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 140,
+                "suggested_retail": 260,
+                "priority_suggested_retail": 260
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 210,
+                "suggested_retail": 334,
+                "priority_suggested_retail": 334
               }
             }
           }
@@ -18477,39 +18481,13 @@
           "product_cost_basis": "2mL / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 45,
-                "suggested_retail": 138,
-                "priority_suggested_retail": 138
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 90,
-                "suggested_retail": 186,
-                "priority_suggested_retail": 186
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 180,
-                "suggested_retail": 281,
-                "priority_suggested_retail": 281
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 270,
-                "suggested_retail": 376,
-                "priority_suggested_retail": 376
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 45,
@@ -18533,6 +18511,32 @@
                 "product_cost": 270,
                 "suggested_retail": 387,
                 "priority_suggested_retail": 387
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 45,
+                "suggested_retail": 159,
+                "priority_suggested_retail": 159
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 90,
+                "suggested_retail": 207,
+                "priority_suggested_retail": 207
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 180,
+                "suggested_retail": 302,
+                "priority_suggested_retail": 302
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 270,
+                "suggested_retail": 397,
+                "priority_suggested_retail": 397
               }
             }
           }
@@ -18558,39 +18562,13 @@
           "product_cost_basis": "3mL / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 55,
-                "suggested_retail": 149,
-                "priority_suggested_retail": 149
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 110,
-                "suggested_retail": 207,
-                "priority_suggested_retail": 207
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 220,
-                "suggested_retail": 323,
-                "priority_suggested_retail": 323
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 330,
-                "suggested_retail": 440,
-                "priority_suggested_retail": 440
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 55,
@@ -18614,6 +18592,32 @@
                 "product_cost": 330,
                 "suggested_retail": 450,
                 "priority_suggested_retail": 450
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 55,
+                "suggested_retail": 170,
+                "priority_suggested_retail": 170
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 110,
+                "suggested_retail": 228,
+                "priority_suggested_retail": 228
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 220,
+                "suggested_retail": 344,
+                "priority_suggested_retail": 344
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 330,
+                "suggested_retail": 461,
+                "priority_suggested_retail": 461
               }
             }
           }
@@ -18639,39 +18643,13 @@
           "product_cost_basis": "2mL / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 65,
-                "suggested_retail": 159,
-                "priority_suggested_retail": 159
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 130,
-                "suggested_retail": 228,
-                "priority_suggested_retail": 228
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 260,
-                "suggested_retail": 366,
-                "priority_suggested_retail": 366
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 390,
-                "suggested_retail": 503,
-                "priority_suggested_retail": 503
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 65,
@@ -18695,6 +18673,32 @@
                 "product_cost": 390,
                 "suggested_retail": 514,
                 "priority_suggested_retail": 514
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 65,
+                "suggested_retail": 180,
+                "priority_suggested_retail": 180
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 130,
+                "suggested_retail": 249,
+                "priority_suggested_retail": 249
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 260,
+                "suggested_retail": 387,
+                "priority_suggested_retail": 387
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 390,
+                "suggested_retail": 524,
+                "priority_suggested_retail": 524
               }
             }
           }
@@ -18720,39 +18724,13 @@
           "product_cost_basis": "3mL / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 75,
-                "suggested_retail": 170,
-                "priority_suggested_retail": 170
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 150,
-                "suggested_retail": 249,
-                "priority_suggested_retail": 249
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 300,
-                "suggested_retail": 408,
-                "priority_suggested_retail": 408
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 450,
-                "suggested_retail": 567,
-                "priority_suggested_retail": 567
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 75,
@@ -18776,6 +18754,32 @@
                 "product_cost": 450,
                 "suggested_retail": 577,
                 "priority_suggested_retail": 577
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 75,
+                "suggested_retail": 191,
+                "priority_suggested_retail": 191
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 150,
+                "suggested_retail": 270,
+                "priority_suggested_retail": 270
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 300,
+                "suggested_retail": 429,
+                "priority_suggested_retail": 429
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 450,
+                "suggested_retail": 588,
+                "priority_suggested_retail": 588
               }
             }
           }
@@ -18801,39 +18805,13 @@
           "product_cost_basis": "1mL / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 15,
-                "suggested_retail": 106,
-                "priority_suggested_retail": 106
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 30,
-                "suggested_retail": 122,
-                "priority_suggested_retail": 122
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 60,
-                "suggested_retail": 154,
-                "priority_suggested_retail": 154
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 90,
-                "suggested_retail": 186,
-                "priority_suggested_retail": 186
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 15,
@@ -18857,6 +18835,32 @@
                 "product_cost": 90,
                 "suggested_retail": 196,
                 "priority_suggested_retail": 196
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 15,
+                "suggested_retail": 127,
+                "priority_suggested_retail": 127
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 30,
+                "suggested_retail": 143,
+                "priority_suggested_retail": 143
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 60,
+                "suggested_retail": 175,
+                "priority_suggested_retail": 175
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 90,
+                "suggested_retail": 207,
+                "priority_suggested_retail": 207
               }
             }
           }
@@ -18882,39 +18886,13 @@
           "product_cost_basis": "1mL / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 15,
-                "suggested_retail": 106,
-                "priority_suggested_retail": 106
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 30,
-                "suggested_retail": 122,
-                "priority_suggested_retail": 122
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 60,
-                "suggested_retail": 154,
-                "priority_suggested_retail": 154
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 90,
-                "suggested_retail": 186,
-                "priority_suggested_retail": 186
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 15,
@@ -18938,6 +18916,32 @@
                 "product_cost": 90,
                 "suggested_retail": 196,
                 "priority_suggested_retail": 196
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 15,
+                "suggested_retail": 127,
+                "priority_suggested_retail": 127
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 30,
+                "suggested_retail": 143,
+                "priority_suggested_retail": 143
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 60,
+                "suggested_retail": 175,
+                "priority_suggested_retail": 175
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 90,
+                "suggested_retail": 207,
+                "priority_suggested_retail": 207
               }
             }
           }
@@ -18963,39 +18967,13 @@
           "product_cost_basis": "2.5mL / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 20,
-                "suggested_retail": 112,
-                "priority_suggested_retail": 112
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 40,
-                "suggested_retail": 133,
-                "priority_suggested_retail": 133
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 80,
-                "suggested_retail": 175,
-                "priority_suggested_retail": 175
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 120,
-                "suggested_retail": 217,
-                "priority_suggested_retail": 217
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 20,
@@ -19019,6 +18997,32 @@
                 "product_cost": 120,
                 "suggested_retail": 228,
                 "priority_suggested_retail": 228
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 20,
+                "suggested_retail": 133,
+                "priority_suggested_retail": 133
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 40,
+                "suggested_retail": 154,
+                "priority_suggested_retail": 154
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 80,
+                "suggested_retail": 196,
+                "priority_suggested_retail": 196
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 120,
+                "suggested_retail": 239,
+                "priority_suggested_retail": 239
               }
             }
           }
@@ -19044,39 +19048,13 @@
           "product_cost_basis": "2.5mL / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 25,
-                "suggested_retail": 117,
-                "priority_suggested_retail": 117
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 50,
-                "suggested_retail": 143,
-                "priority_suggested_retail": 143
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 100,
-                "suggested_retail": 196,
-                "priority_suggested_retail": 196
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 150,
-                "suggested_retail": 249,
-                "priority_suggested_retail": 249
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 25,
@@ -19100,6 +19078,32 @@
                 "product_cost": 150,
                 "suggested_retail": 260,
                 "priority_suggested_retail": 260
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 25,
+                "suggested_retail": 138,
+                "priority_suggested_retail": 138
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 50,
+                "suggested_retail": 165,
+                "priority_suggested_retail": 165
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 100,
+                "suggested_retail": 217,
+                "priority_suggested_retail": 217
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 150,
+                "suggested_retail": 270,
+                "priority_suggested_retail": 270
               }
             }
           }
@@ -19125,39 +19129,13 @@
           "product_cost_basis": "3.5mL / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 35,
-                "suggested_retail": 127,
-                "priority_suggested_retail": 127
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 70,
-                "suggested_retail": 165,
-                "priority_suggested_retail": 165
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 140,
-                "suggested_retail": 239,
-                "priority_suggested_retail": 239
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 210,
-                "suggested_retail": 313,
-                "priority_suggested_retail": 313
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 35,
@@ -19181,6 +19159,32 @@
                 "product_cost": 210,
                 "suggested_retail": 323,
                 "priority_suggested_retail": 323
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 35,
+                "suggested_retail": 149,
+                "priority_suggested_retail": 149
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 70,
+                "suggested_retail": 186,
+                "priority_suggested_retail": 186
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 140,
+                "suggested_retail": 260,
+                "priority_suggested_retail": 260
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 210,
+                "suggested_retail": 334,
+                "priority_suggested_retail": 334
               }
             }
           }
@@ -19206,39 +19210,13 @@
           "product_cost_basis": "2mL / month (assumed)",
           "fulfillment": {
             "shipping_method": "coldOvernight",
-            "shipping_cost": 20,
-            "shipping_retail": 25,
+            "shipping_cost": 35,
+            "shipping_retail": 35,
             "processing_fee": 25,
             "syringes_and_alcohol_pads_included": true
           },
           "plans": {
             "async": {
-              "1": {
-                "days_supply": 30,
-                "product_cost": 40,
-                "suggested_retail": 133,
-                "priority_suggested_retail": 133
-              },
-              "2": {
-                "days_supply": 60,
-                "product_cost": 80,
-                "suggested_retail": 175,
-                "priority_suggested_retail": 175
-              },
-              "4": {
-                "days_supply": 120,
-                "product_cost": 160,
-                "suggested_retail": 260,
-                "priority_suggested_retail": 260
-              },
-              "6": {
-                "days_supply": 180,
-                "product_cost": 240,
-                "suggested_retail": 344,
-                "priority_suggested_retail": 344
-              }
-            },
-            "sync": {
               "1": {
                 "days_supply": 30,
                 "product_cost": 40,
@@ -19262,6 +19240,32 @@
                 "product_cost": 240,
                 "suggested_retail": 355,
                 "priority_suggested_retail": 355
+              }
+            },
+            "sync": {
+              "1": {
+                "days_supply": 30,
+                "product_cost": 40,
+                "suggested_retail": 154,
+                "priority_suggested_retail": 154
+              },
+              "2": {
+                "days_supply": 60,
+                "product_cost": 80,
+                "suggested_retail": 196,
+                "priority_suggested_retail": 196
+              },
+              "4": {
+                "days_supply": 120,
+                "product_cost": 160,
+                "suggested_retail": 281,
+                "priority_suggested_retail": 281
+              },
+              "6": {
+                "days_supply": 180,
+                "product_cost": 240,
+                "suggested_retail": 366,
+                "priority_suggested_retail": 366
               }
             }
           }
@@ -66444,39 +66448,13 @@
         "product_cost_basis": "1ml / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 45,
-              "suggested_retail": 138,
-              "priority_suggested_retail": 138
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 90,
-              "suggested_retail": 186,
-              "priority_suggested_retail": 186
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 180,
-              "suggested_retail": 281,
-              "priority_suggested_retail": 281
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 270,
-              "suggested_retail": 376,
-              "priority_suggested_retail": 376
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 45,
@@ -66500,6 +66478,32 @@
               "product_cost": 270,
               "suggested_retail": 387,
               "priority_suggested_retail": 387
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 45,
+              "suggested_retail": 159,
+              "priority_suggested_retail": 159
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 90,
+              "suggested_retail": 207,
+              "priority_suggested_retail": 207
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 180,
+              "suggested_retail": 302,
+              "priority_suggested_retail": 302
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 270,
+              "suggested_retail": 397,
+              "priority_suggested_retail": 397
             }
           }
         }
@@ -66525,39 +66529,13 @@
         "product_cost_basis": "2ml / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 55,
-              "suggested_retail": 149,
-              "priority_suggested_retail": 149
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 110,
-              "suggested_retail": 207,
-              "priority_suggested_retail": 207
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 220,
-              "suggested_retail": 323,
-              "priority_suggested_retail": 323
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 330,
-              "suggested_retail": 440,
-              "priority_suggested_retail": 440
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 55,
@@ -66581,6 +66559,32 @@
               "product_cost": 330,
               "suggested_retail": 450,
               "priority_suggested_retail": 450
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 55,
+              "suggested_retail": 170,
+              "priority_suggested_retail": 170
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 110,
+              "suggested_retail": 228,
+              "priority_suggested_retail": 228
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 220,
+              "suggested_retail": 344,
+              "priority_suggested_retail": 344
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 330,
+              "suggested_retail": 461,
+              "priority_suggested_retail": 461
             }
           }
         }
@@ -66606,39 +66610,13 @@
         "product_cost_basis": "2ml / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 58,
-              "suggested_retail": 152,
-              "priority_suggested_retail": 152
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 116,
-              "suggested_retail": 213,
-              "priority_suggested_retail": 213
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 232,
-              "suggested_retail": 336,
-              "priority_suggested_retail": 336
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 348,
-              "suggested_retail": 459,
-              "priority_suggested_retail": 459
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 58,
@@ -66662,6 +66640,32 @@
               "product_cost": 348,
               "suggested_retail": 469,
               "priority_suggested_retail": 469
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 58,
+              "suggested_retail": 173,
+              "priority_suggested_retail": 173
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 116,
+              "suggested_retail": 234,
+              "priority_suggested_retail": 234
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 232,
+              "suggested_retail": 357,
+              "priority_suggested_retail": 357
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 348,
+              "suggested_retail": 480,
+              "priority_suggested_retail": 480
             }
           }
         }
@@ -66687,39 +66691,13 @@
         "product_cost_basis": "4ml / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 70,
-              "suggested_retail": 165,
-              "priority_suggested_retail": 165
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 140,
-              "suggested_retail": 239,
-              "priority_suggested_retail": 239
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 280,
-              "suggested_retail": 387,
-              "priority_suggested_retail": 387
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 420,
-              "suggested_retail": 535,
-              "priority_suggested_retail": 535
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 70,
@@ -66743,6 +66721,32 @@
               "product_cost": 420,
               "suggested_retail": 545,
               "priority_suggested_retail": 545
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 70,
+              "suggested_retail": 186,
+              "priority_suggested_retail": 186
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 140,
+              "suggested_retail": 260,
+              "priority_suggested_retail": 260
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 280,
+              "suggested_retail": 408,
+              "priority_suggested_retail": 408
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 420,
+              "suggested_retail": 556,
+              "priority_suggested_retail": 556
             }
           }
         }
@@ -66768,39 +66772,13 @@
         "product_cost_basis": "2ml / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 55,
-              "suggested_retail": 149,
-              "priority_suggested_retail": 149
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 110,
-              "suggested_retail": 207,
-              "priority_suggested_retail": 207
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 220,
-              "suggested_retail": 323,
-              "priority_suggested_retail": 323
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 330,
-              "suggested_retail": 440,
-              "priority_suggested_retail": 440
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 55,
@@ -66824,6 +66802,32 @@
               "product_cost": 330,
               "suggested_retail": 450,
               "priority_suggested_retail": 450
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 55,
+              "suggested_retail": 170,
+              "priority_suggested_retail": 170
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 110,
+              "suggested_retail": 228,
+              "priority_suggested_retail": 228
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 220,
+              "suggested_retail": 344,
+              "priority_suggested_retail": 344
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 330,
+              "suggested_retail": 461,
+              "priority_suggested_retail": 461
             }
           }
         }
@@ -66849,39 +66853,13 @@
         "product_cost_basis": "2ml / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 58,
-              "suggested_retail": 152,
-              "priority_suggested_retail": 152
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 116,
-              "suggested_retail": 213,
-              "priority_suggested_retail": 213
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 232,
-              "suggested_retail": 336,
-              "priority_suggested_retail": 336
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 348,
-              "suggested_retail": 459,
-              "priority_suggested_retail": 459
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 58,
@@ -66905,6 +66883,32 @@
               "product_cost": 348,
               "suggested_retail": 469,
               "priority_suggested_retail": 469
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 58,
+              "suggested_retail": 173,
+              "priority_suggested_retail": 173
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 116,
+              "suggested_retail": 234,
+              "priority_suggested_retail": 234
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 232,
+              "suggested_retail": 357,
+              "priority_suggested_retail": 357
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 348,
+              "suggested_retail": 480,
+              "priority_suggested_retail": 480
             }
           }
         }
@@ -66930,39 +66934,13 @@
         "product_cost_basis": "4ml / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 70,
-              "suggested_retail": 165,
-              "priority_suggested_retail": 165
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 140,
-              "suggested_retail": 239,
-              "priority_suggested_retail": 239
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 280,
-              "suggested_retail": 387,
-              "priority_suggested_retail": 387
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 420,
-              "suggested_retail": 535,
-              "priority_suggested_retail": 535
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 70,
@@ -66986,6 +66964,32 @@
               "product_cost": 420,
               "suggested_retail": 545,
               "priority_suggested_retail": 545
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 70,
+              "suggested_retail": 186,
+              "priority_suggested_retail": 186
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 140,
+              "suggested_retail": 260,
+              "priority_suggested_retail": 260
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 280,
+              "suggested_retail": 408,
+              "priority_suggested_retail": 408
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 420,
+              "suggested_retail": 556,
+              "priority_suggested_retail": 556
             }
           }
         }
@@ -67011,39 +67015,13 @@
         "product_cost_basis": "1mL / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 78,
-              "suggested_retail": 173,
-              "priority_suggested_retail": 173
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 156,
-              "suggested_retail": 256,
-              "priority_suggested_retail": 256
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 312,
-              "suggested_retail": 421,
-              "priority_suggested_retail": 421
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 468,
-              "suggested_retail": 586,
-              "priority_suggested_retail": 586
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 78,
@@ -67067,6 +67045,32 @@
               "product_cost": 468,
               "suggested_retail": 596,
               "priority_suggested_retail": 596
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 78,
+              "suggested_retail": 194,
+              "priority_suggested_retail": 194
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 156,
+              "suggested_retail": 277,
+              "priority_suggested_retail": 277
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 312,
+              "suggested_retail": 442,
+              "priority_suggested_retail": 442
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 468,
+              "suggested_retail": 607,
+              "priority_suggested_retail": 607
             }
           }
         }
@@ -67092,39 +67096,13 @@
         "product_cost_basis": "2.5mL / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 96,
-              "suggested_retail": 192,
-              "priority_suggested_retail": 192
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 192,
-              "suggested_retail": 294,
-              "priority_suggested_retail": 294
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 384,
-              "suggested_retail": 497,
-              "priority_suggested_retail": 497
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 576,
-              "suggested_retail": 700,
-              "priority_suggested_retail": 700
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 96,
@@ -67148,6 +67126,32 @@
               "product_cost": 576,
               "suggested_retail": 711,
               "priority_suggested_retail": 711
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 96,
+              "suggested_retail": 213,
+              "priority_suggested_retail": 213
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 192,
+              "suggested_retail": 315,
+              "priority_suggested_retail": 315
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 384,
+              "suggested_retail": 518,
+              "priority_suggested_retail": 518
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 576,
+              "suggested_retail": 721,
+              "priority_suggested_retail": 721
             }
           }
         }
@@ -67173,39 +67177,13 @@
         "product_cost_basis": "1mL / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 120,
-              "suggested_retail": 217,
-              "priority_suggested_retail": 217
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 240,
-              "suggested_retail": 344,
-              "priority_suggested_retail": 344
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 480,
-              "suggested_retail": 598,
-              "priority_suggested_retail": 598
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 720,
-              "suggested_retail": 852,
-              "priority_suggested_retail": 852
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 120,
@@ -67229,6 +67207,32 @@
               "product_cost": 720,
               "suggested_retail": 863,
               "priority_suggested_retail": 863
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 120,
+              "suggested_retail": 239,
+              "priority_suggested_retail": 239
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 240,
+              "suggested_retail": 366,
+              "priority_suggested_retail": 366
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 480,
+              "suggested_retail": 620,
+              "priority_suggested_retail": 620
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 720,
+              "suggested_retail": 874,
+              "priority_suggested_retail": 874
             }
           }
         }
@@ -67254,39 +67258,13 @@
         "product_cost_basis": "2.5mL / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 138,
-              "suggested_retail": 236,
-              "priority_suggested_retail": 236
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 276,
-              "suggested_retail": 383,
-              "priority_suggested_retail": 383
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 552,
-              "suggested_retail": 675,
-              "priority_suggested_retail": 675
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 828,
-              "suggested_retail": 967,
-              "priority_suggested_retail": 967
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 138,
@@ -67310,6 +67288,32 @@
               "product_cost": 828,
               "suggested_retail": 977,
               "priority_suggested_retail": 977
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 138,
+              "suggested_retail": 258,
+              "priority_suggested_retail": 258
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 276,
+              "suggested_retail": 404,
+              "priority_suggested_retail": 404
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 552,
+              "suggested_retail": 696,
+              "priority_suggested_retail": 696
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 828,
+              "suggested_retail": 988,
+              "priority_suggested_retail": 988
             }
           }
         }
@@ -67335,39 +67339,13 @@
         "product_cost_basis": "1ml / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 60,
-              "suggested_retail": 154,
-              "priority_suggested_retail": 154
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 120,
-              "suggested_retail": 217,
-              "priority_suggested_retail": 217
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 240,
-              "suggested_retail": 344,
-              "priority_suggested_retail": 344
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 360,
-              "suggested_retail": 471,
-              "priority_suggested_retail": 471
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 60,
@@ -67391,6 +67369,32 @@
               "product_cost": 360,
               "suggested_retail": 482,
               "priority_suggested_retail": 482
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 60,
+              "suggested_retail": 175,
+              "priority_suggested_retail": 175
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 120,
+              "suggested_retail": 239,
+              "priority_suggested_retail": 239
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 240,
+              "suggested_retail": 366,
+              "priority_suggested_retail": 366
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 360,
+              "suggested_retail": 493,
+              "priority_suggested_retail": 493
             }
           }
         }
@@ -67416,39 +67420,13 @@
         "product_cost_basis": "2ml / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 78,
-              "suggested_retail": 173,
-              "priority_suggested_retail": 173
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 156,
-              "suggested_retail": 256,
-              "priority_suggested_retail": 256
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 312,
-              "suggested_retail": 421,
-              "priority_suggested_retail": 421
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 468,
-              "suggested_retail": 586,
-              "priority_suggested_retail": 586
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 78,
@@ -67472,6 +67450,32 @@
               "product_cost": 468,
               "suggested_retail": 596,
               "priority_suggested_retail": 596
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 78,
+              "suggested_retail": 194,
+              "priority_suggested_retail": 194
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 156,
+              "suggested_retail": 277,
+              "priority_suggested_retail": 277
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 312,
+              "suggested_retail": 442,
+              "priority_suggested_retail": 442
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 468,
+              "suggested_retail": 607,
+              "priority_suggested_retail": 607
             }
           }
         }
@@ -67497,39 +67501,13 @@
         "product_cost_basis": "2ml / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 93,
-              "suggested_retail": 189,
-              "priority_suggested_retail": 189
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 186,
-              "suggested_retail": 287,
-              "priority_suggested_retail": 287
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 372,
-              "suggested_retail": 484,
-              "priority_suggested_retail": 484
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 558,
-              "suggested_retail": 681,
-              "priority_suggested_retail": 681
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 93,
@@ -67553,6 +67531,32 @@
               "product_cost": 558,
               "suggested_retail": 692,
               "priority_suggested_retail": 692
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 93,
+              "suggested_retail": 210,
+              "priority_suggested_retail": 210
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 186,
+              "suggested_retail": 308,
+              "priority_suggested_retail": 308
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 372,
+              "suggested_retail": 505,
+              "priority_suggested_retail": 505
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 558,
+              "suggested_retail": 702,
+              "priority_suggested_retail": 702
             }
           }
         }
@@ -67578,39 +67582,13 @@
         "product_cost_basis": "4ml / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 114,
-              "suggested_retail": 211,
-              "priority_suggested_retail": 211
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 228,
-              "suggested_retail": 332,
-              "priority_suggested_retail": 332
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 456,
-              "suggested_retail": 573,
-              "priority_suggested_retail": 573
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 684,
-              "suggested_retail": 814,
-              "priority_suggested_retail": 814
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 114,
@@ -67634,6 +67612,32 @@
               "product_cost": 684,
               "suggested_retail": 825,
               "priority_suggested_retail": 825
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 114,
+              "suggested_retail": 232,
+              "priority_suggested_retail": 232
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 228,
+              "suggested_retail": 353,
+              "priority_suggested_retail": 353
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 456,
+              "suggested_retail": 594,
+              "priority_suggested_retail": 594
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 684,
+              "suggested_retail": 835,
+              "priority_suggested_retail": 835
             }
           }
         }
@@ -67659,39 +67663,13 @@
         "product_cost_basis": "2ml / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 78,
-              "suggested_retail": 173,
-              "priority_suggested_retail": 173
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 156,
-              "suggested_retail": 256,
-              "priority_suggested_retail": 256
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 312,
-              "suggested_retail": 421,
-              "priority_suggested_retail": 421
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 468,
-              "suggested_retail": 586,
-              "priority_suggested_retail": 586
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 78,
@@ -67715,6 +67693,32 @@
               "product_cost": 468,
               "suggested_retail": 596,
               "priority_suggested_retail": 596
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 78,
+              "suggested_retail": 194,
+              "priority_suggested_retail": 194
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 156,
+              "suggested_retail": 277,
+              "priority_suggested_retail": 277
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 312,
+              "suggested_retail": 442,
+              "priority_suggested_retail": 442
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 468,
+              "suggested_retail": 607,
+              "priority_suggested_retail": 607
             }
           }
         }
@@ -67740,39 +67744,13 @@
         "product_cost_basis": "2ml / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 93,
-              "suggested_retail": 189,
-              "priority_suggested_retail": 189
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 186,
-              "suggested_retail": 287,
-              "priority_suggested_retail": 287
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 372,
-              "suggested_retail": 484,
-              "priority_suggested_retail": 484
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 558,
-              "suggested_retail": 681,
-              "priority_suggested_retail": 681
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 93,
@@ -67796,6 +67774,32 @@
               "product_cost": 558,
               "suggested_retail": 692,
               "priority_suggested_retail": 692
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 93,
+              "suggested_retail": 210,
+              "priority_suggested_retail": 210
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 186,
+              "suggested_retail": 308,
+              "priority_suggested_retail": 308
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 372,
+              "suggested_retail": 505,
+              "priority_suggested_retail": 505
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 558,
+              "suggested_retail": 702,
+              "priority_suggested_retail": 702
             }
           }
         }
@@ -67821,39 +67825,13 @@
         "product_cost_basis": "4ml / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 114,
-              "suggested_retail": 211,
-              "priority_suggested_retail": 211
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 228,
-              "suggested_retail": 332,
-              "priority_suggested_retail": 332
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 456,
-              "suggested_retail": 573,
-              "priority_suggested_retail": 573
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 684,
-              "suggested_retail": 814,
-              "priority_suggested_retail": 814
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 114,
@@ -67877,6 +67855,32 @@
               "product_cost": 684,
               "suggested_retail": 825,
               "priority_suggested_retail": 825
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 114,
+              "suggested_retail": 232,
+              "priority_suggested_retail": 232
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 228,
+              "suggested_retail": 353,
+              "priority_suggested_retail": 353
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 456,
+              "suggested_retail": 594,
+              "priority_suggested_retail": 594
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 684,
+              "suggested_retail": 835,
+              "priority_suggested_retail": 835
             }
           }
         }
@@ -67902,39 +67906,13 @@
         "product_cost_basis": "2mL / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 78,
-              "suggested_retail": 173,
-              "priority_suggested_retail": 173
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 156,
-              "suggested_retail": 256,
-              "priority_suggested_retail": 256
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 312,
-              "suggested_retail": 421,
-              "priority_suggested_retail": 421
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 468,
-              "suggested_retail": 586,
-              "priority_suggested_retail": 586
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 78,
@@ -67958,6 +67936,32 @@
               "product_cost": 468,
               "suggested_retail": 596,
               "priority_suggested_retail": 596
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 78,
+              "suggested_retail": 194,
+              "priority_suggested_retail": 194
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 156,
+              "suggested_retail": 277,
+              "priority_suggested_retail": 277
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 312,
+              "suggested_retail": 442,
+              "priority_suggested_retail": 442
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 468,
+              "suggested_retail": 607,
+              "priority_suggested_retail": 607
             }
           }
         }
@@ -67983,39 +67987,13 @@
         "product_cost_basis": "2mL / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 168,
-              "suggested_retail": 268,
-              "priority_suggested_retail": 268
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 336,
-              "suggested_retail": 446,
-              "priority_suggested_retail": 446
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 672,
-              "suggested_retail": 802,
-              "priority_suggested_retail": 802
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 1008,
-              "suggested_retail": 1157,
-              "priority_suggested_retail": 1157
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 168,
@@ -68039,6 +68017,32 @@
               "product_cost": 1008,
               "suggested_retail": 1168,
               "priority_suggested_retail": 1168
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 168,
+              "suggested_retail": 289,
+              "priority_suggested_retail": 289
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 336,
+              "suggested_retail": 467,
+              "priority_suggested_retail": 467
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 672,
+              "suggested_retail": 823,
+              "priority_suggested_retail": 823
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 1008,
+              "suggested_retail": 1178,
+              "priority_suggested_retail": 1178
             }
           }
         }
@@ -68064,39 +68068,13 @@
         "product_cost_basis": "4mL / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 198,
-              "suggested_retail": 300,
-              "priority_suggested_retail": 300
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 396,
-              "suggested_retail": 509,
-              "priority_suggested_retail": 509
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 792,
-              "suggested_retail": 929,
-              "priority_suggested_retail": 929
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 1188,
-              "suggested_retail": 1348,
-              "priority_suggested_retail": 1348
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 198,
@@ -68120,6 +68098,32 @@
               "product_cost": 1188,
               "suggested_retail": 1358,
               "priority_suggested_retail": 1358
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 198,
+              "suggested_retail": 321,
+              "priority_suggested_retail": 321
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 396,
+              "suggested_retail": 531,
+              "priority_suggested_retail": 531
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 792,
+              "suggested_retail": 950,
+              "priority_suggested_retail": 950
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 1188,
+              "suggested_retail": 1369,
+              "priority_suggested_retail": 1369
             }
           }
         }
@@ -68145,39 +68149,13 @@
         "product_cost_basis": "1mL / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 126,
-              "suggested_retail": 224,
-              "priority_suggested_retail": 224
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 252,
-              "suggested_retail": 357,
-              "priority_suggested_retail": 357
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 504,
-              "suggested_retail": 624,
-              "priority_suggested_retail": 624
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 756,
-              "suggested_retail": 890,
-              "priority_suggested_retail": 890
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 126,
@@ -68201,6 +68179,32 @@
               "product_cost": 756,
               "suggested_retail": 901,
               "priority_suggested_retail": 901
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 126,
+              "suggested_retail": 245,
+              "priority_suggested_retail": 245
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 252,
+              "suggested_retail": 378,
+              "priority_suggested_retail": 378
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 504,
+              "suggested_retail": 645,
+              "priority_suggested_retail": 645
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 756,
+              "suggested_retail": 912,
+              "priority_suggested_retail": 912
             }
           }
         }
@@ -68226,39 +68230,13 @@
         "product_cost_basis": "3mL / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 156,
-              "suggested_retail": 256,
-              "priority_suggested_retail": 256
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 312,
-              "suggested_retail": 421,
-              "priority_suggested_retail": 421
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 624,
-              "suggested_retail": 751,
-              "priority_suggested_retail": 751
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 936,
-              "suggested_retail": 1081,
-              "priority_suggested_retail": 1081
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 156,
@@ -68282,6 +68260,32 @@
               "product_cost": 936,
               "suggested_retail": 1092,
               "priority_suggested_retail": 1092
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 156,
+              "suggested_retail": 277,
+              "priority_suggested_retail": 277
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 312,
+              "suggested_retail": 442,
+              "priority_suggested_retail": 442
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 624,
+              "suggested_retail": 772,
+              "priority_suggested_retail": 772
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 936,
+              "suggested_retail": 1102,
+              "priority_suggested_retail": 1102
             }
           }
         }
@@ -68307,39 +68311,13 @@
         "product_cost_basis": "3mL / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 186,
-              "suggested_retail": 287,
-              "priority_suggested_retail": 287
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 372,
-              "suggested_retail": 484,
-              "priority_suggested_retail": 484
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 744,
-              "suggested_retail": 878,
-              "priority_suggested_retail": 878
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 1116,
-              "suggested_retail": 1271,
-              "priority_suggested_retail": 1271
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 186,
@@ -68363,6 +68341,32 @@
               "product_cost": 1116,
               "suggested_retail": 1282,
               "priority_suggested_retail": 1282
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 186,
+              "suggested_retail": 308,
+              "priority_suggested_retail": 308
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 372,
+              "suggested_retail": 505,
+              "priority_suggested_retail": 505
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 744,
+              "suggested_retail": 899,
+              "priority_suggested_retail": 899
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 1116,
+              "suggested_retail": 1293,
+              "priority_suggested_retail": 1293
             }
           }
         }
@@ -71304,39 +71308,13 @@
         "product_cost_basis": "vial / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 40,
-              "suggested_retail": 133,
-              "priority_suggested_retail": 133
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 80,
-              "suggested_retail": 175,
-              "priority_suggested_retail": 175
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 160,
-              "suggested_retail": 260,
-              "priority_suggested_retail": 260
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 240,
-              "suggested_retail": 344,
-              "priority_suggested_retail": 344
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 40,
@@ -71360,6 +71338,32 @@
               "product_cost": 240,
               "suggested_retail": 355,
               "priority_suggested_retail": 355
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 40,
+              "suggested_retail": 154,
+              "priority_suggested_retail": 154
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 80,
+              "suggested_retail": 196,
+              "priority_suggested_retail": 196
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 160,
+              "suggested_retail": 281,
+              "priority_suggested_retail": 281
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 240,
+              "suggested_retail": 366,
+              "priority_suggested_retail": 366
             }
           }
         }
@@ -71385,39 +71389,13 @@
         "product_cost_basis": "vial / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 43,
-              "suggested_retail": 136,
-              "priority_suggested_retail": 136
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 86,
-              "suggested_retail": 181,
-              "priority_suggested_retail": 181
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 172,
-              "suggested_retail": 272,
-              "priority_suggested_retail": 272
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 258,
-              "suggested_retail": 363,
-              "priority_suggested_retail": 363
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 43,
@@ -71441,6 +71419,32 @@
               "product_cost": 258,
               "suggested_retail": 374,
               "priority_suggested_retail": 374
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 43,
+              "suggested_retail": 157,
+              "priority_suggested_retail": 157
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 86,
+              "suggested_retail": 203,
+              "priority_suggested_retail": 203
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 172,
+              "suggested_retail": 294,
+              "priority_suggested_retail": 294
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 258,
+              "suggested_retail": 385,
+              "priority_suggested_retail": 385
             }
           }
         }
@@ -72114,39 +72118,13 @@
         "product_cost_basis": "vial / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 60,
-              "suggested_retail": 154,
-              "priority_suggested_retail": 154
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 120,
-              "suggested_retail": 217,
-              "priority_suggested_retail": 217
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 240,
-              "suggested_retail": 344,
-              "priority_suggested_retail": 344
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 360,
-              "suggested_retail": 471,
-              "priority_suggested_retail": 471
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 60,
@@ -72170,6 +72148,32 @@
               "product_cost": 360,
               "suggested_retail": 482,
               "priority_suggested_retail": 482
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 60,
+              "suggested_retail": 175,
+              "priority_suggested_retail": 175
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 120,
+              "suggested_retail": 239,
+              "priority_suggested_retail": 239
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 240,
+              "suggested_retail": 366,
+              "priority_suggested_retail": 366
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 360,
+              "suggested_retail": 493,
+              "priority_suggested_retail": 493
             }
           }
         }
@@ -72195,39 +72199,13 @@
         "product_cost_basis": "vial / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 80,
-              "suggested_retail": 175,
-              "priority_suggested_retail": 175
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 160,
-              "suggested_retail": 260,
-              "priority_suggested_retail": 260
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 320,
-              "suggested_retail": 429,
-              "priority_suggested_retail": 429
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 480,
-              "suggested_retail": 598,
-              "priority_suggested_retail": 598
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 80,
@@ -72251,6 +72229,32 @@
               "product_cost": 480,
               "suggested_retail": 609,
               "priority_suggested_retail": 609
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 80,
+              "suggested_retail": 196,
+              "priority_suggested_retail": 196
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 160,
+              "suggested_retail": 281,
+              "priority_suggested_retail": 281
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 320,
+              "suggested_retail": 450,
+              "priority_suggested_retail": 450
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 480,
+              "suggested_retail": 620,
+              "priority_suggested_retail": 620
             }
           }
         }
@@ -72276,39 +72280,13 @@
         "product_cost_basis": "vial / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 120,
-              "suggested_retail": 217,
-              "priority_suggested_retail": 217
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 240,
-              "suggested_retail": 344,
-              "priority_suggested_retail": 344
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 480,
-              "suggested_retail": 598,
-              "priority_suggested_retail": 598
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 720,
-              "suggested_retail": 852,
-              "priority_suggested_retail": 852
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 120,
@@ -72332,6 +72310,32 @@
               "product_cost": 720,
               "suggested_retail": 863,
               "priority_suggested_retail": 863
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 120,
+              "suggested_retail": 239,
+              "priority_suggested_retail": 239
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 240,
+              "suggested_retail": 366,
+              "priority_suggested_retail": 366
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 480,
+              "suggested_retail": 620,
+              "priority_suggested_retail": 620
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 720,
+              "suggested_retail": 874,
+              "priority_suggested_retail": 874
             }
           }
         }
@@ -72438,39 +72442,13 @@
         "product_cost_basis": "1mL / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 35,
-              "suggested_retail": 127,
-              "priority_suggested_retail": 127
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 70,
-              "suggested_retail": 165,
-              "priority_suggested_retail": 165
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 140,
-              "suggested_retail": 239,
-              "priority_suggested_retail": 239
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 210,
-              "suggested_retail": 313,
-              "priority_suggested_retail": 313
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 35,
@@ -72494,6 +72472,32 @@
               "product_cost": 210,
               "suggested_retail": 323,
               "priority_suggested_retail": 323
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 35,
+              "suggested_retail": 149,
+              "priority_suggested_retail": 149
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 70,
+              "suggested_retail": 186,
+              "priority_suggested_retail": 186
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 140,
+              "suggested_retail": 260,
+              "priority_suggested_retail": 260
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 210,
+              "suggested_retail": 334,
+              "priority_suggested_retail": 334
             }
           }
         }
@@ -72519,39 +72523,13 @@
         "product_cost_basis": "2mL / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 45,
-              "suggested_retail": 138,
-              "priority_suggested_retail": 138
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 90,
-              "suggested_retail": 186,
-              "priority_suggested_retail": 186
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 180,
-              "suggested_retail": 281,
-              "priority_suggested_retail": 281
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 270,
-              "suggested_retail": 376,
-              "priority_suggested_retail": 376
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 45,
@@ -72575,6 +72553,32 @@
               "product_cost": 270,
               "suggested_retail": 387,
               "priority_suggested_retail": 387
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 45,
+              "suggested_retail": 159,
+              "priority_suggested_retail": 159
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 90,
+              "suggested_retail": 207,
+              "priority_suggested_retail": 207
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 180,
+              "suggested_retail": 302,
+              "priority_suggested_retail": 302
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 270,
+              "suggested_retail": 397,
+              "priority_suggested_retail": 397
             }
           }
         }
@@ -72600,39 +72604,13 @@
         "product_cost_basis": "3mL / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 55,
-              "suggested_retail": 149,
-              "priority_suggested_retail": 149
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 110,
-              "suggested_retail": 207,
-              "priority_suggested_retail": 207
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 220,
-              "suggested_retail": 323,
-              "priority_suggested_retail": 323
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 330,
-              "suggested_retail": 440,
-              "priority_suggested_retail": 440
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 55,
@@ -72656,6 +72634,32 @@
               "product_cost": 330,
               "suggested_retail": 450,
               "priority_suggested_retail": 450
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 55,
+              "suggested_retail": 170,
+              "priority_suggested_retail": 170
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 110,
+              "suggested_retail": 228,
+              "priority_suggested_retail": 228
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 220,
+              "suggested_retail": 344,
+              "priority_suggested_retail": 344
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 330,
+              "suggested_retail": 461,
+              "priority_suggested_retail": 461
             }
           }
         }
@@ -72681,39 +72685,13 @@
         "product_cost_basis": "2mL / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 65,
-              "suggested_retail": 159,
-              "priority_suggested_retail": 159
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 130,
-              "suggested_retail": 228,
-              "priority_suggested_retail": 228
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 260,
-              "suggested_retail": 366,
-              "priority_suggested_retail": 366
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 390,
-              "suggested_retail": 503,
-              "priority_suggested_retail": 503
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 65,
@@ -72737,6 +72715,32 @@
               "product_cost": 390,
               "suggested_retail": 514,
               "priority_suggested_retail": 514
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 65,
+              "suggested_retail": 180,
+              "priority_suggested_retail": 180
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 130,
+              "suggested_retail": 249,
+              "priority_suggested_retail": 249
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 260,
+              "suggested_retail": 387,
+              "priority_suggested_retail": 387
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 390,
+              "suggested_retail": 524,
+              "priority_suggested_retail": 524
             }
           }
         }
@@ -72762,39 +72766,13 @@
         "product_cost_basis": "3mL / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 75,
-              "suggested_retail": 170,
-              "priority_suggested_retail": 170
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 150,
-              "suggested_retail": 249,
-              "priority_suggested_retail": 249
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 300,
-              "suggested_retail": 408,
-              "priority_suggested_retail": 408
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 450,
-              "suggested_retail": 567,
-              "priority_suggested_retail": 567
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 75,
@@ -72818,6 +72796,32 @@
               "product_cost": 450,
               "suggested_retail": 577,
               "priority_suggested_retail": 577
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 75,
+              "suggested_retail": 191,
+              "priority_suggested_retail": 191
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 150,
+              "suggested_retail": 270,
+              "priority_suggested_retail": 270
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 300,
+              "suggested_retail": 429,
+              "priority_suggested_retail": 429
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 450,
+              "suggested_retail": 588,
+              "priority_suggested_retail": 588
             }
           }
         }
@@ -72843,39 +72847,13 @@
         "product_cost_basis": "1mL / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 15,
-              "suggested_retail": 106,
-              "priority_suggested_retail": 106
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 30,
-              "suggested_retail": 122,
-              "priority_suggested_retail": 122
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 60,
-              "suggested_retail": 154,
-              "priority_suggested_retail": 154
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 90,
-              "suggested_retail": 186,
-              "priority_suggested_retail": 186
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 15,
@@ -72899,6 +72877,32 @@
               "product_cost": 90,
               "suggested_retail": 196,
               "priority_suggested_retail": 196
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 15,
+              "suggested_retail": 127,
+              "priority_suggested_retail": 127
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 30,
+              "suggested_retail": 143,
+              "priority_suggested_retail": 143
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 60,
+              "suggested_retail": 175,
+              "priority_suggested_retail": 175
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 90,
+              "suggested_retail": 207,
+              "priority_suggested_retail": 207
             }
           }
         }
@@ -72924,39 +72928,13 @@
         "product_cost_basis": "1mL / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 15,
-              "suggested_retail": 106,
-              "priority_suggested_retail": 106
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 30,
-              "suggested_retail": 122,
-              "priority_suggested_retail": 122
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 60,
-              "suggested_retail": 154,
-              "priority_suggested_retail": 154
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 90,
-              "suggested_retail": 186,
-              "priority_suggested_retail": 186
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 15,
@@ -72980,6 +72958,32 @@
               "product_cost": 90,
               "suggested_retail": 196,
               "priority_suggested_retail": 196
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 15,
+              "suggested_retail": 127,
+              "priority_suggested_retail": 127
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 30,
+              "suggested_retail": 143,
+              "priority_suggested_retail": 143
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 60,
+              "suggested_retail": 175,
+              "priority_suggested_retail": 175
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 90,
+              "suggested_retail": 207,
+              "priority_suggested_retail": 207
             }
           }
         }
@@ -73005,39 +73009,13 @@
         "product_cost_basis": "2.5mL / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 20,
-              "suggested_retail": 112,
-              "priority_suggested_retail": 112
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 40,
-              "suggested_retail": 133,
-              "priority_suggested_retail": 133
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 80,
-              "suggested_retail": 175,
-              "priority_suggested_retail": 175
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 120,
-              "suggested_retail": 217,
-              "priority_suggested_retail": 217
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 20,
@@ -73061,6 +73039,32 @@
               "product_cost": 120,
               "suggested_retail": 228,
               "priority_suggested_retail": 228
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 20,
+              "suggested_retail": 133,
+              "priority_suggested_retail": 133
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 40,
+              "suggested_retail": 154,
+              "priority_suggested_retail": 154
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 80,
+              "suggested_retail": 196,
+              "priority_suggested_retail": 196
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 120,
+              "suggested_retail": 239,
+              "priority_suggested_retail": 239
             }
           }
         }
@@ -73086,39 +73090,13 @@
         "product_cost_basis": "2.5mL / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 25,
-              "suggested_retail": 117,
-              "priority_suggested_retail": 117
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 50,
-              "suggested_retail": 143,
-              "priority_suggested_retail": 143
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 100,
-              "suggested_retail": 196,
-              "priority_suggested_retail": 196
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 150,
-              "suggested_retail": 249,
-              "priority_suggested_retail": 249
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 25,
@@ -73142,6 +73120,32 @@
               "product_cost": 150,
               "suggested_retail": 260,
               "priority_suggested_retail": 260
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 25,
+              "suggested_retail": 138,
+              "priority_suggested_retail": 138
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 50,
+              "suggested_retail": 165,
+              "priority_suggested_retail": 165
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 100,
+              "suggested_retail": 217,
+              "priority_suggested_retail": 217
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 150,
+              "suggested_retail": 270,
+              "priority_suggested_retail": 270
             }
           }
         }
@@ -73167,39 +73171,13 @@
         "product_cost_basis": "3.5mL / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 35,
-              "suggested_retail": 127,
-              "priority_suggested_retail": 127
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 70,
-              "suggested_retail": 165,
-              "priority_suggested_retail": 165
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 140,
-              "suggested_retail": 239,
-              "priority_suggested_retail": 239
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 210,
-              "suggested_retail": 313,
-              "priority_suggested_retail": 313
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 35,
@@ -73223,6 +73201,32 @@
               "product_cost": 210,
               "suggested_retail": 323,
               "priority_suggested_retail": 323
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 35,
+              "suggested_retail": 149,
+              "priority_suggested_retail": 149
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 70,
+              "suggested_retail": 186,
+              "priority_suggested_retail": 186
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 140,
+              "suggested_retail": 260,
+              "priority_suggested_retail": 260
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 210,
+              "suggested_retail": 334,
+              "priority_suggested_retail": 334
             }
           }
         }
@@ -73248,39 +73252,13 @@
         "product_cost_basis": "2mL / month (assumed)",
         "fulfillment": {
           "shipping_method": "coldOvernight",
-          "shipping_cost": 20,
-          "shipping_retail": 25,
+          "shipping_cost": 35,
+          "shipping_retail": 35,
           "processing_fee": 25,
           "syringes_and_alcohol_pads_included": true
         },
         "plans": {
           "async": {
-            "1": {
-              "days_supply": 30,
-              "product_cost": 40,
-              "suggested_retail": 133,
-              "priority_suggested_retail": 133
-            },
-            "2": {
-              "days_supply": 60,
-              "product_cost": 80,
-              "suggested_retail": 175,
-              "priority_suggested_retail": 175
-            },
-            "4": {
-              "days_supply": 120,
-              "product_cost": 160,
-              "suggested_retail": 260,
-              "priority_suggested_retail": 260
-            },
-            "6": {
-              "days_supply": 180,
-              "product_cost": 240,
-              "suggested_retail": 344,
-              "priority_suggested_retail": 344
-            }
-          },
-          "sync": {
             "1": {
               "days_supply": 30,
               "product_cost": 40,
@@ -73304,6 +73282,32 @@
               "product_cost": 240,
               "suggested_retail": 355,
               "priority_suggested_retail": 355
+            }
+          },
+          "sync": {
+            "1": {
+              "days_supply": 30,
+              "product_cost": 40,
+              "suggested_retail": 154,
+              "priority_suggested_retail": 154
+            },
+            "2": {
+              "days_supply": 60,
+              "product_cost": 80,
+              "suggested_retail": 196,
+              "priority_suggested_retail": 196
+            },
+            "4": {
+              "days_supply": 120,
+              "product_cost": 160,
+              "suggested_retail": 281,
+              "priority_suggested_retail": 281
+            },
+            "6": {
+              "days_supply": 180,
+              "product_cost": 240,
+              "suggested_retail": 366,
+              "priority_suggested_retail": 366
             }
           }
         }

@@ -8,7 +8,7 @@
 
 - Suggested retail defaults to Standard shipping (2-day) at $15 Kintaro cost / $15 retail per order.
 - The viewer also models Priority shipping (overnight) at $20 cost / $25 retail.
-- Injectable Tirzepatide and Semaglutide orders default to cold overnight shipping at $20 Kintaro cost and $25 retail; syringes and alcohol pads are included, plus a $25 processing fee per order.
+- Injectable Tirzepatide and Semaglutide orders default to cold overnight shipping at $35 Kintaro cost and $35 retail; syringes and alcohol pads are included, plus a $25 processing fee per order.
 - Plan days are commercial estimates using 30 days per month; verify package duration and prescribed quantity before setting a final price.
 
 ## Summary
@@ -273,51 +273,51 @@
 | L-Carnitine Injectable | 500 mg/ml -30ml | injectable | 30mL | V Pharm |  | $62.5 | per_package | Async ($35) | $120 | $186 | $318 | $450 | lipotropic\|injectable | SKU available upon request |
 | Liraglutide 503B Weight Loss Injectable | 6mg/mL | injectable | (42mg/7mL Vial) | V Pharm | LIRAGLUTIDE-WS | $73.75 | per_package | Async ($35) | $131 | $209 | $366 | $522 | glp-1 |  |
 | Liraglutide 503B Weight Loss Injectable | 6mg/mL | injectable | (90mg/15mL Vial) | V Pharm | LIRAGLUTIDE15-WS | $123.75 | per_package | Async ($35) | $184 | $315 | $577 | $839 | glp-1 |  |
-| Semaglutide + Glycine 1.25mg/5mg per ml (1ml vial) | 1.25mg/5mg per ml (1ml vial) | injectable | 1ml | V Pharm | SGGLY-1.25-5-1-DX | $45 | per_package | Async ($35) | $138 | $186 | $281 | $376 | glp-1 |  |
-| Semaglutide + Glycine 1.25mg/5mg per ml (2ml vial) | 1.25mg/5mg per ml (2ml vial) | injectable | 2ml | V Pharm | SGGLY-1.25-5-2-DX | $55 | per_package | Async ($35) | $149 | $207 | $323 | $440 | glp-1 |  |
-| Semaglutide + Glycine 2.5 mg/5mg per ml (2 ml vial) | 2.5 mg/5mg per ml (2 ml vial) | injectable | 2ml | V Pharm | SGGLY-2.5-5-2-DX | $58 | per_package | Async ($35) | $152 | $213 | $336 | $459 | glp-1 |  |
-| Semaglutide + Glycine 3.125mg/5mg per ml (4ml vial) | 3.125mg/5mg per ml (4ml vial) | injectable | 4ml | V Pharm | SGGLY-3.125-5-4-DX | $70 | per_package | Async ($35) | $165 | $239 | $387 | $535 | glp-1 |  |
-| Semaglutide + B12 1.25mg/0.5mg per ml (2ml vial) | 1.25mg/0.5mg per ml (2ml vial) | injectable | 2ml | V Pharm | SGB12-1.25-0.5-2-DX | $55 | per_package | Async ($35) | $149 | $207 | $323 | $440 | glp-1 |  |
-| Semaglutide + B12 2.5 mg/0.5mg per ml (2 ml vial) | 2.5mg/0.5mg per ml (2ml vial) | injectable | 2ml | V Pharm | SGB12-2.5-0.5-2-DX | $58 | per_package | Async ($35) | $152 | $213 | $336 | $459 | glp-1 |  |
-| Semaglutide + B12 3.125mg/0.5mg per ml (4ml vial) | 3.125mg/0.5mg per ml (2ml vial) | injectable | 4ml | V Pharm | SGB12-3.125-0.5-4-DX | $70 | per_package | Async ($35) | $165 | $239 | $387 | $535 | glp-1 |  |
-| Semaglutide/Methylcobalamin/Glycine | 1mg/1mg/10mg/ml | injectable | 1mL | V Pharm | SGMG1-VS | $78 | per_package | Async ($35) | $173 | $256 | $421 | $586 | glp-1 |  |
-| Semaglutide/Methylcobalamin/Glycine | 1mg/1mg/10mg/ml | injectable | 2.5mL | V Pharm | SGMG2.5-VS | $96 | per_package | Async ($35) | $192 | $294 | $497 | $700 | glp-1 |  |
-| Semaglutide/Methylcobalamin/Glycine | 5mg/1mg/10mg/ml | injectable | 1mL | V Pharm | SGMG5-VS | $120 | per_package | Async ($35) | $217 | $344 | $598 | $852 | glp-1 |  |
-| Semaglutide/Methylcobalamin/Glycine | 5mg/1mg/10mg/ml | injectable | 2.5mL | V Pharm | SGMG12.5-VS | $138 | per_package | Async ($35) | $236 | $383 | $675 | $967 | glp-1 |  |
-| Tirzepatide + Glycine 8.5 mg/5mg per ml (1ml vial) | 8.5 mg/5mg per ml (1ml vial) | injectable | 1ml | V Pharm | TZTGLY-8.5-5-1-DX | $60 | per_package | Async ($35) | $154 | $217 | $344 | $471 | glp-1 |  |
-| Tirzepatide + Glycine 8.5 mg/5mg per ml (2ml vial) | 8.5 mg/5mg per ml (2ml vial) | injectable | 2ml | V Pharm | TZTGLY-8.5-5-2-DX | $78 | per_package | Async ($35) | $173 | $256 | $421 | $586 | glp-1 |  |
-| Tirzepatide + Glycine 17 mg/5mg per ml (2ml vial) | 17 mg/5mg per ml (2ml vial) | injectable | 2ml | V Pharm | TZTGLY-17-5-2-DX | $93 | per_package | Async ($35) | $189 | $287 | $484 | $681 | glp-1 |  |
-| Tirzepatide + Glycine 17mg/5mg per ml (4ml vial) | 17mg/5mg per ml (4ml vial) | injectable | 4ml | V Pharm | TZTGLY-17-5-2-DX | $114 | per_package | Async ($35) | $211 | $332 | $573 | $814 | glp-1 |  |
-| Tirzepatide + B12 8.5 mg/0.5mg per ml (2ml vial) | 8.5 mg/0.5mg per ml (2ml vial) | injectable | 2ml | V Pharm | TZTB12-8.5-0.5-2-DX | $78 | per_package | Async ($35) | $173 | $256 | $421 | $586 | glp-1 |  |
-| Tirzepatide + B12 17 mg/0.5mg per ml (2ml vial) | 17 mg/0.5mg per ml (2ml vial) | injectable | 2ml | V Pharm | TZTB12-17-0.5-2-DX | $93 | per_package | Async ($35) | $189 | $287 | $484 | $681 | glp-1 |  |
-| Tirzepatide + B12 17mg/0.5mg per ml (4ml vial) | 17mg/0.5mg per ml (4ml vial) | injectable | 4ml | V Pharm | TZTB12-17-0.5-4-DX | $114 | per_package | Async ($35) | $211 | $332 | $573 | $814 | glp-1 |  |
-| Tirzepatide/Glycine/Methylcobalamin | 8.5mg/10mg/1mg/ml | injectable | 2mL | V Pharm | TZTGM172-VS | $78 | per_package | Async ($35) | $173 | $256 | $421 | $586 | glp-1 |  |
-| Tirzepatide/Glycine/Methylcobalamin | 17mg/10mg/1mg/ml | injectable | 2mL | V Pharm | TZTGM342-VS | $168 | per_package | Async ($35) | $268 | $446 | $802 | $1157 | glp-1 |  |
-| Tirzepatide/Glycine/Methylcobalamin | 17mg/10mg/1mg/ml | injectable | 4mL | V Pharm | TZTGM344-VS | $198 | per_package | Async ($35) | $300 | $509 | $929 | $1348 | glp-1 |  |
-| Tirzepatide/L-Carnitine | 10mg/100mg/ml | injectable | 1mL | V Pharm | TZTC101-VS | $126 | per_package | Async ($35) | $224 | $357 | $624 | $890 | glp-1 |  |
-| Tirzepatide/L-Carnitine | 10mg/100mg/ml | injectable | 3mL | V Pharm | TZTC103-VS | $156 | per_package | Async ($35) | $256 | $421 | $751 | $1081 | glp-1 |  |
-| Tirzepatide/L-Carnitine | 20mg/100mg/ml | injectable | 3mL | V Pharm | TZTC203-VS | $186 | per_package | Async ($35) | $287 | $484 | $878 | $1271 | glp-1 |  |
+| Semaglutide + Glycine 1.25mg/5mg per ml (1ml vial) | 1.25mg/5mg per ml (1ml vial) | injectable | 1ml | V Pharm | SGGLY-1.25-5-1-DX | $45 | per_package | Async ($35) | $149 | $196 | $292 | $387 | glp-1 |  |
+| Semaglutide + Glycine 1.25mg/5mg per ml (2ml vial) | 1.25mg/5mg per ml (2ml vial) | injectable | 2ml | V Pharm | SGGLY-1.25-5-2-DX | $55 | per_package | Async ($35) | $159 | $217 | $334 | $450 | glp-1 |  |
+| Semaglutide + Glycine 2.5 mg/5mg per ml (2 ml vial) | 2.5 mg/5mg per ml (2 ml vial) | injectable | 2ml | V Pharm | SGGLY-2.5-5-2-DX | $58 | per_package | Async ($35) | $162 | $224 | $347 | $469 | glp-1 |  |
+| Semaglutide + Glycine 3.125mg/5mg per ml (4ml vial) | 3.125mg/5mg per ml (4ml vial) | injectable | 4ml | V Pharm | SGGLY-3.125-5-4-DX | $70 | per_package | Async ($35) | $175 | $249 | $397 | $545 | glp-1 |  |
+| Semaglutide + B12 1.25mg/0.5mg per ml (2ml vial) | 1.25mg/0.5mg per ml (2ml vial) | injectable | 2ml | V Pharm | SGB12-1.25-0.5-2-DX | $55 | per_package | Async ($35) | $159 | $217 | $334 | $450 | glp-1 |  |
+| Semaglutide + B12 2.5 mg/0.5mg per ml (2 ml vial) | 2.5mg/0.5mg per ml (2ml vial) | injectable | 2ml | V Pharm | SGB12-2.5-0.5-2-DX | $58 | per_package | Async ($35) | $162 | $224 | $347 | $469 | glp-1 |  |
+| Semaglutide + B12 3.125mg/0.5mg per ml (4ml vial) | 3.125mg/0.5mg per ml (2ml vial) | injectable | 4ml | V Pharm | SGB12-3.125-0.5-4-DX | $70 | per_package | Async ($35) | $175 | $249 | $397 | $545 | glp-1 |  |
+| Semaglutide/Methylcobalamin/Glycine | 1mg/1mg/10mg/ml | injectable | 1mL | V Pharm | SGMG1-VS | $78 | per_package | Async ($35) | $184 | $266 | $431 | $596 | glp-1 |  |
+| Semaglutide/Methylcobalamin/Glycine | 1mg/1mg/10mg/ml | injectable | 2.5mL | V Pharm | SGMG2.5-VS | $96 | per_package | Async ($35) | $203 | $304 | $507 | $711 | glp-1 |  |
+| Semaglutide/Methylcobalamin/Glycine | 5mg/1mg/10mg/ml | injectable | 1mL | V Pharm | SGMG5-VS | $120 | per_package | Async ($35) | $228 | $355 | $609 | $863 | glp-1 |  |
+| Semaglutide/Methylcobalamin/Glycine | 5mg/1mg/10mg/ml | injectable | 2.5mL | V Pharm | SGMG12.5-VS | $138 | per_package | Async ($35) | $247 | $393 | $685 | $977 | glp-1 |  |
+| Tirzepatide + Glycine 8.5 mg/5mg per ml (1ml vial) | 8.5 mg/5mg per ml (1ml vial) | injectable | 1ml | V Pharm | TZTGLY-8.5-5-1-DX | $60 | per_package | Async ($35) | $165 | $228 | $355 | $482 | glp-1 |  |
+| Tirzepatide + Glycine 8.5 mg/5mg per ml (2ml vial) | 8.5 mg/5mg per ml (2ml vial) | injectable | 2ml | V Pharm | TZTGLY-8.5-5-2-DX | $78 | per_package | Async ($35) | $184 | $266 | $431 | $596 | glp-1 |  |
+| Tirzepatide + Glycine 17 mg/5mg per ml (2ml vial) | 17 mg/5mg per ml (2ml vial) | injectable | 2ml | V Pharm | TZTGLY-17-5-2-DX | $93 | per_package | Async ($35) | $199 | $298 | $495 | $692 | glp-1 |  |
+| Tirzepatide + Glycine 17mg/5mg per ml (4ml vial) | 17mg/5mg per ml (4ml vial) | injectable | 4ml | V Pharm | TZTGLY-17-5-2-DX | $114 | per_package | Async ($35) | $222 | $342 | $584 | $825 | glp-1 |  |
+| Tirzepatide + B12 8.5 mg/0.5mg per ml (2ml vial) | 8.5 mg/0.5mg per ml (2ml vial) | injectable | 2ml | V Pharm | TZTB12-8.5-0.5-2-DX | $78 | per_package | Async ($35) | $184 | $266 | $431 | $596 | glp-1 |  |
+| Tirzepatide + B12 17 mg/0.5mg per ml (2ml vial) | 17 mg/0.5mg per ml (2ml vial) | injectable | 2ml | V Pharm | TZTB12-17-0.5-2-DX | $93 | per_package | Async ($35) | $199 | $298 | $495 | $692 | glp-1 |  |
+| Tirzepatide + B12 17mg/0.5mg per ml (4ml vial) | 17mg/0.5mg per ml (4ml vial) | injectable | 4ml | V Pharm | TZTB12-17-0.5-4-DX | $114 | per_package | Async ($35) | $222 | $342 | $584 | $825 | glp-1 |  |
+| Tirzepatide/Glycine/Methylcobalamin | 8.5mg/10mg/1mg/ml | injectable | 2mL | V Pharm | TZTGM172-VS | $78 | per_package | Async ($35) | $184 | $266 | $431 | $596 | glp-1 |  |
+| Tirzepatide/Glycine/Methylcobalamin | 17mg/10mg/1mg/ml | injectable | 2mL | V Pharm | TZTGM342-VS | $168 | per_package | Async ($35) | $279 | $457 | $812 | $1168 | glp-1 |  |
+| Tirzepatide/Glycine/Methylcobalamin | 17mg/10mg/1mg/ml | injectable | 4mL | V Pharm | TZTGM344-VS | $198 | per_package | Async ($35) | $311 | $520 | $939 | $1358 | glp-1 |  |
+| Tirzepatide/L-Carnitine | 10mg/100mg/ml | injectable | 1mL | V Pharm | TZTC101-VS | $126 | per_package | Async ($35) | $234 | $368 | $634 | $901 | glp-1 |  |
+| Tirzepatide/L-Carnitine | 10mg/100mg/ml | injectable | 3mL | V Pharm | TZTC103-VS | $156 | per_package | Async ($35) | $266 | $431 | $761 | $1092 | glp-1 |  |
+| Tirzepatide/L-Carnitine | 20mg/100mg/ml | injectable | 3mL | V Pharm | TZTC203-VS | $186 | per_package | Async ($35) | $298 | $495 | $888 | $1282 | glp-1 |  |
 | Cagrilintide | 5mg | injectable | vial | Peptides Supplier |  | $61 | per_package | Async ($35) | $118 | $183 | $312 | $441 | amylin | amylin analog, not a GLP-1 |
 | Retatrutide | 10mg | injectable | vial | Peptides Supplier |  | $60 | per_package | Async ($35) | $117 | $180 | $307 | $434 | glp-1 |  |
 | Retatrutide | 20mg | injectable | vial | Peptides Supplier |  | $80 | per_package | Async ($35) | $138 | $223 | $392 | $561 | glp-1 |  |
 | Retatrutide | 30mg | injectable | vial | Peptides Supplier |  | $100 | per_package | Async ($35) | $159 | $265 | $477 | $688 | glp-1 |  |
 | Retatrutide | 60mg | injectable | vial | Peptides Supplier |  | $150 | per_package | Async ($35) | $212 | $371 | $688 | $1006 | glp-1 |  |
-| Semaglutide | 5mg | injectable | vial | Peptides Supplier |  | $40 | per_package | Async ($35) | $133 | $175 | $260 | $344 | glp-1 |  |
-| Semaglutide | 10mg | injectable | vial | Peptides Supplier |  | $43 | per_package | Async ($35) | $136 | $181 | $272 | $363 | glp-1 |  |
-| Tirzepatide | 10mg | injectable | vial | Peptides Supplier |  | $60 | per_package | Async ($35) | $154 | $217 | $344 | $471 | glp-1 |  |
-| Tirzepatide | 30mg | injectable | vial | Peptides Supplier |  | $80 | per_package | Async ($35) | $175 | $260 | $429 | $598 | glp-1 |  |
-| Tirzepatide | 60mg | injectable | vial | Peptides Supplier |  | $120 | per_package | Async ($35) | $217 | $344 | $598 | $852 | glp-1 |  |
-| Tirzepatide + Glycine | 10mg + Glycine 5mg 1mL | injectable | 1mL | S Pharm |  | $35 | per_package | Async ($35) | $127 | $165 | $239 | $313 | glp-1 |  |
-| Tirzepatide + Glycine | 20mg + Glycine 10mg 2mL | injectable | 2mL | S Pharm |  | $45 | per_package | Async ($35) | $138 | $186 | $281 | $376 | glp-1 |  |
-| Tirzepatide + Glycine | 30mg + Glycine 15mg 3mL | injectable | 3mL | S Pharm |  | $55 | per_package | Async ($35) | $149 | $207 | $323 | $440 | glp-1 |  |
-| Tirzepatide + Glycine | 40mg + Glycine 10mg 2mL | injectable | 2mL | S Pharm |  | $65 | per_package | Async ($35) | $159 | $228 | $366 | $503 | glp-1 |  |
-| Tirzepatide + Glycine | 60mg + Glycine 15mg 3mL | injectable | 3mL | S Pharm |  | $75 | per_package | Async ($35) | $170 | $249 | $408 | $567 | glp-1 |  |
-| Semaglutide + Glycine | 1.5mg + Glycine 5mg 1mL | injectable | 1mL | S Pharm |  | $15 | per_package | Async ($35) | $106 | $122 | $154 | $186 | glp-1 |  |
-| Semaglutide + Glycine | 2.5mg + Glycine 5mg 1mL | injectable | 1mL | S Pharm |  | $15 | per_package | Async ($35) | $106 | $122 | $154 | $186 | glp-1 |  |
-| Semaglutide + Glycine | 3.75mg + Glycine 12.5mg 2.5mL | injectable | 2.5mL | S Pharm |  | $20 | per_package | Async ($35) | $112 | $133 | $175 | $217 | glp-1 |  |
-| Semaglutide + Glycine | 6.25mg + Glycine 12.5mg 2.5mL | injectable | 2.5mL | S Pharm |  | $25 | per_package | Async ($35) | $117 | $143 | $196 | $249 | glp-1 |  |
-| Semaglutide + Glycine | 8.75mg + Glycine 17.5mg 3.5mL | injectable | 3.5mL | S Pharm |  | $35 | per_package | Async ($35) | $127 | $165 | $239 | $313 | glp-1 |  |
-| Semaglutide + Glycine | 10mg + Glycine 10mg 2mL | injectable | 2mL | S Pharm |  | $40 | per_package | Async ($35) | $133 | $175 | $260 | $344 | glp-1 |  |
+| Semaglutide | 5mg | injectable | vial | Peptides Supplier |  | $40 | per_package | Async ($35) | $143 | $186 | $270 | $355 | glp-1 |  |
+| Semaglutide | 10mg | injectable | vial | Peptides Supplier |  | $43 | per_package | Async ($35) | $147 | $192 | $283 | $374 | glp-1 |  |
+| Tirzepatide | 10mg | injectable | vial | Peptides Supplier |  | $60 | per_package | Async ($35) | $165 | $228 | $355 | $482 | glp-1 |  |
+| Tirzepatide | 30mg | injectable | vial | Peptides Supplier |  | $80 | per_package | Async ($35) | $186 | $270 | $440 | $609 | glp-1 |  |
+| Tirzepatide | 60mg | injectable | vial | Peptides Supplier |  | $120 | per_package | Async ($35) | $228 | $355 | $609 | $863 | glp-1 |  |
+| Tirzepatide + Glycine | 10mg + Glycine 5mg 1mL | injectable | 1mL | S Pharm |  | $35 | per_package | Async ($35) | $138 | $175 | $249 | $323 | glp-1 |  |
+| Tirzepatide + Glycine | 20mg + Glycine 10mg 2mL | injectable | 2mL | S Pharm |  | $45 | per_package | Async ($35) | $149 | $196 | $292 | $387 | glp-1 |  |
+| Tirzepatide + Glycine | 30mg + Glycine 15mg 3mL | injectable | 3mL | S Pharm |  | $55 | per_package | Async ($35) | $159 | $217 | $334 | $450 | glp-1 |  |
+| Tirzepatide + Glycine | 40mg + Glycine 10mg 2mL | injectable | 2mL | S Pharm |  | $65 | per_package | Async ($35) | $170 | $239 | $376 | $514 | glp-1 |  |
+| Tirzepatide + Glycine | 60mg + Glycine 15mg 3mL | injectable | 3mL | S Pharm |  | $75 | per_package | Async ($35) | $180 | $260 | $418 | $577 | glp-1 |  |
+| Semaglutide + Glycine | 1.5mg + Glycine 5mg 1mL | injectable | 1mL | S Pharm |  | $15 | per_package | Async ($35) | $117 | $133 | $165 | $196 | glp-1 |  |
+| Semaglutide + Glycine | 2.5mg + Glycine 5mg 1mL | injectable | 1mL | S Pharm |  | $15 | per_package | Async ($35) | $117 | $133 | $165 | $196 | glp-1 |  |
+| Semaglutide + Glycine | 3.75mg + Glycine 12.5mg 2.5mL | injectable | 2.5mL | S Pharm |  | $20 | per_package | Async ($35) | $122 | $143 | $186 | $228 | glp-1 |  |
+| Semaglutide + Glycine | 6.25mg + Glycine 12.5mg 2.5mL | injectable | 2.5mL | S Pharm |  | $25 | per_package | Async ($35) | $127 | $154 | $207 | $260 | glp-1 |  |
+| Semaglutide + Glycine | 8.75mg + Glycine 17.5mg 3.5mL | injectable | 3.5mL | S Pharm |  | $35 | per_package | Async ($35) | $138 | $175 | $249 | $323 | glp-1 |  |
+| Semaglutide + Glycine | 10mg + Glycine 10mg 2mL | injectable | 2mL | S Pharm |  | $40 | per_package | Async ($35) | $143 | $186 | $270 | $355 | glp-1 |  |
 | 5-Amino-1mq | 2mg/mL / 10MG | injectable | 5mL | VCO |  | $50.8 | per_package | Async ($35) | $107 | $161 | $268 | $376 |  | VCO 2026 source category: Allergy. Nicotinamide N-methyltransferase inhibitor for metabolic optimization. |
 | 5-Amino-1mq | 50MG | capsule | 60 units | VCO |  | $54.2 | per_package | Async ($35) | $111 | $168 | $283 | $398 |  | VCO 2026 source category: Allergy. Nicotinamide N-methyltransferase inhibitor for metabolic optimization. Form normalized to capsule from source "Pill/Tablet/Capsule". |
 | BAM15 | 60MG | capsule | 1 units | VCO |  | $217.4 | per_package | Async ($35) | $283 | $514 | $974 | $1434 |  | VCO 2026 source category: Allergy. Mitochondrial uncoupler that increases energy expenditure. Form normalized to capsule from source "Pill/Tablet/Capsule". |
